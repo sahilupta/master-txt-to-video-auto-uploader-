@@ -1,0 +1,3960 @@
+====================================================================================================
+COMPLETE .SO MODULE STRING & CODE EXTRACTION
+====================================================================================================
+
+====================================================================================================
+MODULE: master.server
+PATH: master/server.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  scraper = <HttpxClient>
+
+  ═══ CLASSES ═══
+
+  class HttpxClient(object):  # from module: server
+
+    def __init__(self, verify_ssl=True):
+      # varnames: ['self', 'verify_ssl']
+      # names: []
+
+    async def close(self):
+      # varnames: ['self']
+      # names: []
+
+    async def get(self, url, params=None, headers=None, cookies=None, retry=(0, 0, 500), attempt=0):
+      # varnames: ['self', 'url', 'params', 'headers', 'cookies', 'retry', 'attempt', 'max_retries', 'backoff', 'retry_code', 'response']
+      # names: []
+
+    async def post(self, url, json=None, data=None, params=None, headers=None, cookies=None, files=None, retry=(0, 0, 500), attempt=0):
+      # varnames: ['self', 'url', 'json', 'data', 'params', 'headers', 'cookies', 'files', 'retry', 'attempt', 'max_retries', 'backoff', 'retry_code', 'response']
+      # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyExc_ValueError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyExc_SystemError
+  | PyDict_GetItemWithError
+  | PyExc_RuntimeError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_NameError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | can't send non-None value to a just-started coroutine
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | coroutine '%.50S' was never awaited
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | name '%U' is not defined
+  | server.HttpxClient.close
+  | server.HttpxClient.post
+  | server.HttpxClient.get
+  | server.HttpxClient.__init__
+  | cython_runtime
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | asyncio.coroutines
+  | HttpxClient.__init__
+  | HttpxClient.close
+  | HttpxClient.post
+  | HttpxClient.get
+  | status_code
+  | HttpxClient
+  | AsyncClient
+  | __metaclass__
+  | __qualname__
+  | timeout
+  | asyncio
+  | httpx
+  | files
+  | __await__
+  | send
+  | __name__
+  | data
+  | !key
+  | !key
+  | __Pyx_Coroutine_GetAwaitableIter
+  | __pyx_L15_except_return
+  | message
+  | PyExc_ModuleNotFoundError
+  | _dictkeysobject
+  | PyExc_KeyError
+  | __pyx_pf_6server_11HttpxClient_5post
+  | __Pyx_RaiseNeedMoreValuesError
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | tp_as_async
+  | gi_qualname
+  | name_str
+  | __Pyx_UnicodeKeywordsEqual
+  | PyDict_GetItemWithError
+  | __Pyx__ImportDottedModule_Error
+  | invalid_keyword_type
+  | __pyx_CoroutineAwait_methods
+  | PyErr_WarnFormat
+  | __pyx_k_httpx
+  | is_async
+  | _PyCoLineInstrumentationData
+  | __pyx_L16_try_return
+  | __Pyx_CoroutineAwait_Send
+  | __Pyx_get_runtime_version
+  | m_free
+  | __Pyx_Coroutine_get_name
+  | __Pyx_CyFunction_set_qualname
+  | module_name
+  | __pyx_pw_6server_11HttpxClient_6post
+  | tp_free
+  | PyObject_IsSubclass
+  | PyExc_RuntimeWarning
+  | datastack_top
+  | yieldfrom_am_send
+  | PyErr_Format
+  | in_async_gen
+  | partial_name
+  | kwnames
+  | ma_keys
+  | async_exc
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | _PyCFunctionFastWithKeywords
+  | PyExc_RuntimeError
+  | co_filename
+  | __Pyx_CyFunction_get_qualname
+  | PyDict_Update
+  | __Pyx_MatchKeywordArg
+  | delete_later
+  | __Pyx_CyFunction_set_name
+  | __pyx_k_files
+  | __Pyx_Coroutine_SendEx
+  | PyUnicode_DATA
+  | _PyErr_FormatFromCause
+  | gi_modulename
+  | __Pyx_RaiseTooManyValuesError
+  | PyDescr_IsData
+  | __Pyx_Coroutine_AmSend
+  | error_traceback
+  | __Pyx_ReturnWithStopIteration
+  | __pyx_pf_6server_11HttpxClient_2get
+  | _status
+  | __pyx_k_send
+  | __Pyx_Coroutine_set_name
+  | __Pyx_Coroutine_status_from_result
+  | keys_are_strings
+  | __pyx_freecount_6server___pyx_scope_struct_2_close
+  | __pyx_k_asyncio_coroutines
+  | method_name
+  | __Pyx_TypeName
+  | __Pyx_CoroutineAwait_Throw
+  | b_name
+  | _co_freevars
+  | function_name
+  | __pyx_v_data
+  | return_offset
+  | __Pyx__Coroutine_await
+  | __pyx_mdef_6server_11HttpxClient_9close
+  | _f_frame_data
+  | __pyx_k_HttpxClient_get
+  | GNU C17 13.3.0 -mtune=generic -march=x86-64 -g -O2 -fno-strict-overflow -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+  | __pyx_gb_6server_11HttpxClient_7generator1
+  | slot_error
+  | error_value
+  | kw_name
+  | __Pyx_CalculateMetaclass
+  | on_delete
+  | __Pyx__ReturnWithStopIteration
+  | owned_metaclass
+  | datastack_chunk
+  | __Pyx_CoroutineAwait_traverse
+  | __Pyx_Coroutine_await
+  | __pyx_k_asyncio
+  | co_nfreevars
+  | __pyx_k_AsyncClient
+  | PyExc_NameError
+  | varnames_tuple
+  | __pyx_k_await
+  | source_type_name
+  | error_type
+  | res_type_name
+  | __Pyx_Coroutine_get_qualname
+  | __pyx_L10_resume_from_await
+  | __pyx_k_HttpxClient_post
+  | _PyUnicode_NONCOMPACT_DATA
+  | __pyx_pf_6server_11HttpxClient_8close
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS
+  | __pyx_L1_error
+  | __Pyx__Coroutine_MethodReturnFromResult
+  | start
+  | __Pyx_Py3ClassCreate
+  | __Pyx_CoroutineAwait_clear
+  | PyDictKeysObject
+  | __Pyx__Coroutine_AlreadyRunningError
+  | __pyx_k_name
+  | co_name
+  | PyExc_TypeError
+  | _co_varnames
+  | __pyx_L11_resume_from_await
+
+====================================================================================================
+MODULE: master.database
+PATH: master/database.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  IST = <Asia/Kolkata>
+  db_instance = <Database>
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  class Database(object):  # from module: database
+
+    def __init__(self, uri, database_name):
+      # varnames: ['self', 'uri', 'database_name']
+      # names: []
+
+    async def add_batch(self, user_id: 'int', course_id: 'int', api: 'str', token: 'str', select: 'dict', time: 'str', group_id: 'int', length: 'int', credit: 'str', filename: 'str', thumb: 'str'):
+      # varnames: ['self', 'user_id', 'course_id', 'api', 'token', 'select', 'time', 'group_id', 'length', 'credit', 'filename', 'thumb']
+      # names: []
+
+    async def delete_batch(self, user_id: 'int', course_id: 'int'):
+      # varnames: ['self', 'user_id', 'course_id']
+      # names: []
+
+    async def delete_batch_status(self, user_id: 'int', course_id: 'int'):
+      # varnames: ['self', 'user_id', 'course_id']
+      # names: []
+
+    async def get_all_batches(self, user_id: 'int'):
+      # varnames: ['self', 'user_id', 'cursor']
+      # names: []
+
+    async def get_all_batches_with_schedule(self):
+      # varnames: ['self', 'cursor']
+      # names: []
+
+    async def get_batch(self, user_id: 'int', course_id: 'int'):
+      # varnames: ['self', 'user_id', 'course_id']
+      # names: []
+
+    async def get_batch_status(self, user_id: 'int', course_id: 'int'):
+      # varnames: ['self', 'user_id', 'course_id']
+      # names: []
+
+    async def get_incomplete_batches(self):
+      # varnames: ['self']
+      # names: []
+
+    async def get_msg_id(self, url: 'str'):
+      # varnames: ['self', 'url', 'x']
+      # names: []
+
+    async def get_topic(self, group_id: 'int', subjectname: 'str'):
+      # varnames: ['self', 'group_id', 'subjectname']
+      # names: []
+
+    async def is_batch_uptodate(self, user_id: 'int', course_id: 'int'):
+      # varnames: ['self', 'user_id', 'course_id']
+      # names: []
+
+    async def is_file_uploaded(self, course_id: 'int', url: 'str') -> 'bool':
+      # varnames: ['self', 'course_id', 'url']
+      # names: []
+
+    async def mark_file_uploaded(self, course_id: 'int', url: 'str', chat_id: 'int'):
+      # varnames: ['self', 'course_id', 'url', 'chat_id']
+      # names: []
+
+    async def save_batch_status(self, user_id: 'int', course_id: 'int', status: 'bool' = False):
+      # varnames: ['self', 'user_id', 'course_id', 'status']
+      # names: []
+
+    async def save_msg_id(self, url: 'str', msg_id: 'str'):
+      # varnames: ['self', 'url', 'msg_id']
+      # names: []
+
+    async def save_topic(self, group_id: 'int', forum_id: 'int', subjectname: 'str'):
+      # varnames: ['self', 'group_id', 'forum_id', 'subjectname']
+      # names: []
+
+    async def update_batch_schedule(self, user_id: 'int', course_id: 'int', new_time: 'str'):
+      # varnames: ['self', 'user_id', 'course_id', 'new_time']
+      # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_SystemError
+  | PyExc_RuntimeError
+  | PyExc_KeyError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_NameError
+  | PyExc_ValueError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyExc_OverflowError
+  | PyExc_IndexError
+  | __pyx_module_is_main_database
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | PyInit_database
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | database.Database.get_incomplete_batches
+  | database.Database.get_all_batches_with_schedule
+  | can't send non-None value to a just-started coroutine
+  | database.Database.is_batch_uptodate
+  | database.Database.get_batch_status
+  | database.Database.delete_batch_status
+  | database.Database.is_file_uploaded
+  | database.Database.delete_batch
+  | database.Database.mark_file_uploaded
+  | database.Database.update_batch_schedule
+  | Module 'database' has already been imported. Re-initialisation is not supported.
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | database.Database.save_batch_status
+  | database.Database.get_all_batches
+  | coroutine '%.50S' was never awaited
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | database.__pyx_scope_struct_16_get_incomplete_batches
+  | database.__pyx_scope_struct_15_is_batch_uptodate
+  | database.__pyx_scope_struct_14_delete_batch_status
+  | database.__pyx_scope_struct_13_get_batch_status
+  | database.__pyx_scope_struct_12_save_batch_status
+  | database.__pyx_scope_struct_11_is_file_uploaded
+  | database.__pyx_scope_struct_10_mark_file_uploaded
+  | database.__pyx_scope_struct_9_update_batch_schedule
+  | database.__pyx_scope_struct_8_get_all_batches_with_schedule
+  | database.__pyx_scope_struct_7_get_all_batches
+  | database.__pyx_scope_struct_6_delete_batch
+  | database.__pyx_scope_struct_5_get_batch
+  | database.__pyx_scope_struct_4_add_batch
+  | database.__pyx_scope_struct_3_get_msg_id
+  | database.__pyx_scope_struct_2_save_msg_id
+  | database.__pyx_scope_struct_1_get_topic
+  | database.__pyx_scope_struct__save_topic
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | name '%U' is not defined
+  | master/database.py
+  | get_incomplete_batches
+  | get_all_batches_with_schedule
+  | delete_batch
+  | get_all_batches
+  | get_batch_status
+  | delete_batch_status
+  | is_batch_uptodate
+  | is_file_uploaded
+  | database.Database.__init__
+  | user_id
+  | database.Database.add_batch
+  | course_id
+  | token
+  | group_id
+  | filename
+  | thumb
+  | database.Database.get_topic
+  | subjectname
+  | database.Database.save_msg_id
+  | database.Database.get_batch
+  | database.Database.save_topic
+  | mark_file_uploaded
+  | update_batch_schedule
+  | new_time
+  | cython_runtime
+  | init database
+  | save_batch_status
+  | database.Database.get_msg_id
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | Note that Cython is deliberately stricter than PEP-484 and rejects subclasses of builtin types. If you need to pass subclasses then set the 'annotation_typing' directive to False.
+  | Database.get_all_batches_with_schedule
+  | Database.get_incomplete_batches
+  | Database.update_batch_schedule
+  | get_all_batches_with_schedule
+  | Database.delete_batch_status
+  | Database.mark_file_uploaded
+  | Database.save_batch_status
+  | Database.is_batch_uptodate
+  | Database.is_file_uploaded
+  | Database.get_batch_status
+  | Database.get_all_batches
+  | get_incomplete_batches
+  | update_batch_schedule
+  | Database.delete_batch
+  | Database.save_msg_id
+  | motor.motor_asyncio
+  | delete_batch_status
+  | Database.save_topic
+  | Database.get_msg_id
+  | master/database.py
+  | mark_file_uploaded
+  | asyncio.coroutines
+  | Database.get_topic
+  | Database.get_batch
+  | Database.add_batch
+  | AsyncIOMotorClient
+  | save_batch_status
+  | is_batch_uptodate
+  | topic_collection
+  | is_file_uploaded
+  | get_batch_status
+  | batch_collection
+  | get_all_batches
+  | Database.__init__
+  | uploaded_files
+  | motor_asyncio
+  | database_name
+  | __class_getitem__
+  | last_updated
+  | delete_batch
+  | batch_status
+  | uploaded_at
+  | subjectname
+  | file_credit
+  | update_one
+  | save_topic
+  | delete_one
+  | __metaclass__
+  | get_topic
+  | get_batch
+  | course_id
+  | add_batch
+  | timezone
+  | __qualname__
+  | new_time
+  | group_id
+  | filename
+  | datetime
+  | database
+  | Database
+  | user_id
+  | DB_NAME
+  | status
+  | return
+  | token
+  | thumb
+  | __await__
+  | time
+  | send
+  | __name__
+  | f">7>
+  | F">7>
+  | __pyx_v_token
+  | __Pyx_CyFunction_get_name
+  | __pyx_freelist_8database___pyx_scope_struct_5_get_batch
+  | __pyx_pf_8database_8Database_26get_all_batches_with_schedule
+  | __pyx_pw_8database_8Database_36is_file_uploaded
+  | __Pyx_Coroutine_set_qualname
+
+====================================================================================================
+MODULE: master.utils
+PATH: master/utils.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  LOGGER = <Logger>
+  scraper = <HttpxClient>
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  ═══ FUNCTIONS ═══
+
+  async def check_server():
+    # varnames: ['session', 'response', 'e']
+    # names: []
+
+  async def decrypt_link(link):
+    # varnames: ['link', 'key', 'iv', 'cipher', 'decrypted_link', 'e']
+    # names: []
+
+  async def send_random_photo():
+    # varnames: ['regex_photo', 'pht', 'url', 'response']
+    # names: []
+
+  def unpad(padded_data, block_size, style='pkcs7'):
+    """Remove standard padding.
+
+    Args:
+      padded_data (byte string):
+        A piece of data with padding that needs to be stripped.
+      block_size (integer):
+        The block boundary to use for padding. The input length
+        must be a multiple of :data:`block_size`.
+      style (string):
+        Padding algorithm. It can be *'pkcs7'* (default), *'iso7816'* or *'x923'*.
+    Return:
+        byte string : data without padding.
+    Raises:
+      ValueError: if the padding is incorrect.
+    """
+    # varnames: ['padded_data', 'block_size', 'style', 'pdata_len', 'padding_len']
+    # names: ['len', 'ValueError', 'bord', 'min', 'bchr', 'rfind']
+    # constants:
+    #   "Remove standard padding.\n\n    Args:\n      padded_data (byte string):\n        A piece of data with padding that needs to be stripped.\n      block_size (integer):\n        The block boundary to use for padding. The input length\n        must be a multiple of :data:`block_size`.\n      style (string):\n        Padding algorithm. It can be *'pkcs7'* (default), *'iso7816'* or *'x923'*.\n    Return:\n        byte string : data without padding.\n    Raises:\n      ValueError: if the padding is incorrect.\n    "
+    #   0
+    #   'Zero-length input cannot be unpadded'
+    #   'Input data is not padded'
+    #   ('pkcs7', 'x923')
+    #   -1
+    #   1
+    #   'Padding is incorrect.'
+    #   'pkcs7'
+    #   'PKCS#7 padding is incorrect.'
+    #   'ANSI X.923 padding is incorrect.'
+    #   'iso7816'
+    #   128
+    #   'ISO 7816-4 padding is incorrect.'
+    #   'Unknown padding style'
+    # === SOURCE CODE ===
+    # def unpad(padded_data, block_size, style='pkcs7'):
+    #     """Remove standard padding.
+    # 
+    #     Args:
+    #       padded_data (byte string):
+    #         A piece of data with padding that needs to be stripped.
+    #       block_size (integer):
+    #         The block boundary to use for padding. The input length
+    #         must be a multiple of :data:`block_size`.
+    #       style (string):
+    #         Padding algorithm. It can be *'pkcs7'* (default), *'iso7816'* or *'x923'*.
+    #     Return:
+    #         byte string : data without padding.
+    #     Raises:
+    #       ValueError: if the padding is incorrect.
+    #     """
+    # 
+    #     pdata_len = len(padded_data)
+    # 
+    #     if pdata_len == 0:
+    #         raise ValueError("Zero-length input cannot be unpadded")
+    # 
+    #     if pdata_len % block_size:
+    #         raise ValueError("Input data is not padded")
+    # 
+    #     if style in ('pkcs7', 'x923'):
+    #         padding_len = bord(padded_data[-1])
+    # 
+    #         if padding_len < 1 or padding_len > min(block_size, pdata_len):
+    #             raise ValueError("Padding is incorrect.")
+    # 
+    #         if style == 'pkcs7':
+    #             if padded_data[-padding_len:] != bchr(padding_len)*padding_len:
+    #                 raise ValueError("PKCS#7 padding is incorrect.")
+    #         else:
+    #             if padded_data[-padding_len:-1] != bchr(0)*(padding_len-1):
+    #                 raise ValueError("ANSI X.923 padding is incorrect.")
+    # 
+    #     elif style == 'iso7816':
+    #         padding_len = pdata_len - padded_data.rfind(bchr(128))
+    # 
+    #         if padding_len < 1 or padding_len > min(block_size, pdata_len):
+    #             raise ValueError("Padding is incorrect.")
+    # 
+    #         if padding_len > 1 and padded_data[1-padding_len:] != bchr(0)*(padding_len-1):
+    #             raise ValueError("ISO 7816-4 padding is incorrect.")
+    #     else:
+    #         raise ValueError("Unknown padding style")
+    # 
+    #     return padded_data[:-padding_len]
+    # 
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_SystemError
+  | PyExc_RuntimeError
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyArg_ValidateKeywordArguments
+  | PyExc_ValueError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | PyExc_KeyError
+  | PyExc_NameError
+  | PyObject_Format
+  | PyExc_OverflowError
+  | cannot instantiate type, use 'await coroutine' instead
+  | base class '%.200s' is not a heap type
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | cannot reuse already awaited coroutine
+  | __name__ must be set to a string object
+  | __qualname__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | %s() got an unexpected keyword argument '%U'
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | coroutine '%.50S' was never awaited
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | can't send non-None value to a just-started coroutine
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | utils.__pyx_scope_struct_1_send_random_photo
+  | utils.__pyx_scope_struct__decrypt_link
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | utils.send_random_photo
+  | utils.decrypt_link
+  | cython_runtime
+  | name '%U' is not defined
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | https://www.masterapi.tech/check/authorised/?admin_id=
+  | https://api.waifu.pics/sfw/
+  | Error decrypting link: 
+  | asyncio.coroutines
+  | send_random_photo
+  | decrypted_link
+  | decrypt_link
+  | regex_photo
+  | __qualname__
+  | ADMIN_ID
+  | decrypt
+  | aiohttp
+  | status
+  | base64
+  | __await__
+  | send
+  | __name__
+  | __Pyx_Coroutine_GetAwaitableIter
+  | __pyx_L23_return
+  | message
+  | PyExc_ModuleNotFoundError
+  | _dictkeysobject
+  | PyExc_KeyError
+  | __pyx_L21_error
+  | __Pyx_MatchKeywordArg_nostr
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | tp_as_async
+  | from_name
+  | gi_qualname
+  | __pyx_L10_error
+  | __Pyx_UnicodeKeywordsEqual
+  | __pyx_k_https_www_masterapi_tech_check_a
+  | PyDict_GetItemWithError
+  | __pyx_L4_error
+  | __pyx_k_decrypt_link
+  | __Pyx__ImportDottedModule_Error
+  | invalid_keyword_type
+  | __pyx_CoroutineAwait_methods
+  | modname
+  | PyErr_WarnFormat
+  | is_async
+  | _PyCoLineInstrumentationData
+  | __pyx_k_regex_photo
+  | __pyx_k_status
+  | __Pyx_get_runtime_version
+  | m_free
+  | __Pyx_Coroutine_get_name
+  | __Pyx_CyFunction_set_qualname
+  | module_name
+  | __pyx_k_send_random_photo
+  | tp_free
+  | PyObject_IsSubclass
+  | __pyx_pw_5utils_4send_random_photo
+  | PyExc_RuntimeWarning
+  | __pyx_tp_new_5utils___pyx_scope_struct_1_send_random_photo
+  | datastack_top
+  | yieldfrom_am_send
+  | PyErr_Format
+  | in_async_gen
+  | partial_name
+  | ma_keys
+  | async_exc
+  | with_error
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | _PyCFunctionFastWithKeywords
+  | PyExc_RuntimeError
+  | co_filename
+  | __Pyx_CyFunction_get_qualname
+  | PyDict_Update
+  | __Pyx_MatchKeywordArg
+  | delete_later
+  | PyModule_GetName
+  | __Pyx_CyFunction_set_name
+  | __Pyx_Coroutine_SendEx
+  | PyUnicode_DATA
+  | __pyx_L8_try_return
+  | __pyx_freelist_5utils___pyx_scope_struct__decrypt_link
+  | _PyErr_FormatFromCause
+  | gi_modulename
+  | PyDescr_IsData
+  | __pyx_tp_dealloc_5utils___pyx_scope_struct_1_send_random_photo
+  | __pyx_L17_except_error
+  | __pyx_type_5utils___pyx_scope_struct__decrypt_link
+  | __Pyx_Coroutine_AmSend
+  | error_traceback
+  | __Pyx_ReturnWithStopIteration
+  | __pyx_k_send
+  | __Pyx_Coroutine_set_name
+  | __Pyx_Coroutine_status_from_result
+  | keys_are_strings
+  | __pyx_k_Error_decrypting_link
+  | result_udata
+  | __pyx_L36_resume_from_await
+  | __pyx_L22_resume_from_await
+  | __pyx_k_asyncio_coroutines
+  | method_name
+  | __Pyx_TypeName
+  | __Pyx_CoroutineAwait_Throw
+  | b_name
+  | __pyx_L37_resume_from_await
+  | _co_freevars
+  | function_name
+  | __pyx_k_ADMIN_ID
+  | __pyx_k_https_api_waifu_pics_sfw
+  | __pyx_mdef_5utils_1decrypt_link
+  | return_offset
+  | __Pyx__Coroutine_await
+  | _f_frame_data
+  | GNU C17 13.3.0 -mtune=generic -march=x86-64 -g -O2 -fno-strict-overflow -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+  | slot_error
+  | error_value
+  | kw_name
+  | on_delete
+  | __Pyx__ReturnWithStopIteration
+  | __pyx_tp_traverse_5utils___pyx_scope_struct_1_send_random_photo
+  | datastack_chunk
+  | __Pyx_CoroutineAwait_traverse
+  | __pyx_pf_5utils_3send_random_photo
+  | __Pyx_Coroutine_await
+  | __pyx_L28_except_error
+  | co_nfreevars
+  | __pyx_freelist_5utils___pyx_scope_struct_1_send_random_photo
+  | PyExc_NameError
+  | varnames_tuple
+  | __pyx_k_await
+  | __pyx_L6_except_error
+  | __pyx_L38_resume_from_await
+  | source_type_name
+  | error_type
+  | __pyx_mdef_5utils_4send_random_photo
+  | res_type_name
+  | _PyUnicode_NONCOMPACT_DATA
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS
+
+====================================================================================================
+MODULE: master.helper
+PATH: master/helper.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  LOGGER = <Logger>
+  UTC = <timezone>
+  db_instance = <Database>
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  ═══ FUNCTIONS ═══
+
+  def convert_timestamp(ts: 'int') -> 'str':
+    # varnames: ['ts', 'dt']
+    # names: []
+
+  async def download_video(url, name, save_dir, credit):
+    # varnames: ['url', 'name', 'save_dir', 'credit', 'video_name', 'cmd']
+    # names: []
+
+  async def duration(video):
+    # varnames: ['video', 'proc', 'output']
+    # names: []
+
+  async def get_youtube_video_id(url):
+    # varnames: ['url', 'youtube_regex', 'match', 'vid_id']
+    # names: []
+
+  def sanitize_name(name):
+    # varnames: ['name']
+    # names: []
+
+  async def send_vid(bot, url, caption, filename, name, chat_id, forum_id, thumbs):
+    # varnames: ['bot', 'url', 'caption', 'filename', 'name', 'chat_id', 'forum_id', 'thumbs', 'thumb', 'reply', 'dur', 'start_time', 'copy', 'e', 'video']
+    # names: []
+
+  def temp_File_name(name):
+    # varnames: ['name']
+    # names: []
+
+  async def thumbnail_gen(thumb, filename):
+    # varnames: ['thumb', 'filename', 'cmd', 'mark', 'watermarked_image', 'e']
+    # names: []
+
+  async def watermark_image(image_path, watermark):
+    # varnames: ['image_path', 'watermark', 'img', '_', 'height', 'font_size', 'cmd']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyExc_SystemError
+  | PyDict_GetItemWithError
+  | PyExc_RuntimeError
+  | PyExc_OverflowError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyObject_IsSubclass
+  | PyExc_ValueError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyExc_NameError
+  | __pyx_module_is_main_helper
+  | PyObject_Format
+  | PyErr_WarnFormat
+  | PyExc_UnboundLocalError
+  | PyInit_helper
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | NULL result without error in PyObject_Call
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | Module 'helper' has already been imported. Re-initialisation is not supported.
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | can't send non-None value to a just-started coroutine
+  | coroutine '%.50S' was never awaited
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | helper.__pyx_scope_struct_5_send_vid
+  | helper.__pyx_scope_struct_4_watermark_image
+  | helper.__pyx_scope_struct_3_thumbnail_gen
+  | helper.__pyx_scope_struct_2_download_video
+  | helper.__pyx_scope_struct_1_get_youtube_video_id
+  | helper.__pyx_scope_struct__duration
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | master/helper.py
+  | helper.send_vid
+  | helper.watermark_image
+  | helper.thumbnail_gen
+  | helper.download_video
+  | helper.get_youtube_video_id
+  | helper.duration
+  | name '%U' is not defined
+  | cython_runtime
+  | init helper
+  | helper.temp_File_name
+  | helper.sanitize_name
+  | helper.convert_timestamp
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | default=noprint_wrappers=1:nokey=1
+  | Thumbnail Generation Process Started: 
+  | Note that Cython is deliberately stricter than PEP-484 and rejects subclasses of builtin types. If you need to pass subclasses then set the 'annotation_typing' directive to False.
+  | Error sending video to log channel: 
+  | " -vf "drawtext=fontfile=constant/master.otf:text='
+  | " -R 25 --fragment-retries 25 --external-downloader aria2c --downloader-args "aria2c: -x 16 -j 32"
+  | Watermarking Process Completed
+  |  Uploading Video 
+  | :-** <blockquote><b>
+  | Error generating thumbnail: 
+  | Error saving message ID: 
+  | get_youtube_video_id
+  | reply_to_message_id
+  | asyncio.coroutines
+  | watermarked_image
+  | convert_timestamp
+  | ' -O 'Local_thumb.jpg'
+  | master/helper.py
+  | watermark_image
+  | master.database
+  | format=duration
+  | Local_thumb.jpg
+  | temp_File_name
+  | download_video
+  | thumbnail_gen
+  | sanitize_name
+  | progress_args
+  | fromtimestamp
+  | send_message
+  | LOG_CHANNEL
+  | video_name
+  | startswith
+  | start_time
+  | send_video
+  | ffmpeg -y -i "
+  | ValueError
+  | watermark
+  | strftime
+  | send_vid
+  | __qualname__
+  | filename
+  | ffmpeg -i "
+  | duration
+  | datetime
+  | appxdl -u "
+  | caption
+  | asyncio
+  | yt-dlp "
+  | thumbs
+  | return
+  | __name__
+  | helper
+  | delete
+  | video
+  | thumb
+  | https://
+  | group
+  | error
+  | __await__
+  | time
+  | send
+  | name
+  | http://
+  | Send
+  | %key
+  | %key
+  | __pyx_k_Error_sending_video_to_log_chann
+  | __Pyx_CyFunction_get_name
+  | __pyx_L56_error
+  | __pyx_type_6helper___pyx_scope_struct_5_send_vid
+  | __pyx_pw_6helper_4sanitize_name
+  | __Pyx_Coroutine_set_qualname
+  | data1
+  | __pyx_v_start_time
+  | async_gen_finalizer
+  | __pyx_k_send_vid
+  | __pyx_k_helper
+  | PyExc_TypeError
+  | PySendResult
+  | __pyx_L64_except_error
+  | __pyx_k_thumbs
+  | _PyErr_FormatFromCause
+  | PyUnicode_FromFormat
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS
+  | __pyx_pw_6helper_8get_youtube_video_id
+  | __Pyx_CoroutineAwait_no_new
+  | PyUnicode_DATA
+  | __Pyx_ParseKeywordDictToDict
+  | ml_name
+  | PyErr_WarnFormat
+  | __pyx_ptype_6helper___pyx_scope_struct_1_get_youtube_video_id
+  | __pyx_v_thumbs
+  | instance_class
+  | __pyx_obj_6helper___pyx_scope_struct_2_download_video
+  | __pyx_L9_except_error
+  | __pyx_L5_argtuple_error
+  | __pyx_pf_6helper_5temp_File_name
+  | __pyx_L19_resume_from_await
+  | __pyx_k_progress_args
+  | varnames_tuple
+  | __Pyx__Coroutine_GetAwaitableIter
+  | __pyx_L25_error
+  | __pyx_v_video_name
+  | co_filename
+  | __Pyx_PyObject_GetAttrStr_ClearAttributeError
+  | __pyx_freecount_6helper___pyx_scope_struct__duration
+  | __pyx_k_video
+  | __pyx_freelist_6helper___pyx_scope_struct_5_send_vid
+  | keys_are_strings
+  | __pyx_L6_resume_from_await
+  | module_name_str
+  | __pyx_k_default_noprint_wrappers_1_nokey
+  | __pyx_ptype_6helper___pyx_scope_struct__duration
+  | classobj
+  | __pyx_v_filename
+  | __pyx_obj_6helper___pyx_scope_struct_5_send_vid
+  | __pyx_k_master_helper_py
+  | __pyx_tp_traverse_6helper___pyx_scope_struct_1_get_youtube_video_id
+
+====================================================================================================
+MODULE: master.logdb
+PATH: master/logdb.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  LOGGER = <Logger>
+  db_instance = <Database>
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  ═══ FUNCTIONS ═══
+
+  async def check_and_send_from_db(bot, url, group_id, video_caption, pdf_caption, pdf_counter, video_counter, forum_id):
+    # varnames: ['bot', 'url', 'group_id', 'video_caption', 'pdf_caption', 'pdf_counter', 'video_counter', 'forum_id', 'file_data', 'msg_id', 'msg_data', '_', 'e']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_RuntimeError
+  | PyExc_OverflowError
+  | PyExc_SystemError
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_ValueError
+  | PyErr_WarnFormat
+  | PyArg_ValidateKeywordArguments
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyExc_NameError
+  | PyObject_IsSubclass
+  | PyExc_KeyError
+  | PyObject_Format
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | cannot reuse already awaited coroutine
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine '%.50S' was never awaited
+  | %s() got an unexpected keyword argument '%U'
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | can't send non-None value to a just-started coroutine
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | base class '%.200s' is not a heap type
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | logdb.__pyx_scope_struct__check_and_send_from_db
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | logdb.check_and_send_from_db
+  | name '%U' is not defined
+  | cython_runtime
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | Sent video from database for URL: 
+  | Error sending file from database: 
+  | Sent document from database for URL: 
+  | check_and_send_from_db
+  | reply_to_message_id
+  | asyncio.coroutines
+  | pyrogram.errors
+  | master.database
+  | video_counter
+  | video_caption
+  | send_document
+  | get_messages
+  | pdf_counter
+  | pdf_caption
+  | LOG_CHANNEL
+  | send_video
+  | file_data
+  | File data: 
+  | __qualname__
+  | msg_data
+  | group_id
+  | file_id
+  | caption
+  | asyncio
+  | video
+  | error
+  | __await__
+  | send
+  | __name__
+  | __Pyx_Coroutine_GetAwaitableIter
+  | __pyx_k_error
+  | message
+  | PyExc_ModuleNotFoundError
+  | _dictkeysobject
+  | PyExc_KeyError
+  | __pyx_L40_error
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | tp_as_async
+  | __pyx_k_file_data
+  | from_name
+  | gi_qualname
+  | __pyx_v_group_id
+  | __pyx_mdef_5logdb_1check_and_send_from_db
+  | __Pyx_UnicodeKeywordsEqual
+  | PyDict_GetItemWithError
+  | __pyx_v_pdf_caption
+  | __pyx_L49_resume_from_await
+  | __Pyx__ImportDottedModule_Error
+  | invalid_keyword_type
+  | __pyx_CoroutineAwait_methods
+  | modname
+  | __pyx_k_video_caption
+  | __pyx_type_5logdb___pyx_scope_struct__check_and_send_from_db
+  | is_async
+  | _PyCoLineInstrumentationData
+  | __Pyx_CoroutineAwait_Send
+  | __Pyx_get_runtime_version
+  | __pyx_L20_try_return
+  | m_free
+  | __Pyx_Coroutine_get_name
+  | __Pyx_CyFunction_set_qualname
+  | __pyx_tp_dealloc_5logdb___pyx_scope_struct__check_and_send_from_db
+  | module_name
+  | __pyx_L42_except_error
+  | tp_free
+  | PyObject_IsSubclass
+  | PyExc_RuntimeWarning
+  | datastack_top
+  | yieldfrom_am_send
+  | __pyx_L48_resume_from_await
+  | PyErr_Format
+  | in_async_gen
+  | partial_name
+  | kwnames
+  | ma_keys
+  | async_exc
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | _PyCFunctionFastWithKeywords
+  | PyExc_RuntimeError
+  | co_filename
+  | __Pyx_CyFunction_get_qualname
+  | PyDict_Update
+  | __pyx_v_file_data
+  | __Pyx_MatchKeywordArg
+  | __pyx_k_caption
+  | delete_later
+  | PyModule_GetName
+  | __pyx_k_pdf_counter
+  | __Pyx_Coroutine_SendEx
+  | PyUnicode_DATA
+  | _PyErr_FormatFromCause
+  | gi_modulename
+  | PyDescr_IsData
+  | __Pyx_Coroutine_AmSend
+  | error_traceback
+  | __Pyx_ReturnWithStopIteration
+  | _status
+  | __pyx_freelist_5logdb___pyx_scope_struct__check_and_send_from_db
+  | __pyx_k_send
+  | __Pyx_Coroutine_set_name
+  | __Pyx_Coroutine_status_from_result
+  | __pyx_tp_traverse_5logdb___pyx_scope_struct__check_and_send_from_db
+  | keys_are_strings
+  | result_udata
+  | __pyx_k_asyncio_coroutines
+  | method_name
+  | __Pyx_TypeName
+  | __Pyx_CoroutineAwait_Throw
+  | __pyx_k_send_video
+  | b_name
+  | _co_freevars
+  | function_name
+  | __pyx_v_msg_data
+  | __pyx_L10_try_return
+  | return_offset
+  | __Pyx__Coroutine_await
+  | _f_frame_data
+  | GNU C17 13.3.0 -mtune=generic -march=x86-64 -g -O2 -fno-strict-overflow -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+  | slot_error
+  | error_value
+  | __pyx_k_check_and_send_from_db
+  | kw_name
+  | on_delete
+  | __Pyx__ReturnWithStopIteration
+  | __pyx_L55_error
+  | datastack_chunk
+  | __Pyx_CoroutineAwait_traverse
+  | __Pyx_Coroutine_await
+  | __pyx_k_asyncio
+  | co_nfreevars
+  | PyExc_NameError
+  | varnames_tuple
+  | __pyx_k_await
+  | source_type_name
+  | error_type
+
+====================================================================================================
+MODULE: master.key
+PATH: master/key.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  DB_NAME = 'APPX_API'
+  DB_URL = 'mongodb+srv://master:KCzMfCaj7DgGCBPh@cluster0.zihv6vx.mongodb.net/'
+  app_identifier_map = {}
+  db_instance = <Database>
+  pass101 = 'KCzMfCaj7DgGCBPh'
+  pass2 = 'NmC1fGZDNNBEfdh0'
+  pass3 = 'NmC1fGdcccsfdh0'
+  pass4 = 'NmC1fGdcccsfdh0'
+  pass5 = 'NmC1fGdcccsfdh0'
+  pass6 = 'NmC1fGdcccsfdh0'
+  pass7 = 'NmC1fGdcccsfdh0'
+  pass8 = 'NmC1fGdcccsfdh0'
+  us = 'master'
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  class Database(object):  # from module: key
+
+    def __init__(self, uri, database_name):
+      # varnames: ['self', 'uri', 'database_name']
+      # names: []
+
+    async def get_appx_api(self):
+      # varnames: ['self', 'result', 'appx_api', 'sorted_appx_api']
+      # names: []
+
+  ═══ FUNCTIONS ═══
+
+  async def appx_page_paid(call_msg, letter, page):
+    # varnames: ['call_msg', 'letter', 'page', 'markup', 'current_page', 'total_pages', 'text', 'e']
+    # names: []
+
+  def gen_alpha_paid_kb():
+    # varnames: ['keys', 'keyboard', 'i', 'i']
+    # names: []
+
+  async def gen_apps_paid_kb(letter, page=0, apps_per_page=25):
+    # varnames: ['letter', 'page', 'apps_per_page', 'app_dict', 'letter_grouped', 'app', 'api', 'first_letter', 'start', 'end', 'paginated_apps', 'keys', 'idx', 'unique_id', 'keyboard', 'nav_buttons', 'total_pages', 'i']
+    # names: []
+
+  async def get_appx_api():
+    # varnames: []
+    # names: []
+
+  async def handle_app_paid(bot, data, call_msg, a):
+    # varnames: ['bot', 'data', 'call_msg', 'a', 'app_id', 'app_details', 'app_name', 'api']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyExc_ValueError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_SystemError
+  | PyExc_OverflowError
+  | PyExc_RuntimeError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyExc_NameError
+  | __pyx_module_is_main_key
+  | PyObject_Format
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | PyExc_KeyError
+  | PyExc_IndexError
+  | PyInit_key
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | key.Database.get_appx_api.lambda
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | can't send non-None value to a just-started coroutine
+  | Module 'key' has already been imported. Re-initialisation is not supported.
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | coroutine '%.50S' was never awaited
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | key.__pyx_scope_struct_4_appx_page_paid
+  | key.__pyx_scope_struct_3_handle_app_paid
+  | key.__pyx_scope_struct_2_gen_apps_paid_kb
+  | key.__pyx_scope_struct_1_get_appx_api
+  | key.__pyx_scope_struct__get_appx_api
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | master/key.py
+  | key.appx_page_paid
+  | key.handle_app_paid
+  | key.gen_apps_paid_kb
+  | key.get_appx_api
+  | key.Database.get_appx_api
+  | name '%U' is not defined
+  | cython_runtime
+  | init key
+  | key.gen_alpha_paid_kb
+  | key.Database.__init__
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | Error: Unable to extract app_id from data..Please start it by /app
+  | Database.get_appx_api.<locals>.<lambda>
+  |  not found in app_identifier_map..Restart Markup Keyboard by /app
+  | @cluster0.zihv6vx.mongodb.net/
+  | Error updating message: 
+  | Database.get_appx_api
+  | InlineKeyboardMarkup
+  | InlineKeyboardButton
+  | motor.motor_asyncio
+  | appx_api_collection
+  | asyncio.coroutines
+  | AsyncIOMotorClient
+  | gen_alpha_paid_kb
+  | gen_apps_paid_kb
+  | <b>Current page: </b>
+  | sorted_appx_api
+  | handle_app_paid
+  | Database.__init__
+  | letter_grouped
+  | appx_page_paid
+  | motor_asyncio
+  | master/key.py
+  | database_name
+  | __class_getitem__
+  | callback_data
+  | appx_api_data
+  | previouspaid_
+  | get_appx_api
+  | edit_caption
+  | Error: app_id 
+  | nav_buttons
+  | mongodb+srv://
+  | forwardpaid_
+  | appx_master
+  | IndexError
+  | __metaclass__
+  | alphapaid_
+  | add_batch
+  | __qualname__
+  | keyboard
+  | appx_api
+  | app_name
+  | USERLINK
+  | Database
+  | APPX_API
+  | caption
+  | DB_NAME
+  | format
+  | delete
+  | abatch_
+  | start
+  | __await__
+  | send
+  | __name__
+  | keys
+  | data
+  | , API: 
+  | (key
+  | (key
+  | __pyx_ptype_3key___pyx_scope_struct_2_gen_apps_paid_kb
+  | __pyx_k_start
+  | __Pyx_CyFunction_get_name
+  | __Pyx_RaiseNoneNotIterableError
+  | __Pyx_Coroutine_set_qualname
+  | data1
+  | data2
+  | __pyx_tp_dealloc_3key___pyx_scope_struct_1_get_appx_api
+  | __pyx_k_keyboard
+  | async_gen_finalizer
+  | PyExc_TypeError
+  | PySendResult
+  | __pyx_type_3key___pyx_scope_struct_1_get_appx_api
+  | __pyx_k_cluster0_zihv6vx_mongodb_net
+  | _PyErr_FormatFromCause
+  | __pyx_tp_new_3key___pyx_scope_struct_2_gen_apps_paid_kb
+  | __pyx_k_send
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS
+  | __pyx_pf_3key_8handle_app_paid
+  | __Pyx_Coroutine_status_from_result
+  | __Pyx_CoroutineAwait_no_new
+  | PyUnicode_DATA
+  | __Pyx_ParseKeywordDictToDict
+  | __pyx_ptype_3key___pyx_scope_struct_4_appx_page_paid
+  | ml_name
+  | PyErr_WarnFormat
+  | __pyx_pw_3key_9handle_app_paid
+  | instance_class
+  | __pyx_mdef_3key_12appx_page_paid
+  | __pyx_L9_except_error
+  | __pyx_L5_argtuple_error
+  | __pyx_v_start
+  | __pyx_L19_resume_from_await
+  | __Pyx__Coroutine_GetAwaitableIter
+  | co_filename
+  | __Pyx_PyObject_GetAttrStr_ClearAttributeError
+  | __pyx_k_previouspaid
+  | __pyx_mdef_3key_9handle_app_paid
+  | __pyx_tp_dealloc_3key___pyx_scope_struct__get_appx_api
+  | __pyx_pw_3key_8Database_1__init__
+  | keys_are_strings
+  | __pyx_freelist_3key___pyx_scope_struct_1_get_appx_api
+  | module_name_str
+  | classobj
+  | __pyx_k_data
+  | __pyx_pw_3key_4gen_alpha_paid_kb
+  | __pyx_k_InlineKeyboardButton
+  | __pyx_L24_resume_from_await
+  | allow_py2_metaclass
+  | mm_class
+  | datastack_top
+  | __Pyx_CoroutineAwait_traverse
+  | __pyx_freecount_3key___pyx_scope_struct_3_handle_app_paid
+  | __pyx_k_asyncio_coroutines
+  | kwnames
+  | __Pyx_ParseKeywords
+  | __Pyx_CoroutineAwait_Close
+  | __pyx_k_caption
+  | __Pyx_MatchKeywordArg_nostr
+  | __pyx_type_3key___pyx_scope_struct__get_appx_api
+
+====================================================================================================
+MODULE: master.buttom
+PATH: master/buttom.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  APP = "\n<b>➣━━━━━━━ 🤖 APPS ━━━━━━━➣</b>\n\n<i>I'm your all-in-one solution for extracting and managing course content. Whether you're a student or educator, I've got you covered!</i>\n\n<i>Bot Made By [ADMIN]({})</i>\n<i>I can do Everything What You Want.</i>\n"
+  BATCH_ALREADY_EXISTS = '❌Batch Already Exists in my Database❌'
+  BATCH_DELETED = '❌Batch Deleted Successfully❌'
+  BATCH_NOT_FOUND = '❌Batch Not Found in my Database❌'
+  BATCH_SELECTION = '<b>Please enter the batch ID number from the list above that you want to set for auto-update ⬆️</b>'
+  BATCH_STATUS = '<b>➣━━━━━━━ 📊 BATCH STATUS ━━━━━━━➣</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n🖼️ <b>Thumbnail:</b> [Thumbnail]({})\n\n<b>⚙️ Configuration:</b>\n⏰ <b>Set Time:</b> {}\n💘 <b>Credit:</b> <code>{}</code>\n🚀 <b>Filename:</b> <code>{}</code>\n🖼️ <b>Thumbnail:</b> <code>{}</code>\n🔗 <b>API:</b> {}\n👥 <b>Group Name:</b> {}\n🆔 <b>Group ID:</b> {}\n\n<b>📈 Status Information:</b>\n🕒 <b>Last Updated:</b> {}\n🟢 <b>Batch Activated:</b> {}\n🔄 <b>Current Status:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  BATCH_UPDATED = '✅Batch Updated Successfully✅'
+  COLLECTING_DATA = '<b>➣━━━━━━━ 📊 COLLECTING DATA ━━━━━━━➣</b>\n\n<b>Collecting Data... Please Wait a Few Minutes</b>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  CONFIRM_CONFIG = '<b>➣━━━━━━━ 📋 CONFIRMATION ━━━━━━━➣</b>\n\n<b>Configuration Summary</b>\n\n🏠 <b>App Name:</b> {}\n🆔 <b>Batch ID:</b> {}\n📚 <b>Batch Name:</b> {}\n💰 <b>Price:</b> {}₹\n💰 <b>Credit:</b> <code>{}</code>\n💰 <b>Filename Credit:</b> <code>{}</code>\n🖼️ <b>Thumbnail:</b> <code>{}</code>\n⏰ <b>Update Time:</b> <code>{}</code>\n👥 <b>Group ID:</b> <code>{}</code>\n👥 <b>Group Name:</b> <i>{}</i>\n\n✅ Type <code>yes</code> to confirm\n❌ Type <code>no</code> to cancel\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  CREDIT_OPTIONS = '<b>➣━━━━━━━ 💰 CREDIT ━━━━━━━➣</b>\n\n<b>Enter Credit Name:</b>\n\n1️⃣ Caption only: `Admin`\n2️⃣ Caption + Filename: `Admin,Admin`\n3️⃣ Default: Send `/d`\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  DAILY_UPDATE_COMPLETED = '<b>➣━━━━━━━ 📊 DAILY UPDATE COMPLETED ━━━━━━━➣</b>\n\n<b>Daily Update Completed!</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n\n<b>📈 Update Details:</b>\n📄 <b>PDFs:</b> {}\n🎥 <b>Videos:</b> {}\n⏰ <b>Last Updated:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  DISCLAIMER = '\n<b> ======= ⚖️ LEGAL DISCLAIMER =======</b>\n\n<i>Please read this disclaimer carefully before using the bot.</i>\n\n<b> ======= 🎓 EDUCATIONAL PURPOSE =======</b>\n<blockquote>This bot was created with the sole intention of helping students who cannot afford expensive educational courses. As a student myself, I understand the financial constraints many face in accessing quality education.</blockquote>\n\n<b> ======= 🎯 INTENDED USE =======</b>\n<blockquote>• Personal learning only\n• Individual educational use\n• Academic advancement\n• Skill development</blockquote>\n\n<b> ======= ⚠️ IMPORTANT NOTICES =======</b>\n<blockquote>1. This bot is NOT intended for:\n   • Commercial use\n   • Content redistribution\n   • Batch selling\n   • Any profit-making activities\n\n2. For Content Creators:\n   • If any educator wishes to remove their content from our supported platforms\n   • Please contact us using /secretchat\n   • We will promptly remove it\n   • We respect intellectual property rights</blockquote>\n\n<b> ======= 🚫 DISCLAIMER =======</b>\n<blockquote>• We do NOT promote or encourage:\n   • Selling of extracted content\n   • Sharing content publicly\n   • Any copyright violations\n   • Commercial exploitation\n\n• We are NOT responsible for:\n   • Misuse of extracted content\n   • User actions post-extraction\n   • Third-party redistribution\n   • Any illegal activities</blockquote>\n\n<b> ======= 📝 TERMS OF USE =======</b>\n<blockquote>By using this bot, you agree:\n• To use content for personal education only\n• Not to redistribute or sell content\n• To respect intellectual property rights\n• To take responsibility for your actions</blockquote>\n\n<b> ======= 💭 FINAL NOTE =======</b>\n<blockquote>This bot was created by a student, for students, with the pure intention of making education more accessible. Any misuse goes against its core purpose and values.</blockquote>\n\n<i>🙏 We trust our users to respect these guidelines and use the bot responsibly for their educational journey.</i>\n'
+  ERROR_UPLOADING = '╭━━━━━━━━━━━━━━➣\n┣⪼ ⚠️ **Download Failed!**\n┣⪼ 📝 **Name:** <code>{}</code>\n┣⪼ 🔗 **URL:** <code>{}</code>\n┣⪼ ❌ **Error Details:**\n┃  ╰─⪼ <code>{}</code>\n┣⪼ 💡 **Tip:** Contact Developer\n╰━━━━━━━━━━━━━━➣'
+  GENERAL_ERROR = '<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>\n\n<b>Error Occurred</b>\n\nSomething went wrong while processing your request.\nPlease try again or contact support if the issue persists.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  GROUP_ERROR = '<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>\n\n<b>Invalid group ID or insufficient permissions</b>\n\nPlease verify:\n• Group ID is correct\n• Bot has admin rights\n• All permissions are granted\n<i>Error: {}</i>\nTry again with a valid group ID 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  GROUP_SETUP = '<b>➣━━━━━━━ 👥 GROUP SETUP ━━━━━━━➣</b>\n\n<b>Group Setup Required</b>\n\nPlease follow these steps:\n1️⃣ Enable Forum in the group\n2️⃣ Convert group to Supergroup\n3️⃣ Add bot as admin with all permissions\n\n✍️ Now, please send the group ID\nExample: <code>-100xxxxxxxx</code>\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  HELP = '<b>➣━━━━━━━ 📚 HELP ━━━━━━━➣</b>\n\n<b>Available Commands</b>\n\n/start - Start the bot\n/help - Show this help message\n\n<i>Need more help? Contact support! [ADMIN]({})</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  INVALID_TIME_FORMAT = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n⚠️ Invalid time format! Please use 24-hour format (HH:MM)\nExample: 09:00, 13:30, 22:45\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  INVALID_TOKEN = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>Invalid Token</b>\nPlease provide a valid authentication token to continue.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LAST_BATCH_COMPLETED = '<b>➣━━━━━━━ 📊 BATCH COMPLETED ━━━━━━━➣</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n\n<b>📈 Update Details:</b>\n📄 <b>PDFs:</b> {}\n🎥 <b>Videos:</b> {}\n⏰ <b>Last Updated:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_ERROR = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>Login Failed!</b>\n<i>Error: {}</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_OPTIONS = '<b>➣━━━━━━━━ 🔐 LOGIN ━━━━━━━➣</b>\n\n<b>Choose a login method:</b>\n\n1️⃣ ID & Password Format: <code>email*password</code>\n2️⃣ Token: Paste your access token\n3️⃣ Mobile Number: For OTP login\n\n<i>Please choose one of the above methods to continue...</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_SUCCESS = '<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>\n\n<b>Login Successful!</b>\n<i>Message: {}</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  NO_BATCH_FOUND = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>No Active Batches Found</b>\n\n• Your batches may have expired\n• You haven't purchased any batches yet\n\nPlease check your subscription status and try again! 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  NO_DATA_ERROR = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>No Data Found</b>\n\nThe selected batch appears to be empty.\nPlease try another batch or contact support.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  NO_NEW_CLASSES = "<b>➣━━━━━━━ ❌ NO NEW CLASSES ━━━━━━━➣</b>\n\n<b>No new classes today for course {}</b>\n<b>Go and Enjoy! Maybe it's a holiday!</b>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  OTP_SENT = '<b>➣━━━━━━━ 📱 OTP ━━━━━━━➣</b>\n\n<b>OTP Verification</b>\nAn OTP has been sent to your mobile number.\nPlease enter the OTP below.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  PDF_CAPTION = '╭━━━━━━━━━━━━━━➣\n┣⪼ 📄 <b>PDF Title:</b>\n┃  ╰─⪼ <code>{}.pdf</code>\n┣⪼ 📚 <b>Topic Name:</b>\n┃  ╰─⪼ <b>{}</b>\n┣⪼ ⏰ <b>Class Time:</b>\n┃  ╰─⪼ <i><b>{}</b></i>\n┣⪼ 💘 <b>Download By:</b>\n┃  ╰─⪼ <b>{}</b>\n╰━━━━━━━━━━━━━━➣'
+  PDF_CAPTION_V2 = '<b>[📕]File Title :</b><code>{} .pdf</code>\n<blockquote><b>📌Batch Name : {}\n🔗Topic Name : {}\n⏰Class Time : {}</blockquote></b>\n\n<b><u>📩Extracted By ➤ {}</b></u>'
+  RECOVERING_BATCH = '<b>➣━━━━━━━ 📊 RECOVERING BATCH ━━━━━━━➣</b>\n⚠️ <b>Last Batch Incomplete</b>\n📚 <b>Course:</b> <code>{}</code>\n\n🔄 <b>Restarting all pending tasks...</b>\nPlease wait ⏳\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  SCHEDULE_TIME = '<b>➣━━━━━━━ ⏰ SCHEDULE ━━━━━━━➣</b>\n\nPlease Set the time in <code>HH:MM</code> format for Daily Update\nExample: <code>14:30</code> for 2:30 PM\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  SETUP_CANCELLED = "<b>➣━━━━━━━ ❌ CANCELLED ━━━━━━━➣</b>\n\n<b>Setup Cancelled</b>\n\nBatch update configuration was aborted.\nFeel free to try again when you're ready! 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  SETUP_SUCCESS = '<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>\n\n<b>Setup Successful!</b>\nYour batch has been configured for automatic updates.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  START = "\n<b>➣━━━━━━━ 🤖 WELCOME ━━━━━━━➣</b>\n\n<b>👋 Hey {}, Welcome to Auto Uploader Bot v1.3!</b>\n\n<i>I'm your all-in-one solution for extracting and managing course content. Whether you're a student or educator, I've got you covered!</i>\n\n<i>I'm too advanced bot i can do multiple tasks at one time ...i'm more powerfull except other bot</i>\n\n<i>Bot Made By [ADMIN]({})</i>\n<i>⚠️ Educational use only. See /legal for terms.</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>\n"
+  THUMBNAIL_OPTIONS = '<b>➣━━━━━━━ 🖼 THUMBNAIL ━━━━━━━➣</b>\n\n<b>Choose Thumbnail Option:</b>\n\n1️⃣ Send URL (e.g., `https://telegra.ph/file/xxx.jpg`)\n2️⃣ Default Thumb: Send `/d`\n3️⃣ Thumb Watermark: Send your Name in Simple Font\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  VIDEO_CAPTION = '╭━━━━━━━━━━━━━━➣\n┣⪼ 🎥 <b>Video Title:</b>\n┃  ╰─⪼ <code>{}.mkv</code>\n┣⪼ 📚 <b>Topic Name:</b>\n┃  ╰─⪼ <b>{}</b>\n┣⪼ ⏰ <b>Class Time:</b>\n┃  ╰─⪼ <i><b>{}</b></i>\n┣⪼ 💘 <b>Download By:</b>\n┃  ╰─⪼ <b>{}</b>\n╰━━━━━━━━━━━━━━➣'
+  VIDEO_CAPTION_V2 = '<b>[🎥]Video Title :</b><code>{} .mkv</code>\n<blockquote><b>📌Batch Name : {}\n🔗Topic Name : {}\n⏰Class Time : {}</blockquote></b>\n\n<b><u>📩Extracted By ➤ {}</b></u>'
+  YT_VIDEO_CAPTION = '<blockquote><i>We apologize, We are unable to download YouTube videos for security reasons. However, you can click on the video URL above to watch the video.</i></blockquote>'
+  db_instance = <Database>
+
+  ═══ FUNCTIONS ═══
+
+  async def delete_batch(bot, user_id: 'int', course_id: 'int'):
+    # varnames: ['bot', 'user_id', 'course_id']
+    # names: []
+
+  async def get_batch_statistics(bot, user_id: 'int', course_id: 'int'):
+    # varnames: ['bot', 'user_id', 'course_id', 'batch', 'check', 'group', 'group_name', 'stats']
+    # names: []
+
+  async def manage_batch(bot, m, course_id: 'int'):
+    # varnames: ['bot', 'm', 'course_id', 'x', 'time']
+    # names: []
+
+  async def show_all_batches_buttom(user_id: 'int'):
+    # varnames: ['user_id', 'batches', 'buttons', 'batch', 'batch_name']
+    # names: []
+
+  async def show_all_batches_buttom_delete(user_id: 'int'):
+    # varnames: ['user_id', 'batches', 'buttons', 'batch', 'batch_name']
+    # names: []
+
+  async def show_all_batches_buttom_manage(user_id: 'int'):
+    # varnames: ['user_id', 'batches', 'buttons', 'batch', 'batch_name']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_SystemError
+  | PyExc_RuntimeError
+  | PyExc_KeyError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_NameError
+  | PyExc_ValueError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | PyObject_Format
+  | PyMapping_Keys
+  | PyExc_IndexError
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __name__ must be set to a string object
+  | __qualname__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | can't send non-None value to a just-started coroutine
+  | coroutine '%.50S' was never awaited
+  | buttom.show_all_batches_buttom
+  | show_all_batches_buttom_manage
+  | buttom.show_all_batches_buttom_manage
+  | show_all_batches_buttom_delete
+  | buttom.show_all_batches_buttom_delete
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | __pyx_scope_struct_1_show_all_batches_buttom
+  | __pyx_scope_struct_2_show_all_batches_buttom_manage
+  | __pyx_scope_struct_3_manage_batch
+  | __pyx_scope_struct_4_get_batch_statistics
+  | __pyx_scope_struct_5_delete_batch
+  | __pyx_scope_struct__show_all_batches_buttom_delete
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | buttom.__pyx_scope_struct_5_delete_batch
+  | buttom.__pyx_scope_struct_4_get_batch_statistics
+  | buttom.__pyx_scope_struct_3_manage_batch
+  | buttom.__pyx_scope_struct_2_show_all_batches_buttom_manage
+  | buttom.__pyx_scope_struct_1_show_all_batches_buttom
+  | buttom.__pyx_scope_struct__show_all_batches_buttom_delete
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | name '%U' is not defined
+  | user_id
+  | buttom.delete_batch
+  | course_id
+  | buttom.get_batch_statistics
+  | buttom.manage_batch
+  | show_all_batches_buttom
+  | cython_runtime
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | Note that Cython is deliberately stricter than PEP-484 and rejects subclasses of builtin types. If you need to pass subclasses then set the 'annotation_typing' directive to False.
+  | show_all_batches_buttom_manage
+  | show_all_batches_buttom_delete
+  |  <i>Time Set Successfully</i> 
+  | show_all_batches_buttom
+  | update_batch_schedule
+  | get_batch_statistics
+  | InlineKeyboardMarkup
+  | InlineKeyboardButton
+  | delete_batch_status
+  | asyncio.coroutines
+  | get_batch_status
+  | course_thumbnail
+  | master.database
+  | get_all_batches
+  | BATCH_NOT_FOUND
+  | SCHEDULE_TIME
+  | BATCH_DELETED
+  | send_message
+  | manage_batch
+  | last_updated
+  | delete_batch
+  | BATCH_STATUS
+  | file_credit
+  | course_name
+  | group_name
+  | batch_name
+  |  Incomplete
+  | get_batch
+  | course_id
+  | __qualname__
+  | group_id
+  | user_id
+  | buttons
+  | batches
+  | asyncio
+  | vbatch_
+  | status
+  | mbatch_
+  | format
+  | delete
+  | dbatch_
+  | thumb
+  | group
+  | batch
+  | __await__
+  | time
+  | send
+  | __name__
+  |  key
+  |  key
+  | __Pyx_Coroutine_GetAwaitableIter
+  | __pyx_ptype_6buttom___pyx_scope_struct_4_get_batch_statistics
+  | __pyx_tp_new_6buttom___pyx_scope_struct_1_show_all_batches_buttom
+  | PyExc_ModuleNotFoundError
+  | _dictkeysobject
+  | PyExc_KeyError
+  | __pyx_pw_6buttom_7show_all_batches_buttom_manage
+  | __pyx_tp_traverse_6buttom___pyx_scope_struct__show_all_batches_buttom_delete
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | tp_as_async
+  | from_name
+  | gi_qualname
+  | __pyx_tp_traverse_6buttom___pyx_scope_struct_5_delete_batch
+  | __pyx_k_delete_batch_status
+  | __pyx_pf_6buttom_3show_all_batches_buttom
+  | __Pyx_UnicodeKeywordsEqual
+  | __pyx_ptype_6buttom___pyx_scope_struct_3_manage_batch
+  | PyDict_GetItemWithError
+  | __pyx_k_SCHEDULE_TIME
+  | __pyx_pf_6buttom_15delete_batch
+  | __pyx_mdef_6buttom_7show_all_batches_buttom_manage
+  | __pyx_k_show_all_batches_buttom_manage
+  | invalid_keyword_type
+  | __pyx_CoroutineAwait_methods
+  | modname
+  | PyErr_WarnFormat
+  | __pyx_pf_6buttom_show_all_batches_buttom_delete
+  | is_async
+  | _PyCoLineInstrumentationData
+  | __pyx_freecount_6buttom___pyx_scope_struct_1_show_all_batches_buttom
+  | __pyx_k_status
+  | __pyx_k_delete_batch
+  | __pyx_k_thumb
+  | __Pyx_get_runtime_version
+  | m_free
+  | __pyx_k_batches
+  | __Pyx_CyFunction_set_qualname
+  | module_name
+  | __pyx_k_send_message
+  | __pyx_freelist_6buttom___pyx_scope_struct_3_manage_batch
+  | __pyx_k_BATCH_STATUS
+  | __pyx_tp_traverse_6buttom___pyx_scope_struct_1_show_all_batches_buttom
+  | __pyx_type_6buttom___pyx_scope_struct_2_show_all_batches_buttom_manage
+  | tp_free
+  | PyObject_IsSubclass
+  | PyExc_RuntimeWarning
+  | datastack_top
+  | yieldfrom_am_send
+  | __pyx_k_time
+  | PyErr_Format
+  | in_async_gen
+  | partial_name
+  | kwnames
+  | ma_keys
+  | async_exc
+  | __pyx_k_format
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | __pyx_v_batch
+  | _PyCFunctionFastWithKeywords
+  | __pyx_mdef_6buttom_13get_batch_statistics
+  | PyExc_RuntimeError
+  | co_filename
+
+====================================================================================================
+MODULE: constant.buttom
+PATH: constant/buttom.so
+====================================================================================================
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  ═══ FUNCTIONS ═══
+
+  def contact():
+    # varnames: ['keyboard']
+    # names: []
+
+  def help_keyboard():
+    # varnames: ['keyboard']
+    # names: []
+
+  def home():
+    # varnames: ['keyboard']
+    # names: []
+
+  def yt_keyboard(watchurl, downloadurl):
+    # varnames: ['watchurl', 'downloadurl', 'keyboard']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyExc_SystemError
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_RuntimeError
+  | PyDict_GetItemWithError
+  | PyExc_NameError
+  | PyArg_ValidateKeywordArguments
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | NULL result without error in PyObject_Call
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | %s() got an unexpected keyword argument '%U'
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | cython_runtime
+  | name '%U' is not defined
+  | buttom.yt_keyboard
+  | buttom.help_keyboard
+  | func_name
+  | __name__
+  | __qualname__
+  | InlineKeyboardMarkup
+  | InlineKeyboardButton
+  | asyncio.coroutines
+  | TUTORIAL_VIDEO
+  |  Download Video 
+  | help_keyboard
+  | callback_data
+  |  Contact Admin 
+  | manage_batch
+  | delete_batch
+  |  Manage Batch 
+  |  Delete Batch 
+  | yt_keyboard
+  | downloadurl
+  |  Watch Video 
+  | show_batch
+  |  Show Batch 
+  |  ADD Batch 
+  | __qualname__
+  | keyboard
+  | appxlist
+  | USERLINK
+  | __name__
+  | message
+  | _dictkeysobject
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | tp_as_async
+  | from_name
+  | __Pyx_UnicodeKeywordsEqual
+  | PyDict_GetItemWithError
+  | invalid_keyword_type
+  | __pyx_k_downloadurl
+  | _PyCoLineInstrumentationData
+  | __pyx_k_delete_batch
+  | __Pyx_get_runtime_version
+  | m_free
+  | __pyx_k_yt_keyboard
+  | __Pyx_CyFunction_set_qualname
+  | module_name
+  | __pyx_k_Watch_Video
+  | tp_free
+  | PyExc_RuntimeWarning
+  | datastack_top
+  | PyErr_Format
+  | kwnames
+  | ma_keys
+  | async_exc
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | _PyCFunctionFastWithKeywords
+  | PyExc_RuntimeError
+  | co_filename
+  | __Pyx_CyFunction_get_qualname
+  | PyDict_Update
+  | __Pyx_MatchKeywordArg
+  | delete_later
+  | PyModule_GetName
+  | __Pyx_CyFunction_set_name
+  | __pyx_k_show_batch
+  | PyUnicode_DATA
+  | function_name
+  | __pyx_pf_6buttom_yt_keyboard
+  | _status
+  | keys_are_strings
+  | __pyx_k_asyncio_coroutines
+  | method_name
+  | __pyx_k_Show_Batch
+  | _co_freevars
+  | __pyx_k_help_keyboard
+  | __pyx_k_USERLINK
+  | return_offset
+  | __pyx_k_Delete_Batch
+  | _f_frame_data
+  | GNU C17 13.3.0 -mtune=generic -march=x86-64 -g -O2 -fno-strict-overflow -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+  | kw_name
+  | on_delete
+  | datastack_chunk
+  | co_nfreevars
+  | PyExc_NameError
+  | varnames_tuple
+  | __pyx_k_Manage_Batch
+  | _PyUnicode_NONCOMPACT_DATA
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS
+  | __pyx_L1_error
+  | am_send
+  | start
+  | __pyx_v_keyboard
+  | PyDictKeysObject
+  | __pyx_k_name
+  | co_name
+  | PyExc_TypeError
+  | __pyx_k_keyboard
+  | _co_varnames
+  | full_name
+  | __pyx_mdef_6buttom_5help_keyboard
+  | module_name_str
+  | tp_name
+  | __Pyx_CyFunction_get_name
+  | c_profilefunc
+  | __pyx_filename
+  | async_gen_firstiter
+  | PyMem_Free
+  | __Pyx_RejectUnknownKeyword
+  | __pyx_pw_6buttom_5help_keyboard
+  | co_localsplusnames
+  | __Pyx_PyObject_GetAttrStr_ClearAttributeError
+  | delete_nesting
+  | __pyx_pyargnames
+  | attr_name
+  | __Pyx_ParseKeywordDictToDict
+  | PyExc_ImportError
+  | modname
+  | __pyx_v_downloadurl
+  | func_qualname
+  | format
+  | PyCFunctionWithKeywords
+  | __pyx_k_manage_batch
+  | __pyx_cython_runtime
+  | __Pyx_PyObject_GetAttrStrNoError
+  | PyExc_SystemError
+  | __pyx_k_TUTORIAL_VIDEO
+  | PYGEN_RETURN
+  | ml_name
+  | py_object_name
+  | py_funcname
+  | __pyx_k_appxlist
+  | __pyx_pf_6buttom_4help_keyboard
+  | __pyx_L5_argtuple_error
+  | PySendResult
+  | PyAsyncMethods
+  | __Pyx_MatchKeywordArg_nostr
+  | __Pyx_ParseKeywordDict
+  | __Pyx_GetBuiltinName
+  | on_delete_data
+  | key_hash
+  | __Pyx_MatchKeywordArg_str
+  | __pyx_k_Download_Video
+  | __pyx_mdef_6buttom_1yt_keyboard
+  | __pyx_cfilenm
+  | __Pyx_RaiseDoubleKeywordsError
+  | func_name
+  | __pyx_k_qualname
+  | am_await
+  | __Pyx_ParseKeywords
+  | __Pyx__GetModuleGlobalName
+  | __pyx_k_ADD_Batch
+  | PyUnicode_FromFormat
+  | tp_subclasses
+  | co_names
+  | _PyUnicode_COMPACT_DATA
+  | freefunc
+  | data1
+  | data2
+  | PyArg_ValidateKeywordArguments
+  | __pyx_k_Contact_Admin
+  | invalid_keyword
+  | __Pyx_CyFunction_raise_argument_count_error
+  | __pyx_k_InlineKeyboardButton
+  | datastack_limit
+  | async_gen_finalizer
+  | __Pyx_ParseKeywordsTuple
+  | __pyx_pw_6buttom_1yt_keyboard
+  | __pyx_k_callback_data
+  | __pyx_L3_error
+  | PyExc_AttributeError
+  | PYGEN_ERROR
+  | c_profileobj
+
+====================================================================================================
+MODULE: constant.msg
+PATH: constant/msg.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  APP = "\n<b>➣━━━━━━━ 🤖 APPS ━━━━━━━➣</b>\n\n<i>I'm your all-in-one solution for extracting and managing course content. Whether you're a student or educator, I've got you covered!</i>\n\n<i>Bot Made By [ADMIN]({})</i>\n<i>I can do Everything What You Want.</i>\n"
+  BATCH_ALREADY_EXISTS = '❌Batch Already Exists in my Database❌'
+  BATCH_DELETED = '❌Batch Deleted Successfully❌'
+  BATCH_NOT_FOUND = '❌Batch Not Found in my Database❌'
+  BATCH_SELECTION = '<b>Please enter the batch ID number from the list above that you want to set for auto-update ⬆️</b>'
+  BATCH_STATUS = '<b>➣━━━━━━━ 📊 BATCH STATUS ━━━━━━━➣</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n🖼️ <b>Thumbnail:</b> [Thumbnail]({})\n\n<b>⚙️ Configuration:</b>\n⏰ <b>Set Time:</b> {}\n💘 <b>Credit:</b> <code>{}</code>\n🚀 <b>Filename:</b> <code>{}</code>\n🖼️ <b>Thumbnail:</b> <code>{}</code>\n🔗 <b>API:</b> {}\n👥 <b>Group Name:</b> {}\n🆔 <b>Group ID:</b> {}\n\n<b>📈 Status Information:</b>\n🕒 <b>Last Updated:</b> {}\n🟢 <b>Batch Activated:</b> {}\n🔄 <b>Current Status:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  BATCH_UPDATED = '✅Batch Updated Successfully✅'
+  COLLECTING_DATA = '<b>➣━━━━━━━ 📊 COLLECTING DATA ━━━━━━━➣</b>\n\n<b>Collecting Data... Please Wait a Few Minutes</b>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  CONFIRM_CONFIG = '<b>➣━━━━━━━ 📋 CONFIRMATION ━━━━━━━➣</b>\n\n<b>Configuration Summary</b>\n\n🏠 <b>App Name:</b> {}\n🆔 <b>Batch ID:</b> {}\n📚 <b>Batch Name:</b> {}\n💰 <b>Price:</b> {}₹\n💰 <b>Credit:</b> <code>{}</code>\n💰 <b>Filename Credit:</b> <code>{}</code>\n🖼️ <b>Thumbnail:</b> <code>{}</code>\n⏰ <b>Update Time:</b> <code>{}</code>\n👥 <b>Group ID:</b> <code>{}</code>\n👥 <b>Group Name:</b> <i>{}</i>\n\n✅ Type <code>yes</code> to confirm\n❌ Type <code>no</code> to cancel\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  CREDIT_OPTIONS = '<b>➣━━━━━━━ 💰 CREDIT ━━━━━━━➣</b>\n\n<b>Enter Credit Name:</b>\n\n1️⃣ Caption only: `Admin`\n2️⃣ Caption + Filename: `Admin,Admin`\n3️⃣ Default: Send `/d`\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  DAILY_UPDATE_COMPLETED = '<b>➣━━━━━━━ 📊 DAILY UPDATE COMPLETED ━━━━━━━➣</b>\n\n<b>Daily Update Completed!</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n\n<b>📈 Update Details:</b>\n📄 <b>PDFs:</b> {}\n🎥 <b>Videos:</b> {}\n⏰ <b>Last Updated:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  DISCLAIMER = '\n<b> ======= ⚖️ LEGAL DISCLAIMER =======</b>\n\n<i>Please read this disclaimer carefully before using the bot.</i>\n\n<b> ======= 🎓 EDUCATIONAL PURPOSE =======</b>\n<blockquote>This bot was created with the sole intention of helping students who cannot afford expensive educational courses. As a student myself, I understand the financial constraints many face in accessing quality education.</blockquote>\n\n<b> ======= 🎯 INTENDED USE =======</b>\n<blockquote>• Personal learning only\n• Individual educational use\n• Academic advancement\n• Skill development</blockquote>\n\n<b> ======= ⚠️ IMPORTANT NOTICES =======</b>\n<blockquote>1. This bot is NOT intended for:\n   • Commercial use\n   • Content redistribution\n   • Batch selling\n   • Any profit-making activities\n\n2. For Content Creators:\n   • If any educator wishes to remove their content from our supported platforms\n   • Please contact us using /secretchat\n   • We will promptly remove it\n   • We respect intellectual property rights</blockquote>\n\n<b> ======= 🚫 DISCLAIMER =======</b>\n<blockquote>• We do NOT promote or encourage:\n   • Selling of extracted content\n   • Sharing content publicly\n   • Any copyright violations\n   • Commercial exploitation\n\n• We are NOT responsible for:\n   • Misuse of extracted content\n   • User actions post-extraction\n   • Third-party redistribution\n   • Any illegal activities</blockquote>\n\n<b> ======= 📝 TERMS OF USE =======</b>\n<blockquote>By using this bot, you agree:\n• To use content for personal education only\n• Not to redistribute or sell content\n• To respect intellectual property rights\n• To take responsibility for your actions</blockquote>\n\n<b> ======= 💭 FINAL NOTE =======</b>\n<blockquote>This bot was created by a student, for students, with the pure intention of making education more accessible. Any misuse goes against its core purpose and values.</blockquote>\n\n<i>🙏 We trust our users to respect these guidelines and use the bot responsibly for their educational journey.</i>\n'
+  ERROR_UPLOADING = '╭━━━━━━━━━━━━━━➣\n┣⪼ ⚠️ **Download Failed!**\n┣⪼ 📝 **Name:** <code>{}</code>\n┣⪼ 🔗 **URL:** <code>{}</code>\n┣⪼ ❌ **Error Details:**\n┃  ╰─⪼ <code>{}</code>\n┣⪼ 💡 **Tip:** Contact Developer\n╰━━━━━━━━━━━━━━➣'
+  GENERAL_ERROR = '<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>\n\n<b>Error Occurred</b>\n\nSomething went wrong while processing your request.\nPlease try again or contact support if the issue persists.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  GROUP_ERROR = '<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>\n\n<b>Invalid group ID or insufficient permissions</b>\n\nPlease verify:\n• Group ID is correct\n• Bot has admin rights\n• All permissions are granted\n<i>Error: {}</i>\nTry again with a valid group ID 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  GROUP_SETUP = '<b>➣━━━━━━━ 👥 GROUP SETUP ━━━━━━━➣</b>\n\n<b>Group Setup Required</b>\n\nPlease follow these steps:\n1️⃣ Enable Forum in the group\n2️⃣ Convert group to Supergroup\n3️⃣ Add bot as admin with all permissions\n\n✍️ Now, please send the group ID\nExample: <code>-100xxxxxxxx</code>\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  HELP = '<b>➣━━━━━━━ 📚 HELP ━━━━━━━➣</b>\n\n<b>Available Commands</b>\n\n/start - Start the bot\n/help - Show this help message\n\n<i>Need more help? Contact support! [ADMIN]({})</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  INVALID_TIME_FORMAT = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n⚠️ Invalid time format! Please use 24-hour format (HH:MM)\nExample: 09:00, 13:30, 22:45\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  INVALID_TOKEN = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>Invalid Token</b>\nPlease provide a valid authentication token to continue.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LAST_BATCH_COMPLETED = '<b>➣━━━━━━━ 📊 BATCH COMPLETED ━━━━━━━➣</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n\n<b>📈 Update Details:</b>\n📄 <b>PDFs:</b> {}\n🎥 <b>Videos:</b> {}\n⏰ <b>Last Updated:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_ERROR = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>Login Failed!</b>\n<i>Error: {}</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_OPTIONS = '<b>➣━━━━━━━━ 🔐 LOGIN ━━━━━━━➣</b>\n\n<b>Choose a login method:</b>\n\n1️⃣ ID & Password Format: <code>email*password</code>\n2️⃣ Token: Paste your access token\n3️⃣ Mobile Number: For OTP login\n\n<i>Please choose one of the above methods to continue...</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_SUCCESS = '<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>\n\n<b>Login Successful!</b>\n<i>Message: {}</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  NO_BATCH_FOUND = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>No Active Batches Found</b>\n\n• Your batches may have expired\n• You haven't purchased any batches yet\n\nPlease check your subscription status and try again! 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  NO_DATA_ERROR = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>No Data Found</b>\n\nThe selected batch appears to be empty.\nPlease try another batch or contact support.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  NO_NEW_CLASSES = "<b>➣━━━━━━━ ❌ NO NEW CLASSES ━━━━━━━➣</b>\n\n<b>No new classes today for course {}</b>\n<b>Go and Enjoy! Maybe it's a holiday!</b>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  OTP_SENT = '<b>➣━━━━━━━ 📱 OTP ━━━━━━━➣</b>\n\n<b>OTP Verification</b>\nAn OTP has been sent to your mobile number.\nPlease enter the OTP below.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  PDF_CAPTION = '╭━━━━━━━━━━━━━━➣\n┣⪼ 📄 <b>PDF Title:</b>\n┃  ╰─⪼ <code>{}.pdf</code>\n┣⪼ 📚 <b>Topic Name:</b>\n┃  ╰─⪼ <b>{}</b>\n┣⪼ ⏰ <b>Class Time:</b>\n┃  ╰─⪼ <i><b>{}</b></i>\n┣⪼ 💘 <b>Download By:</b>\n┃  ╰─⪼ <b>{}</b>\n╰━━━━━━━━━━━━━━➣'
+  PDF_CAPTION_V2 = '<b>[📕]File Title :</b><code>{} .pdf</code>\n<blockquote><b>📌Batch Name : {}\n🔗Topic Name : {}\n⏰Class Time : {}</blockquote></b>\n\n<b><u>📩Extracted By ➤ {}</b></u>'
+  RECOVERING_BATCH = '<b>➣━━━━━━━ 📊 RECOVERING BATCH ━━━━━━━➣</b>\n⚠️ <b>Last Batch Incomplete</b>\n📚 <b>Course:</b> <code>{}</code>\n\n🔄 <b>Restarting all pending tasks...</b>\nPlease wait ⏳\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  SCHEDULE_TIME = '<b>➣━━━━━━━ ⏰ SCHEDULE ━━━━━━━➣</b>\n\nPlease Set the time in <code>HH:MM</code> format for Daily Update\nExample: <code>14:30</code> for 2:30 PM\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  SETUP_CANCELLED = "<b>➣━━━━━━━ ❌ CANCELLED ━━━━━━━➣</b>\n\n<b>Setup Cancelled</b>\n\nBatch update configuration was aborted.\nFeel free to try again when you're ready! 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  SETUP_SUCCESS = '<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>\n\n<b>Setup Successful!</b>\nYour batch has been configured for automatic updates.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  START = "\n<b>➣━━━━━━━ 🤖 WELCOME ━━━━━━━➣</b>\n\n<b>👋 Hey {}, Welcome to Auto Uploader Bot v1.3!</b>\n\n<i>I'm your all-in-one solution for extracting and managing course content. Whether you're a student or educator, I've got you covered!</i>\n\n<i>I'm too advanced bot i can do multiple tasks at one time ...i'm more powerfull except other bot</i>\n\n<i>Bot Made By [ADMIN]({})</i>\n<i>⚠️ Educational use only. See /legal for terms.</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>\n"
+  THUMBNAIL_OPTIONS = '<b>➣━━━━━━━ 🖼 THUMBNAIL ━━━━━━━➣</b>\n\n<b>Choose Thumbnail Option:</b>\n\n1️⃣ Send URL (e.g., `https://telegra.ph/file/xxx.jpg`)\n2️⃣ Default Thumb: Send `/d`\n3️⃣ Thumb Watermark: Send your Name in Simple Font\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  VIDEO_CAPTION = '╭━━━━━━━━━━━━━━➣\n┣⪼ 🎥 <b>Video Title:</b>\n┃  ╰─⪼ <code>{}.mkv</code>\n┣⪼ 📚 <b>Topic Name:</b>\n┃  ╰─⪼ <b>{}</b>\n┣⪼ ⏰ <b>Class Time:</b>\n┃  ╰─⪼ <i><b>{}</b></i>\n┣⪼ 💘 <b>Download By:</b>\n┃  ╰─⪼ <b>{}</b>\n╰━━━━━━━━━━━━━━➣'
+  VIDEO_CAPTION_V2 = '<b>[🎥]Video Title :</b><code>{} .mkv</code>\n<blockquote><b>📌Batch Name : {}\n🔗Topic Name : {}\n⏰Class Time : {}</blockquote></b>\n\n<b><u>📩Extracted By ➤ {}</b></u>'
+  YT_VIDEO_CAPTION = '<blockquote><i>We apologize, We are unable to download YouTube videos for security reasons. However, you can click on the video URL above to watch the video.</i></blockquote>'
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyExc_RuntimeError
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | name
+  | __file__
+  | cython_runtime
+  | <b>[
+  | ]Video Title :</b><code>{} .mkv</code>
+  | <blockquote><b>
+  | Batch Name : {}
+  | Topic Name : {}
+  | Class Time : {}</blockquote></b>
+  | <b><u>
+  |  {}</b></u>
+  | Batch Already Exists in my Database
+  | <blockquote><i>We apologize, We are unable to download YouTube videos for security reasons. However, you can click on the video URL above to watch the video.</i></blockquote>
+  |  Hey {}, Welcome to Auto Uploader Bot v1.3!</b>
+  | <i>I'm your all-in-one solution for extracting and managing course content. Whether you're a student or educator, I've got you covered!</i>
+  | <i>I'm too advanced bot i can do multiple tasks at one time ...i'm more powerfull except other bot</i>
+  | <i>Bot Made By [ADMIN]({})</i>
+  |  <b>Video Title:</b>
+  |  <code>{}.mkv</code>
+  |  <b>Topic Name:</b>
+  |  <b>{}</b>
+  |  <b>Class Time:</b>
+  |  <i><b>{}</b></i>
+  |  <b>Download By:</b>
+  |  <b>{}</b>
+  |  THUMBNAIL 
+  | <b>Choose Thumbnail Option:</b>
+  |  Send URL (e.g., `https://telegra.ph/file/xxx.jpg`)
+  |  Default Thumb: Send `/d`
+  |  Thumb Watermark: Send your Name in Simple Font
+  |  SCHEDULE 
+  | Please Set the time in <code>HH:MM</code> format for Daily Update
+  |  RECOVERING BATCH 
+  |  <b>Last Batch Incomplete</b>
+  |  <b>Course:</b> <code>{}</code>
+  |  <b>Restarting all pending tasks...</b>
+  | <b>Please enter the batch ID number from the list above that you want to set for auto-update 
+  |  <b>PDF Title:</b>
+  |  <code>{}.pdf</code>
+  |  <b>Topic Name:</b>
+  |  <b>{}</b>
+  |  <b>Class Time:</b>
+  |  <i><b>{}</b></i>
+  |  <b>Download By:</b>
+  |  <b>{}</b>
+  | <b>OTP Verification</b>
+  |  NO NEW CLASSES 
+  | <b>No new classes today for course {}</b>
+  | <b>Go and Enjoy! Maybe it's a holiday!</b>
+  |  LOGIN 
+  | <b>Choose a login method:</b>
+  |  ID & Password Format: <code>email*password</code>
+  |  Token: Paste your access token
+  |  Mobile Number: For OTP login
+  | <i>Please choose one of the above methods to continue...</i>
+  | <b> ======= 
+  | <i>Please read this disclaimer carefully before using the bot.</i>
+  | <b> ======= 
+  | <blockquote>This bot was created with the sole intention of helping students who cannot afford expensive educational courses. As a student myself, I understand the financial constraints many face in accessing quality education.</blockquote>
+  | <b> ======= 
+  | <b> ======= 
+  |  Content redistribution
+  |  Batch selling
+  | 2. For Content Creators:
+  |  If any educator wishes to remove their content from our supported platforms
+  | <b> ======= 
+  |  Selling of extracted content
+  |  Sharing content publicly
+  |  Misuse of extracted content
+  |  User actions post-extraction
+  | <b> ======= 
+  |  To use content for personal education only
+  |  Not to redistribute or sell content
+  | <b> ======= 
+  |  We trust our users to respect these guidelines and use the bot responsibly for their educational journey.</i>
+  |  HELP 
+  | <b>Available Commands</b>
+  | /start - Start the bot
+  | /help - Show this help message
+  | <i>Need more help? Contact support! [ADMIN]({})</i>
+  |  GROUP SETUP 
+  | <b>Group Setup Required</b>
+  |  Enable Forum in the group
+  |  Convert group to Supergroup
+  |  Add bot as admin with all permissions
+  |  Now, please send the group ID
+  | <b>[
+  | ]File Title :</b><code>{} .pdf</code>
+  | <blockquote><b>
+  | Batch Name : {}
+  | Topic Name : {}
+  | Class Time : {}</blockquote></b>
+  | <b><u>
+  |  {}</b></u>
+  |  ERROR 
+  | <b>No Data Found</b>
+  | The selected batch appears to be empty.
+  | Please try another batch or contact support.
+  |  ERROR 
+  | <b>No Active Batches Found</b>
+  |  Your batches may have expired
+  |  You haven't purchased any batches yet
+  | Please check your subscription status and try again! 
+  |  ERROR 
+  | <b>Login Failed!</b>
+  | <i>Error: {}</i>
+  |  ERROR 
+  | <b>Invalid group ID or insufficient permissions</b>
+  |  Group ID is correct
+  |  Bot has admin rights
+  | <i>Error: {}</i>
+  | Try again with a valid group ID 
+  |  ERROR 
+  | <b>Invalid Token</b>
+  | Please provide a valid authentication token to continue.
+  |  ERROR 
+  | <b>Error Occurred</b>
+  |  ERROR 
+  |  Invalid time format! Please use 24-hour format (HH:MM)
+  |  DAILY UPDATE COMPLETED 
+  | <b>Daily Update Completed!</b>
+  |  Batch Information:</b>
+  |  <b>ID:</b> {}
+  |  <b>Name:</b> {}
+  |  <b>Price:</b> {}
+  |  Update Details:</b>
+  |  <b>PDFs:</b> {}
+  |  <b>Videos:</b> {}
+  |  <b>Last Updated:</b> {}
+  | <b>Configuration Summary</b>
+  |  <b>App Name:</b> {}
+  |  <b>Batch ID:</b> {}
+  |  <b>Batch Name:</b> {}
+  |  <b>Price:</b> {}
+  |  <b>Credit:</b> <code>{}</code>
+  |  <b>Filename Credit:</b> <code>{}</code>
+  |  <b>Thumbnail:</b> <code>{}</code>
+  |  <b>Update Time:</b> <code>{}</code>
+  |  <b>Group ID:</b> <code>{}</code>
+  |  <b>Group Name:</b> <i>{}</i>
+  |  COLLECTING DATA 
+  | <b>Collecting Data... Please Wait a Few Minutes</b>
+  | <b>Setup Cancelled</b>
+  | Batch update configuration was aborted.
+  | Feel free to try again when you're ready! 
+  |  BATCH STATUS 
+  |  Batch Information:</b>
+  |  <b>ID:</b> {}
+  |  <b>Name:</b> {}
+  |  <b>Price:</b> {}
+  |  <b>Thumbnail:</b> [Thumbnail]({})
+  |  <b>Set Time:</b> {}
+  |  <b>Credit:</b> <code>{}</code>
+  |  <b>Filename:</b> <code>{}</code>
+  |  <b>Thumbnail:</b> <code>{}</code>
+  |  <b>API:</b> {}
+  |  <b>Group Name:</b> {}
+  |  <b>Group ID:</b> {}
+  |  Status Information:</b>
+  |  <b>Last Updated:</b> {}
+  |  <b>Batch Activated:</b> {}
+  |  <b>Current Status:</b> {}
+  |  BATCH COMPLETED 
+  |  Batch Information:</b>
+  |  <b>ID:</b> {}
+  |  <b>Name:</b> {}
+  |  <b>Price:</b> {}
+  |  Update Details:</b>
+  |  <b>PDFs:</b> {}
+  |  <b>Videos:</b> {}
+  |  <b>Last Updated:</b> {}
+  | <b>Setup Successful!</b>
+  | Your batch has been configured for automatic updates.
+  | <b>Login Successful!</b>
+  | <i>Message: {}</i>
+  | <b>Enter Credit Name:</b>
+  |  Caption only: `Admin`
+  |  Caption + Filename: `Admin,Admin`
+  |  Default: Send `/d`
+  | <i>I'm your all-in-one solution for extracting and managing course content. Whether you're a student or educator, I've got you covered!</i>
+  | <i>Bot Made By [ADMIN]({})</i>
+  | <i>I can do Everything What You Want.</i>
+  |  **Download Failed!**
+  |  **Name:** <code>{}</code>
+  |  **URL:** <code>{}</code>
+  |  **Error Details:**
+  |  <code>{}</code>
+  | Batch Not Found in my Database
+  | Batch Updated Successfully
+  | Batch Deleted Successfully
+  | DAILY_UPDATE_COMPLETED
+  | LAST_BATCH_COMPLETED
+  | BATCH_ALREADY_EXISTS
+  | INVALID_TIME_FORMAT
+  | THUMBNAIL_OPTIONS
+
+====================================================================================================
+MODULE: modules.appx_master
+PATH: modules/appx_master.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  APP = "\n<b>➣━━━━━━━ 🤖 APPS ━━━━━━━➣</b>\n\n<i>I'm your all-in-one solution for extracting and managing course content. Whether you're a student or educator, I've got you covered!</i>\n\n<i>Bot Made By [ADMIN]({})</i>\n<i>I can do Everything What You Want.</i>\n"
+  BATCH_ALREADY_EXISTS = '❌Batch Already Exists in my Database❌'
+  BATCH_DELETED = '❌Batch Deleted Successfully❌'
+  BATCH_NOT_FOUND = '❌Batch Not Found in my Database❌'
+  BATCH_SELECTION = '<b>Please enter the batch ID number from the list above that you want to set for auto-update ⬆️</b>'
+  BATCH_STATUS = '<b>➣━━━━━━━ 📊 BATCH STATUS ━━━━━━━➣</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n🖼️ <b>Thumbnail:</b> [Thumbnail]({})\n\n<b>⚙️ Configuration:</b>\n⏰ <b>Set Time:</b> {}\n💘 <b>Credit:</b> <code>{}</code>\n🚀 <b>Filename:</b> <code>{}</code>\n🖼️ <b>Thumbnail:</b> <code>{}</code>\n🔗 <b>API:</b> {}\n👥 <b>Group Name:</b> {}\n🆔 <b>Group ID:</b> {}\n\n<b>📈 Status Information:</b>\n🕒 <b>Last Updated:</b> {}\n🟢 <b>Batch Activated:</b> {}\n🔄 <b>Current Status:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  BATCH_UPDATED = '✅Batch Updated Successfully✅'
+  COLLECTING_DATA = '<b>➣━━━━━━━ 📊 COLLECTING DATA ━━━━━━━➣</b>\n\n<b>Collecting Data... Please Wait a Few Minutes</b>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  CONFIRM_CONFIG = '<b>➣━━━━━━━ 📋 CONFIRMATION ━━━━━━━➣</b>\n\n<b>Configuration Summary</b>\n\n🏠 <b>App Name:</b> {}\n🆔 <b>Batch ID:</b> {}\n📚 <b>Batch Name:</b> {}\n💰 <b>Price:</b> {}₹\n💰 <b>Credit:</b> <code>{}</code>\n💰 <b>Filename Credit:</b> <code>{}</code>\n🖼️ <b>Thumbnail:</b> <code>{}</code>\n⏰ <b>Update Time:</b> <code>{}</code>\n👥 <b>Group ID:</b> <code>{}</code>\n👥 <b>Group Name:</b> <i>{}</i>\n\n✅ Type <code>yes</code> to confirm\n❌ Type <code>no</code> to cancel\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  CREDIT_OPTIONS = '<b>➣━━━━━━━ 💰 CREDIT ━━━━━━━➣</b>\n\n<b>Enter Credit Name:</b>\n\n1️⃣ Caption only: `Admin`\n2️⃣ Caption + Filename: `Admin,Admin`\n3️⃣ Default: Send `/d`\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  DAILY_UPDATE_COMPLETED = '<b>➣━━━━━━━ 📊 DAILY UPDATE COMPLETED ━━━━━━━➣</b>\n\n<b>Daily Update Completed!</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n\n<b>📈 Update Details:</b>\n📄 <b>PDFs:</b> {}\n🎥 <b>Videos:</b> {}\n⏰ <b>Last Updated:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  DISCLAIMER = '\n<b> ======= ⚖️ LEGAL DISCLAIMER =======</b>\n\n<i>Please read this disclaimer carefully before using the bot.</i>\n\n<b> ======= 🎓 EDUCATIONAL PURPOSE =======</b>\n<blockquote>This bot was created with the sole intention of helping students who cannot afford expensive educational courses. As a student myself, I understand the financial constraints many face in accessing quality education.</blockquote>\n\n<b> ======= 🎯 INTENDED USE =======</b>\n<blockquote>• Personal learning only\n• Individual educational use\n• Academic advancement\n• Skill development</blockquote>\n\n<b> ======= ⚠️ IMPORTANT NOTICES =======</b>\n<blockquote>1. This bot is NOT intended for:\n   • Commercial use\n   • Content redistribution\n   • Batch selling\n   • Any profit-making activities\n\n2. For Content Creators:\n   • If any educator wishes to remove their content from our supported platforms\n   • Please contact us using /secretchat\n   • We will promptly remove it\n   • We respect intellectual property rights</blockquote>\n\n<b> ======= 🚫 DISCLAIMER =======</b>\n<blockquote>• We do NOT promote or encourage:\n   • Selling of extracted content\n   • Sharing content publicly\n   • Any copyright violations\n   • Commercial exploitation\n\n• We are NOT responsible for:\n   • Misuse of extracted content\n   • User actions post-extraction\n   • Third-party redistribution\n   • Any illegal activities</blockquote>\n\n<b> ======= 📝 TERMS OF USE =======</b>\n<blockquote>By using this bot, you agree:\n• To use content for personal education only\n• Not to redistribute or sell content\n• To respect intellectual property rights\n• To take responsibility for your actions</blockquote>\n\n<b> ======= 💭 FINAL NOTE =======</b>\n<blockquote>This bot was created by a student, for students, with the pure intention of making education more accessible. Any misuse goes against its core purpose and values.</blockquote>\n\n<i>🙏 We trust our users to respect these guidelines and use the bot responsibly for their educational journey.</i>\n'
+  ERROR_UPLOADING = '╭━━━━━━━━━━━━━━➣\n┣⪼ ⚠️ **Download Failed!**\n┣⪼ 📝 **Name:** <code>{}</code>\n┣⪼ 🔗 **URL:** <code>{}</code>\n┣⪼ ❌ **Error Details:**\n┃  ╰─⪼ <code>{}</code>\n┣⪼ 💡 **Tip:** Contact Developer\n╰━━━━━━━━━━━━━━➣'
+  GENERAL_ERROR = '<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>\n\n<b>Error Occurred</b>\n\nSomething went wrong while processing your request.\nPlease try again or contact support if the issue persists.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  GROUP_ERROR = '<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>\n\n<b>Invalid group ID or insufficient permissions</b>\n\nPlease verify:\n• Group ID is correct\n• Bot has admin rights\n• All permissions are granted\n<i>Error: {}</i>\nTry again with a valid group ID 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  GROUP_SETUP = '<b>➣━━━━━━━ 👥 GROUP SETUP ━━━━━━━➣</b>\n\n<b>Group Setup Required</b>\n\nPlease follow these steps:\n1️⃣ Enable Forum in the group\n2️⃣ Convert group to Supergroup\n3️⃣ Add bot as admin with all permissions\n\n✍️ Now, please send the group ID\nExample: <code>-100xxxxxxxx</code>\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  HELP = '<b>➣━━━━━━━ 📚 HELP ━━━━━━━➣</b>\n\n<b>Available Commands</b>\n\n/start - Start the bot\n/help - Show this help message\n\n<i>Need more help? Contact support! [ADMIN]({})</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  INVALID_TIME_FORMAT = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n⚠️ Invalid time format! Please use 24-hour format (HH:MM)\nExample: 09:00, 13:30, 22:45\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  INVALID_TOKEN = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>Invalid Token</b>\nPlease provide a valid authentication token to continue.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  IST = <Asia/Kolkata>
+  LAST_BATCH_COMPLETED = '<b>➣━━━━━━━ 📊 BATCH COMPLETED ━━━━━━━➣</b>\n\n<b>📚 Batch Information:</b>\n🆔 <b>ID:</b> {}\n📝 <b>Name:</b> {}\n💰 <b>Price:</b> {}₹\n\n<b>📈 Update Details:</b>\n📄 <b>PDFs:</b> {}\n🎥 <b>Videos:</b> {}\n⏰ <b>Last Updated:</b> {}\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_ERROR = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>Login Failed!</b>\n<i>Error: {}</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_OPTIONS = '<b>➣━━━━━━━━ 🔐 LOGIN ━━━━━━━➣</b>\n\n<b>Choose a login method:</b>\n\n1️⃣ ID & Password Format: <code>email*password</code>\n2️⃣ Token: Paste your access token\n3️⃣ Mobile Number: For OTP login\n\n<i>Please choose one of the above methods to continue...</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  LOGIN_SUCCESS = '<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>\n\n<b>Login Successful!</b>\n<i>Message: {}</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  NO_BATCH_FOUND = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>No Active Batches Found</b>\n\n• Your batches may have expired\n• You haven't purchased any batches yet\n\nPlease check your subscription status and try again! 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  NO_DATA_ERROR = '<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>\n\n<b>No Data Found</b>\n\nThe selected batch appears to be empty.\nPlease try another batch or contact support.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  NO_NEW_CLASSES = "<b>➣━━━━━━━ ❌ NO NEW CLASSES ━━━━━━━➣</b>\n\n<b>No new classes today for course {}</b>\n<b>Go and Enjoy! Maybe it's a holiday!</b>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  OTP_SENT = '<b>➣━━━━━━━ 📱 OTP ━━━━━━━➣</b>\n\n<b>OTP Verification</b>\nAn OTP has been sent to your mobile number.\nPlease enter the OTP below.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  PDF_CAPTION = '╭━━━━━━━━━━━━━━➣\n┣⪼ 📄 <b>PDF Title:</b>\n┃  ╰─⪼ <code>{}.pdf</code>\n┣⪼ 📚 <b>Topic Name:</b>\n┃  ╰─⪼ <b>{}</b>\n┣⪼ ⏰ <b>Class Time:</b>\n┃  ╰─⪼ <i><b>{}</b></i>\n┣⪼ 💘 <b>Download By:</b>\n┃  ╰─⪼ <b>{}</b>\n╰━━━━━━━━━━━━━━➣'
+  PDF_CAPTION_V2 = '<b>[📕]File Title :</b><code>{} .pdf</code>\n<blockquote><b>📌Batch Name : {}\n🔗Topic Name : {}\n⏰Class Time : {}</blockquote></b>\n\n<b><u>📩Extracted By ➤ {}</b></u>'
+  RECOVERING_BATCH = '<b>➣━━━━━━━ 📊 RECOVERING BATCH ━━━━━━━➣</b>\n⚠️ <b>Last Batch Incomplete</b>\n📚 <b>Course:</b> <code>{}</code>\n\n🔄 <b>Restarting all pending tasks...</b>\nPlease wait ⏳\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  SCHEDULE_TIME = '<b>➣━━━━━━━ ⏰ SCHEDULE ━━━━━━━➣</b>\n\nPlease Set the time in <code>HH:MM</code> format for Daily Update\nExample: <code>14:30</code> for 2:30 PM\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  SETUP_CANCELLED = "<b>➣━━━━━━━ ❌ CANCELLED ━━━━━━━➣</b>\n\n<b>Setup Cancelled</b>\n\nBatch update configuration was aborted.\nFeel free to try again when you're ready! 🔄\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  SETUP_SUCCESS = '<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>\n\n<b>Setup Successful!</b>\nYour batch has been configured for automatic updates.\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  START = "\n<b>➣━━━━━━━ 🤖 WELCOME ━━━━━━━➣</b>\n\n<b>👋 Hey {}, Welcome to Auto Uploader Bot v1.3!</b>\n\n<i>I'm your all-in-one solution for extracting and managing course content. Whether you're a student or educator, I've got you covered!</i>\n\n<i>I'm too advanced bot i can do multiple tasks at one time ...i'm more powerfull except other bot</i>\n\n<i>Bot Made By [ADMIN]({})</i>\n<i>⚠️ Educational use only. See /legal for terms.</i>\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>\n"
+  THUMBNAIL_OPTIONS = '<b>➣━━━━━━━ 🖼 THUMBNAIL ━━━━━━━➣</b>\n\n<b>Choose Thumbnail Option:</b>\n\n1️⃣ Send URL (e.g., `https://telegra.ph/file/xxx.jpg`)\n2️⃣ Default Thumb: Send `/d`\n3️⃣ Thumb Watermark: Send your Name in Simple Font\n\n<b>➣━━━━━━━━━━━━━━━━━➣</b>'
+  VIDEO_CAPTION = '╭━━━━━━━━━━━━━━➣\n┣⪼ 🎥 <b>Video Title:</b>\n┃  ╰─⪼ <code>{}.mkv</code>\n┣⪼ 📚 <b>Topic Name:</b>\n┃  ╰─⪼ <b>{}</b>\n┣⪼ ⏰ <b>Class Time:</b>\n┃  ╰─⪼ <i><b>{}</b></i>\n┣⪼ 💘 <b>Download By:</b>\n┃  ╰─⪼ <b>{}</b>\n╰━━━━━━━━━━━━━━➣'
+  VIDEO_CAPTION_V2 = '<b>[🎥]Video Title :</b><code>{} .mkv</code>\n<blockquote><b>📌Batch Name : {}\n🔗Topic Name : {}\n⏰Class Time : {}</blockquote></b>\n\n<b><u>📩Extracted By ➤ {}</b></u>'
+  YT_VIDEO_CAPTION = '<blockquote><i>We apologize, We are unable to download YouTube videos for security reasons. However, you can click on the video URL above to watch the video.</i></blockquote>'
+  db_instance = <Database>
+  headers = {'User-Agent': 'okhttp/4.9.1', 'Accept-Encoding': 'gzip', 'client-service': 'Appx', 'auth-key': 'appxapi', 'source': 'website', 'user-id': '', 'authorization': '', 'user_app_category': '', 'language': 'en', 'device_type': 'ANDROID'}
+  scraper = <HttpxClient>
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  class HttpxClient(object):  # from module: server
+
+    def __init__(self, verify_ssl=True):
+      # varnames: ['self', 'verify_ssl']
+      # names: []
+
+    async def close(self):
+      # varnames: ['self']
+      # names: []
+
+    async def get(self, url, params=None, headers=None, cookies=None, retry=(0, 0, 500), attempt=0):
+      # varnames: ['self', 'url', 'params', 'headers', 'cookies', 'retry', 'attempt', 'max_retries', 'backoff', 'retry_code', 'response']
+      # names: []
+
+    async def post(self, url, json=None, data=None, params=None, headers=None, cookies=None, files=None, retry=(0, 0, 500), attempt=0):
+      # varnames: ['self', 'url', 'json', 'data', 'params', 'headers', 'cookies', 'files', 'retry', 'attempt', 'max_retries', 'backoff', 'retry_code', 'response']
+      # names: []
+
+  ═══ FUNCTIONS ═══
+
+  async def add_batch(bot, m, api, app_name):
+    # varnames: ['bot', 'm', 'api', 'app_name', 'editable', 'input1', 'raw_text', 'log_in', 'email', 'password', 'token', 'login', 'phNum', 'userid', 'e', 'res2', 'bdetail', 'cc', 'n', 'i', 'sent_messages', 'message_header', 'all_batches', 'chunk', 'sent_message', 'editable1', 'input2', 'msg', 'input3', 'time_input', 'time', 'input4', 'credit_filename', 'credit', 'file_credit', 'input5', 'thumb', 'bid', 'select', 'group_id', 'success', 'chat', 'group_name', 'course_id', 'all_data', 'pdf_count', 'video_count']
+    # names: []
+
+  async def check_server():
+    # varnames: ['session', 'response', 'e']
+    # names: []
+
+  async def collect_data(batch_id, api, token):
+    # varnames: ['batch_id', 'api', 'token', 'all_urls', 'e']
+    # names: []
+
+  def get_user_id(token):
+    # varnames: ['token', 'decoded']
+    # names: []
+
+  async def otp_login(phNum, api, editable, bot, m):
+    # varnames: ['phNum', 'api', 'editable', 'bot', 'm', 'params', 'r1', 'input2', 'otp', 'r2', 'login_data', 'token']
+    # names: []
+
+  async def password_login(email, password, api):
+    # varnames: ['email', 'password', 'api', 'payload', 'hdr', 'login', 'login_data', 'token']
+    # names: []
+
+  async def process_batch_upload(bot, course_id: 'int', all_data: 'list'):
+    # varnames: ['bot', 'course_id', 'all_data', 'data', 'course_name', 'save_dir', 'credit', 'file_credit', 'thumb', 'chat_id', 'p_count', 'v_count', 'i', 'url', 'subjectname', 'topicname', 'check_thread', 'forum_id', 'name', 'video_caption', 'pdf_caption', 'success', 'yt_video_id', 'sent_msg', 'pdf_path', 'cmd', 'copy', 'prog', 'filename', 'e']
+    # names: []
+
+  async def set_chat(bot, GROUP_ID, editable1):
+    # varnames: ['bot', 'GROUP_ID', 'editable1', 'chat', 'bot_member', 'e']
+    # names: []
+
+  def timezone(zone):
+    """ Return a datetime.tzinfo implementation for the given timezone
+
+    >>> from datetime import datetime, timedelta
+    >>> utc = timezone('UTC')
+    >>> eastern = timezone('US/Eastern')
+    >>> eastern.zone
+    'US/Eastern'
+    >>> timezone(unicode('US/Eastern')) is eastern
+    True
+    >>> utc_dt = datetime(2002, 10, 27, 6, 0, 0, tzinfo=utc)
+    >>> loc_dt = utc_dt.astimezone(eastern)
+    >>> fmt = '%Y-%m-%d %H:%M:%S %Z (%z)'
+    >>> loc_dt.strftime(fmt)
+    '2002-10-27 01:00:00 EST (-0500)'
+   """
+    # varnames: ['zone', 'fp']
+    # names: ['UnknownTimeZoneError', 'upper', 'utc', 'ascii', 'UnicodeEncodeError', '_case_insensitive_zone_lookup', '_unmunge_zone', '_tzinfo_cache', 'all_timezones_set', 'open_resource', 'build_tzinfo', 'close']
+    # constants:
+    #   " Return a datetime.tzinfo implementation for the given timezone\n\n    >>> from datetime import datetime, timedelta\n    >>> utc = timezone('UTC')\n    >>> eastern = timezone('US/Eastern')\n    >>> eastern.zone\n    'US/Eastern'\n    >>> timezone(unicode('US/Eastern')) is eastern\n    True\n    >>> utc_dt = datetime(2002, 10, 27, 6, 0, 0, tzinfo=utc)\n    >>> loc_dt = utc_dt.astimezone(eastern)\n    >>> fmt = '%Y-%m-%d %H:%M:%S %Z (%z)'\n    >>> loc_dt.strftime(fmt)\n    '2002-10-27 01:00:00 EST (-0500)'\n    >>> (loc_dt - timedelta(minutes=10)).strftime(fmt)\n    '2002-10-27 00:50:00 EST (-0500)'\n    >>> eastern.normalize(loc_dt - timedelta(minutes=10)).strftime(fmt)\n    '2002-10-27 01:50:00 EDT (-0400)'\n    >>> (loc_dt + timedelta(minutes=10)).strftime(fmt)\n    '2002-10-27 01:10:00 EST (-0500)'\n\n    Raises UnknownTimeZoneError if passed an unknown zone.\n\n    >>> try:\n    ...     timezone('Asia/Shangri-La')\n    ... except UnknownTimeZoneError:\n    ...     print('Unknown')\n    Unknown\n\n    >>> try:\n    ...     timezone(unicode('\\N{TRADE MARK SIGN}'))\n    ... except UnknownTimeZoneError:\n    ...     print('Unknown')\n    Unknown\n\n    "
+    #   'UTC'
+    # === SOURCE CODE ===
+    # def timezone(zone):
+    #     r''' Return a datetime.tzinfo implementation for the given timezone
+    # 
+    #     >>> from datetime import datetime, timedelta
+    #     >>> utc = timezone('UTC')
+    #     >>> eastern = timezone('US/Eastern')
+    #     >>> eastern.zone
+    #     'US/Eastern'
+    #     >>> timezone(unicode('US/Eastern')) is eastern
+    #     True
+    #     >>> utc_dt = datetime(2002, 10, 27, 6, 0, 0, tzinfo=utc)
+    #     >>> loc_dt = utc_dt.astimezone(eastern)
+    #     >>> fmt = '%Y-%m-%d %H:%M:%S %Z (%z)'
+    #     >>> loc_dt.strftime(fmt)
+    #     '2002-10-27 01:00:00 EST (-0500)'
+    #     >>> (loc_dt - timedelta(minutes=10)).strftime(fmt)
+    #     '2002-10-27 00:50:00 EST (-0500)'
+    #     >>> eastern.normalize(loc_dt - timedelta(minutes=10)).strftime(fmt)
+    #     '2002-10-27 01:50:00 EDT (-0400)'
+    #     >>> (loc_dt + timedelta(minutes=10)).strftime(fmt)
+    #     '2002-10-27 01:10:00 EST (-0500)'
+    # 
+    #     Raises UnknownTimeZoneError if passed an unknown zone.
+    # 
+    #     >>> try:
+    #     ...     timezone('Asia/Shangri-La')
+    #     ... except UnknownTimeZoneError:
+    #     ...     print('Unknown')
+    #     Unknown
+    # 
+    #     >>> try:
+    #     ...     timezone(unicode('\N{TRADE MARK SIGN}'))
+    #     ... except UnknownTimeZoneError:
+    #     ...     print('Unknown')
+    #     Unknown
+    # 
+    #     '''
+    #     if zone is None:
+    #         raise UnknownTimeZoneError(None)
+    # 
+    #     if zone.upper() == 'UTC':
+    #         return utc
+    # 
+    #     try:
+    #         zone = ascii(zone)
+    #     except UnicodeEncodeError:
+    #         # All valid timezones are ASCII
+    #         raise UnknownTimeZoneError(zone)
+    # 
+    #     zone = _case_insensitive_zone_lookup(_unmunge_zone(zone))
+    #     if zone not in _tzinfo_cache:
+    #         if zone in all_timezones_set:  # noqa
+    #             fp = open_resource(zone)
+    #             try:
+    #                 _tzinfo_cache[zone] = build_tzinfo(zone, fp)
+    #             finally:
+    #                 fp.close()
+    #         else:
+    #             raise UnknownTimeZoneError(zone)
+    # 
+    #     return _tzinfo_cache[zone]
+    # 
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyExc_ValueError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_SystemError
+  | PyExc_RuntimeError
+  | PyExc_KeyError
+  | PyExc_OverflowError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_IndexError
+  | PyExc_NameError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyErr_WarnFormat
+  | PyObject_Format
+  | PyObject_IsSubclass
+  | PyExc_UnboundLocalError
+  | PyUnicode_FromKindAndData
+  | __pyx_module_is_main_appx_master
+  | PyMapping_Keys
+  | PyInit_appx_master
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __name__ must be set to a string object
+  | __qualname__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | coroutine '%.50S' was never awaited
+  | can't send non-None value to a just-started coroutine
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | Module 'appx_master' has already been imported. Re-initialisation is not supported.
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | __pyx_scope_struct_1_otp_login
+  | __pyx_scope_struct_2_add_batch
+  | __pyx_scope_struct__password_login
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | appx_master.__pyx_scope_struct_2_add_batch
+  | appx_master.__pyx_scope_struct_1_otp_login
+  | appx_master.__pyx_scope_struct__password_login
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | name '%U' is not defined
+  | modules/appx_master.py
+  | appx_master.add_batch
+  | appx_master.otp_login
+  | appx_master.password_login
+  | appx_master.get_user_id
+  | group_id
+  | cython_runtime
+  | init appx_master
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | <b><blockquote>BATCH-ID  -  BATCH NAME  -   PRICE</b></blockquote>
+  | /post/userLogin?extra_details=0
+  | <b><i>Login Successfully
+  | modules/appx_master.py
+  | /get/mycoursev2?userid=
+  | process_batch_upload
+  | LAST_BATCH_COMPLETED
+  | INVALID_TIME_FORMAT
+  | asyncio.coroutines
+  | user_app_category
+  | THUMBNAIL_OPTIONS
+  | modules.appxdata
+  | master.database
+  | credit_filename
+  | COLLECTING_DATA
+  | BATCH_SELECTION
+  | password_login
+  | message_header
+  | NO_BATCH_FOUND
+  | sent_messages
+  | __class_getitem__
+  | SCHEDULE_TIME
+  | NO_DATA_ERROR
+  | LOGIN_SUCCESS
+  | LOGIN_OPTIONS
+  | INVALID_TOKEN
+  | sent_message
+  | send_message
+  | okhttp/4.9.1
+  | collect_data
+  | Content-Type
+  | video_count
+  | get_user_id
+  | /get/sendotp
+  | file_credit
+  | course_name
+  | <b>Message: <i>
+  | appx_master
+  | all_batches
+  | LOGIN_ERROR
+  | HttpxClient
+  | GROUP_SETUP
+  | GROUP_ERROR
+  | time_input
+  | login_data
+  | group_name
+  | User-Agent
+  | useremail
+  | pdf_count
+  | otp_login
+  | course_id
+  | add_batch
+  | timezone
+  | strftime
+  | __qualname__
+  | group_id
+  | datetime
+  | auth-key
+  | app_name
+  | all_data
+  | ADMIN_ID
+  | user-id
+  | message
+  | asyncio
+  | appxapi
+  | userid
+  | update
+  | status
+  | format
+  | delete
+  | token
+  | thumb
+  | login
+  | __await__
+  | Admin
+  | user
+  | time
+  | send
+  | __name__
+  | data
+  | Appx
+  | .` - <b>
+  | (key
+  | (key
+  | __pyx_v_token
+  | __pyx_k_user_app_category
+  | __Pyx_CyFunction_get_name
+  | __pyx_k_Content_Type
+  | __Pyx_Coroutine_set_qualname
+  | data1
+  | __pyx_pf_11appx_master_2password_login
+  | __pyx_k_otp_login
+  | async_gen_finalizer
+  | PyExc_TypeError
+  | PySendResult
+  | __pyx_module_is_main_appx_master
+  | __pyx_k_video_count
+  | __pyx_k_User_Agent
+  | __pyx_L117_resume_from_await
+  | __pyx_v_video_count
+  | __pyx_k_BATCH_SELECTION
+  | _PyErr_FormatFromCause
+  | __pyx_pymod_exec_appx_master
+  | __pyx_freecount_11appx_master___pyx_scope_struct__password_login
+  | __pyx_k_send
+  | PyUnicode_FromFormat
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS
+  | __pyx_k_get_sendotp
+  | __Pyx_CoroutineAwait_no_new
+  | PyUnicode_DATA
+  | __Pyx_ParseKeywordDictToDict
+  | ml_name
+  | PyErr_WarnFormat
+  | __pyx_k_post_userLogin_extra_details_0
+  | instance_class
+  | __pyx_k_time_input
+  | __pyx_L5_argtuple_error
+  | __pyx_tp_traverse_11appx_master___pyx_scope_struct_1_otp_login
+
+====================================================================================================
+MODULE: modules.appxdata
+PATH: modules/appxdata.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  LOGGER = <Logger>
+  headers = {'User-Agent': 'okhttp/4.9.1', 'Accept-Encoding': 'gzip', 'client-service': 'Appx', 'auth-key': 'appxapi', 'source': 'website', 'user-id': '', 'authorization': '', 'user_app_category': '', 'language': 'en', 'device_type': 'ANDROID'}
+  scraper = <HttpxClient>
+  semaphore = <Semaphore>
+
+  ═══ CLASSES ═══
+
+  class HttpxClient(object):  # from module: server
+
+    def __init__(self, verify_ssl=True):
+      # varnames: ['self', 'verify_ssl']
+      # names: []
+
+    async def close(self):
+      # varnames: ['self']
+      # names: []
+
+    async def get(self, url, params=None, headers=None, cookies=None, retry=(0, 0, 500), attempt=0):
+      # varnames: ['self', 'url', 'params', 'headers', 'cookies', 'retry', 'attempt', 'max_retries', 'backoff', 'retry_code', 'response']
+      # names: []
+
+    async def post(self, url, json=None, data=None, params=None, headers=None, cookies=None, files=None, retry=(0, 0, 500), attempt=0):
+      # varnames: ['self', 'url', 'json', 'data', 'params', 'headers', 'cookies', 'files', 'retry', 'attempt', 'max_retries', 'backoff', 'retry_code', 'response']
+      # names: []
+
+  ═══ FUNCTIONS ═══
+
+  async def check_server():
+    # varnames: ['session', 'response', 'e']
+    # names: []
+
+  async def collect_data(batch_id, api, token):
+    # varnames: ['batch_id', 'api', 'token', 'all_urls', 'e']
+    # names: []
+
+  async def fetch_appx_v1(api, batch_id):
+    # varnames: ['api', 'batch_id', 'tasks', 'subject', 'u', 'Topic', 'v', 'ids_details', 'i', 'all_urls', 'item', 'sub_item']
+    # names: []
+
+  async def fetch_appx_v2(api, Batch_id, u=-1, TopicName=None, SubjectName=None):
+    # varnames: ['api', 'Batch_id', 'u', 'TopicName', 'SubjectName', 'all_urls', 'tasks', 'res', 'item', 'r', 'url']
+    # names: []
+
+  async def fetch_details(semaphore, api, i, topicName=None, subjectName=None):
+    # varnames: ['semaphore', 'api', 'i', 'topicName', 'subjectName', 'all_data', 'pdf_key', 'link', 'xx', 'MTYPE', 'j', 'pdf_link', 'pdf_version']
+    # names: []
+
+  async def get_video_url(api, i):
+    # varnames: ['api', 'i', 'querystring', 'res', 'enc_link', 'key', 'dec_link', 'keylink', 'url', 'e']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_SystemError
+  | PyExc_RuntimeError
+  | PyExc_KeyError
+  | PyExc_OverflowError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_ValueError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyExc_NameError
+  | __pyx_module_is_main_appxdata
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | PyObject_Format
+  | PyInit_appxdata
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | Module 'appxdata' has already been imported. Re-initialisation is not supported.
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | coroutine '%.50S' was never awaited
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | can't send non-None value to a just-started coroutine
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | appxdata.__pyx_scope_struct_4_collect_data
+  | appxdata.__pyx_scope_struct_3_fetch_appx_v2
+  | appxdata.__pyx_scope_struct_2_fetch_appx_v1
+  | appxdata.__pyx_scope_struct_1_get_video_url
+  | appxdata.__pyx_scope_struct__fetch_details
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | modules/appxdata.py
+  | appxdata.collect_data
+  | appxdata.fetch_appx_v2
+  | appxdata.fetch_appx_v1
+  | appxdata.get_video_url
+  | appxdata.fetch_details
+  | name '%U' is not defined
+  | cython_runtime
+  | init appxdata
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | Not Found Any Link For This Video: 
+  | /get/livecourseclassbycoursesubtopconceptapiv3?courseid=
+  | /get/folder_contentsv2?course_id=
+  | /get/allsubjectfrmlivecourseclass?courseid=
+  | /get/alltopicfrmlivecourseclass?courseid=
+  | /get/fetchVideoDetailsById
+  | Error in get_video_url: 
+  | Error in fetch_appx_v1: 
+  | modules/appxdata.py
+  | folder_wise_course
+  | _encryption_version
+  | asyncio.coroutines
+  | user_app_category
+  | encrypted_links
+  | https://youtu.be/
+  | _encryption_key
+  | download_links
+  | get_video_url
+  | fetch_appx_v2
+  | fetch_appx_v1
+  | subject_name
+  | okhttp/4.9.1
+  | decrypt_link
+  | collect_data
+  | subjectname
+  | subjectid
+  | subjectName
+  | pdf_version
+  | SubjectName
+  | HttpxClient
+  | topic_name
+  | User-Agent
+  | topicname
+  | topicid
+  | topicName
+  | &subjectid=
+  | strtotime
+  | file_link
+  | _encrypted
+  | course_id
+  | TopicName
+  | video_id
+  | __qualname__
+  | pdf_link
+  | batch_id
+  | auth-key
+  | appxdata
+  | all_data
+  | Batch_id
+  | user-id
+  | &topicid=
+  | subject
+  | &start=-1
+  | pdf_key
+  | keylink
+  | asyncio
+  | appxapi
+  | is_pdf
+  | FOLDER
+  | APPX_V=
+  | token
+  | error
+  | __await__
+  | VIDEO
+  | Topic
+  | send
+  | __name__
+  | data
+  | Appx
+  | %key
+  | %key
+  | f'1i>
+  | __pyx_v_token
+  | __pyx_k_get_allsubjectfrmlivecourseclas
+  | __pyx_freecount_8appxdata___pyx_scope_struct_3_fetch_appx_v2
+  | __pyx_k_user_app_category
+  | __Pyx_CyFunction_get_name
+  | __Pyx_Coroutine_set_qualname
+  | data1
+  | data2
+  | __pyx_k_appxdata
+  | __pyx_ptype_8appxdata___pyx_scope_struct_1_get_video_url
+  | async_gen_finalizer
+  | PyExc_TypeError
+  | PySendResult
+  | __pyx_k_User_Agent
+  | __pyx_v_pdf_key
+  | __pyx_ptype_8appxdata___pyx_scope_struct_2_fetch_appx_v1
+  | _PyErr_FormatFromCause
+  | __pyx_k_send
+  | PyUnicode_FromFormat
+  | __pyx_mdef_8appxdata_4get_video_url
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS
+  | __pyx_obj_8appxdata___pyx_scope_struct_1_get_video_url
+  | __pyx_tp_new_8appxdata___pyx_scope_struct_2_fetch_appx_v1
+  | __Pyx_CoroutineAwait_no_new
+  | PyUnicode_DATA
+  | __Pyx_ParseKeywordDictToDict
+  | ml_name
+  | PyErr_WarnFormat
+  | __pyx_pw_8appxdata_1fetch_details
+  | __pyx_obj_8appxdata___pyx_scope_struct_2_fetch_appx_v1
+  | __pyx_freecount_8appxdata___pyx_scope_struct_4_collect_data
+  | instance_class
+  | __pyx_k_Error_in_fetch_appx_v1
+  | __pyx_pymod_exec_appxdata
+  | __pyx_L5_argtuple_error
+  | __Pyx__Coroutine_GetAwaitableIter
+  | __pyx_module_is_main_appxdata
+  | __pyx_tp_traverse_8appxdata___pyx_scope_struct_4_collect_data
+  | co_filename
+  | __Pyx_PyObject_GetAttrStr_ClearAttributeError
+  | __pyx_gb_8appxdata_2generator
+  | keys_are_strings
+  | module_name_str
+  | classobj
+  | __pyx_k_Batch_id
+  | __pyx_k_data
+  | __pyx_k_encryption_key
+  | mm_class
+  | datastack_top
+  | __pyx_k_is_pdf
+  | __pyx_k_collect_data
+
+====================================================================================================
+MODULE: modules.manager
+PATH: modules/manager.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  db_instance = <Database>
+
+  ═══ FUNCTIONS ═══
+
+  async def create_topic(bot, GROUP_ID, subjectname):
+    # varnames: ['bot', 'GROUP_ID', 'subjectname', 'result']
+    # names: []
+
+  async def set_chat(bot, GROUP_ID, editable1):
+    # varnames: ['bot', 'GROUP_ID', 'editable1', 'chat', 'bot_member', 'e']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyExc_SystemError
+  | PyDict_GetItemWithError
+  | PyExc_RuntimeError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_NameError
+  | PyExc_ValueError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | PyObject_Format
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __name__ must be set to a string object
+  | __qualname__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | coroutine '%.50S' was never awaited
+  | can't send non-None value to a just-started coroutine
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | manager.__pyx_scope_struct__create_topic
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | name '%U' is not defined
+  | cython_runtime
+  | manager.create_topic
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | pyrogram.errors.exceptions.forbidden_403
+  |  Bot needs to be an admin to create topics
+  |  Bot does not have write permissions in the group
+  |  Bot does not have permission to manage topics
+  |  This group does not have forum/topics enabled
+  |  The given ID is not a group or channel
+  | create_forum_topic
+  | asyncio.coroutines
+  | can_manage_topics
+  | ChatAdminRequired
+  | pyrogram.errors
+  | master.database
+  | create_topic
+  | subjectname
+  | save_topic
+  | SUPERGROUP
+  | __qualname__
+  | GROUP_ID
+  | CHANNEL
+  | __await__
+  | GROUP
+  |  Error: 
+  | send
+  | __name__
+  | "key
+  | "key
+  | __pyx_v_GROUP_ID
+  | message
+  | __pyx_freecount_7manager___pyx_scope_struct__create_topic
+  | _dictkeysobject
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | tp_as_async
+  | from_name
+  | gi_qualname
+  | __pyx_tp_traverse_7manager___pyx_scope_struct__create_topic
+  | __Pyx_UnicodeKeywordsEqual
+  | PyDict_GetItemWithError
+  | __pyx_L4_error
+  | __pyx_k_create_topic
+  | __pyx_pf_7manager_create_topic
+  | invalid_keyword_type
+  | __pyx_k_subjectname
+  | __pyx_CoroutineAwait_methods
+  | modname
+  | PyErr_WarnFormat
+  | __pyx_type_7manager___pyx_scope_struct__create_topic
+  | is_async
+  | _PyCoLineInstrumentationData
+  | __Pyx_CoroutineAwait_Send
+  | __Pyx_get_runtime_version
+  | m_free
+  | __Pyx_Coroutine_get_name
+  | __Pyx_CyFunction_set_qualname
+  | module_name
+  | tp_free
+  | PyObject_IsSubclass
+  | PyExc_RuntimeWarning
+  | __pyx_k_Bot_needs_to_be_an_admin_to_cre
+  | datastack_top
+  | yieldfrom_am_send
+  | PyErr_Format
+  | in_async_gen
+  | kwnames
+  | ma_keys
+  | async_exc
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | _PyCFunctionFastWithKeywords
+  | PyExc_RuntimeError
+  | co_filename
+  | __Pyx_CyFunction_get_qualname
+  | PyDict_Update
+  | __Pyx_MatchKeywordArg
+  | delete_later
+  | PyModule_GetName
+  | __Pyx_CyFunction_set_name
+  | __Pyx_Coroutine_SendEx
+  | PyUnicode_DATA
+  | __pyx_L8_try_return
+  | _PyErr_FormatFromCause
+  | __pyx_L34_error
+  | gi_modulename
+  | __pyx_freelist_7manager___pyx_scope_struct__create_topic
+  | __pyx_k_SUPERGROUP
+  | __Pyx_Coroutine_AmSend
+  | error_traceback
+  | __Pyx_ReturnWithStopIteration
+  | _status
+  | __pyx_k_send
+  | __Pyx_Coroutine_set_name
+  | __Pyx_Coroutine_status_from_result
+  | keys_are_strings
+  | __pyx_L36_resume_from_await
+  | __pyx_L22_resume_from_await
+  | __pyx_k_asyncio_coroutines
+  | method_name
+  | __Pyx_TypeName
+  | __Pyx_CoroutineAwait_Throw
+  | b_name
+  | _co_freevars
+  | function_name
+  | __pyx_tp_new_7manager___pyx_scope_struct__create_topic
+  | return_offset
+  | __Pyx__Coroutine_await
+  | _f_frame_data
+  | GNU C17 13.3.0 -mtune=generic -march=x86-64 -g -O2 -fno-strict-overflow -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+  | slot_error
+  | error_value
+  | kw_name
+  | on_delete
+  | __Pyx__ReturnWithStopIteration
+  | datastack_chunk
+  | __Pyx_CoroutineAwait_traverse
+  | __Pyx_Coroutine_await
+  | co_nfreevars
+  | PyExc_NameError
+  | varnames_tuple
+  | __pyx_k_await
+  | source_type_name
+  | error_type
+  | res_type_name
+  | __pyx_L10_resume_from_await
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS
+  | __pyx_L1_error
+  | __Pyx__Coroutine_MethodReturnFromResult
+  | start
+  | __Pyx_CoroutineAwait_clear
+  | PyDictKeysObject
+  | __Pyx__Coroutine_AlreadyRunningError
+  | __pyx_L7_except_return
+  | __pyx_k_name
+  | co_name
+  | PyExc_TypeError
+  | _co_varnames
+  | __Pyx_CoroutineAwait_Close
+  | __Pyx_CoroutineAwait_dealloc
+  | __pyx_L25_resume_from_await
+  | full_name
+
+====================================================================================================
+MODULE: modules.tasks
+PATH: modules/tasks.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  LOGGER = <Logger>
+  db_instance = <Database>
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  ═══ FUNCTIONS ═══
+
+  async def create_topic(bot, GROUP_ID, subjectname):
+    # varnames: ['bot', 'GROUP_ID', 'subjectname', 'result']
+    # names: []
+
+  async def process_batch_upload(bot, course_id: 'int', all_data: 'list'):
+    # varnames: ['bot', 'course_id', 'all_data', 'data', 'course_name', 'save_dir', 'credit', 'file_credit', 'thumb', 'chat_id', 'p_count', 'v_count', 'i', 'url', 'subjectname', 'topicname', 'check_thread', 'forum_id', 'name', 'video_caption', 'pdf_caption', 'success', 'yt_video_id', 'sent_msg', 'pdf_path', 'cmd', 'copy', 'prog', 'filename', 'e']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyExc_ValueError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_RuntimeError
+  | PyExc_KeyError
+  | PyExc_OverflowError
+  | PyExc_SystemError
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_NameError
+  | PyErr_WarnFormat
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyArg_ValidateKeywordArguments
+  | PyObject_IsSubclass
+  | PyObject_Format
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | cannot reuse already awaited coroutine
+  | __name__ must be set to a string object
+  | __qualname__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine '%.50S' was never awaited
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | base class '%.200s' is not a heap type
+  | %s() got an unexpected keyword argument '%U'
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | can't send non-None value to a just-started coroutine
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | tasks.__pyx_scope_struct__process_batch_upload
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | name '%U' is not defined
+  | cython_runtime
+  | course_id
+  | tasks.process_batch_upload
+  | all_data
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | Note that Cython is deliberately stricter than PEP-484 and rejects subclasses of builtin types. If you need to pass subclasses then set the 'annotation_typing' directive to False.
+  | <i><b>Video Downloading: </b></i>
+  | <blockquote><b><i>
+  | https://api.masterapi.tech/get/yt/dl?url=
+  | Skipping already uploaded file: 
+  | https://img.youtube.com/vi/
+  | check_and_send_from_db
+  | process_batch_upload
+  | get_youtube_video_id
+  | Error uploading file 
+  | reply_to_message_id
+  | mark_file_uploaded
+  | asyncio.coroutines
+  | save_batch_status
+  | is_batch_uptodate
+  | convert_timestamp
+  | is_file_uploaded
+  | YT_VIDEO_CAPTION
+  | VIDEO_CAPTION_V2
+  | master.database
+  | ERROR_UPLOADING
+  | download_video
+  | PDF_CAPTION_V2
+  | video_caption
+  | send_document
+  | sanitize_name
+  | send_message
+  | create_topic
+  | yt_video_id
+  | yt_keyboard
+  | subjectname
+  | pdf_caption
+  | file_credit
+  | course_name
+  | LOG_CHANNEL
+  | send_photo
+  | topicname
+  | strtotime
+  | get_topic
+  | get_batch
+  | course_id
+  | send_vid
+  | __qualname__
+  | pdf_path
+  | group_id
+  | filename
+  | appxdl -u "
+  | all_data
+  | ADMIN_ID
+  | caption
+  | asyncio
+  | name
+  | helper
+  | format
+  | delete
+  | thumb
+  | photo
+  | error
+  | __await__
+  | Batch 
+  | send
+  | __name__
+  | data
+  | .pdf
+  | .PDF
+  | __pyx_k_error
+  | PyExc_ModuleNotFoundError
+  | __pyx_v_topicname
+  | _dictkeysobject
+  | PyExc_KeyError
+  | __pyx_L21_error
+  | __pyx_k_VIDEO_CAPTION_V2
+  | __pyx_k_get_topic
+  | __Pyx_RaiseNeedMoreValuesError
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | __pyx_k_ERROR_UPLOADING
+  | tp_as_async
+  | from_name
+  | gi_qualname
+  | __pyx_v_name
+  | __pyx_L32_resume_from_await
+  | __Pyx_UnicodeKeywordsEqual
+  | PyDict_GetItemWithError
+  | __pyx_v_pdf_caption
+  | __pyx_k_create_topic
+  | __pyx_pf_5tasks_process_batch_upload
+  | invalid_keyword_type
+  | __pyx_k_subjectname
+  | __pyx_CoroutineAwait_methods
+  | modname
+  | __pyx_k_video_caption
+  | __pyx_v_course_name
+  | is_async
+  | _PyCoLineInstrumentationData
+  | __pyx_L47_resume_from_await
+  | __Pyx_CoroutineAwait_Send
+  | __pyx_k_thumb
+  | m_free
+  | __Pyx_Coroutine_get_name
+  | __pyx_k_yt_keyboard
+  | __Pyx_CyFunction_set_qualname
+  | module_name
+  | __pyx_k_PDF
+  | __pyx_k_send_message
+  | __pyx_tp_new_5tasks___pyx_scope_struct__process_batch_upload
+  | __pyx_L46_resume_from_await
+  | __pyx_k_process_batch_upload
+  | tp_free
+  | PyObject_IsSubclass
+  | __pyx_tp_dealloc_5tasks___pyx_scope_struct__process_batch_upload
+  | PyExc_RuntimeWarning
+  | datastack_top
+  | __pyx_freelist_5tasks___pyx_scope_struct__process_batch_upload
+  | yieldfrom_am_send
+  | PyErr_Format
+  | in_async_gen
+  | partial_name
+  | kwnames
+  | ma_keys
+  | async_exc
+  | __pyx_k_format
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | __pyx_k_download_video
+  | _PyCFunctionFastWithKeywords
+  | PyExc_RuntimeError
+  | co_filename
+  | __Pyx_CyFunction_get_qualname
+  | PyDict_Update
+  | __Pyx_MatchKeywordArg
+  | __pyx_k_caption
+  | delete_later
+  | __pyx_k_https_img_youtube_com_vi
+  | __pyx_obj_5tasks___pyx_scope_struct__process_batch_upload
+
+====================================================================================================
+MODULE: modules.scheduler
+PATH: modules/scheduler.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  IST = <Asia/Kolkata>
+  LOGGER = <Logger>
+  db_instance = <Database>
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  ═══ FUNCTIONS ═══
+
+  async def collect_data(batch_id, api, token):
+    # varnames: ['batch_id', 'api', 'token', 'all_urls', 'e']
+    # names: []
+
+  async def get_next_run_time(time_str: 'str') -> 'datetime':
+    # varnames: ['time_str', 'now', 'hour', 'minute', 'next_run']
+    # names: []
+
+  async def process_batch_upload(bot, course_id: 'int', all_data: 'list'):
+    # varnames: ['bot', 'course_id', 'all_data', 'data', 'course_name', 'save_dir', 'credit', 'file_credit', 'thumb', 'chat_id', 'p_count', 'v_count', 'i', 'url', 'subjectname', 'topicname', 'check_thread', 'forum_id', 'name', 'video_caption', 'pdf_caption', 'success', 'yt_video_id', 'sent_msg', 'pdf_path', 'cmd', 'copy', 'prog', 'filename', 'e']
+    # names: []
+
+  async def schedule_batch_update(bot, course_id: 'int', api_url: 'str', time_str: 'str', token: 'str', length: 'int', course_name: 'str', group_id: 'int', price: 'int'):
+    # varnames: ['bot', 'course_id', 'api_url', 'time_str', 'token', 'length', 'course_name', 'group_id', 'price', 'next_run', 'now', 'sleep_seconds', 'all_data', 'pdf_count', 'video_count', 'time']
+    # names: []
+
+  async def start_daily_schedulers(bot):
+    # varnames: ['bot', 'batches', 'i']
+    # names: []
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyExc_ValueError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_SystemError
+  | PyExc_RuntimeError
+  | PyExc_KeyError
+  | PyExc_OverflowError
+  | PyArg_ValidateKeywordArguments
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_NameError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | PyObject_Format
+  | __pyx_module_is_main_scheduler
+  | PyInit_scheduler
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | base class '%.200s' is not a heap type
+  | cannot reuse already awaited coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | scheduler.start_daily_schedulers
+  | scheduler.schedule_batch_update
+  | can't send non-None value to a just-started coroutine
+  | coroutine '%.50S' was never awaited
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | Module 'scheduler' has already been imported. Re-initialisation is not supported.
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | scheduler.__pyx_scope_struct_2_start_daily_schedulers
+  | scheduler.__pyx_scope_struct_1_schedule_batch_update
+  | scheduler.__pyx_scope_struct__get_next_run_time
+  | cannot import name %S
+  | __file__
+  | takes no keyword arguments
+  | keywords must be strings
+  | name '%U' is not defined
+  | modules/scheduler.py
+  | start_daily_schedulers
+  | schedule_batch_update
+  | course_id
+  | api_url
+  | time_str
+  | token
+  | course_name
+  | group_id
+  | scheduler.get_next_run_time
+  | cython_runtime
+  | init scheduler
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | Starting scheduled update for course 
+  | Started scheduler for course <i><b>
+  | Note that Cython is deliberately stricter than PEP-484 and rejects subclasses of builtin types. If you need to pass subclasses then set the 'annotation_typing' directive to False.
+  | Completed scheduled update for course 
+  | Until Batch Not Completed, Daily Update Not Started.If Batch Completed Then Auto Update Started
+  | No new classes today for course 
+  | No batches with schedule found
+  | get_all_batches_with_schedule
+  | Started scheduler for course 
+  | start_daily_schedulers
+  | Next update for course 
+  | DAILY_UPDATE_COMPLETED
+  | schedule_batch_update
+  |  batches with schedule
+  | process_batch_upload
+  | modules/scheduler.py
+  | asyncio.coroutines
+  | is_batch_uptodate
+  | get_next_run_time
+  | modules.appxdata
+  | master.database
+  | NO_NEW_CLASSES
+  |  IST: Sleep Time 
+  | send_message
+  |  scheduled at 
+  | collect_data
+  | video_count
+  | course_name
+  | timedelta
+  | scheduler
+  | pdf_count
+  | course_id
+  | timezone
+  | time_str
+  | strftime
+  | __qualname__
+  | group_id
+  | datetime
+  | </b></i> at <b>
+  | all_data
+  | ADMIN_ID
+  | batches
+  | asyncio
+  | api_url
+  |  videos
+  | return
+  | format
+  | token
+  | __await__
+  | time
+  | send
+  | __name__
+  |  PDFs, 
+  | %key
+  | %key
+  | __pyx_freelist_9scheduler___pyx_scope_struct__get_next_run_time
+  | PyExc_ModuleNotFoundError
+  | __pyx_CoroutineAwaitType_slots
+  | __pyx_k_process_batch_upload
+  | _dictkeysobject
+  | PyExc_KeyError
+  | __pyx_v_pdf_count
+  | __Pyx_RaiseNeedMoreValuesError
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | tp_as_async
+  | __pyx_k_scheduler
+  | from_name
+  | gi_qualname
+  | __pyx_gb_9scheduler_2generator
+  | __pyx_type_9scheduler___pyx_scope_struct__get_next_run_time
+  | __pyx_v_group_id
+  | __pyx_type_9scheduler___pyx_scope_struct_1_schedule_batch_update
+  | __Pyx_UnicodeKeywordsEqual
+  | PyDict_GetItemWithError
+  | __pyx_type_9scheduler___pyx_scope_struct_2_start_daily_schedulers
+  | __pyx_pf_9scheduler_3schedule_batch_update
+  | __pyx_k_Started_scheduler_for_course_i_b
+  | __pyx_tp_traverse_9scheduler___pyx_scope_struct_1_schedule_batch_update
+  | invalid_keyword_type
+  | __pyx_freelist_9scheduler___pyx_scope_struct_2_start_daily_schedulers
+  | __pyx_CoroutineAwait_methods
+  | modname
+  | PyErr_WarnFormat
+  | __pyx_v_course_name
+  | is_async
+  | _PyCoLineInstrumentationData
+  | __Pyx_CoroutineAwait_Send
+  | __pyx_k_time
+  | __Pyx_get_runtime_version
+  | m_free
+  | __pyx_k_batches
+  | __Pyx_CyFunction_set_qualname
+  | __pyx_k_collect_data
+  | __pyx_tp_dealloc_9scheduler___pyx_scope_struct_1_schedule_batch_update
+  | module_name
+  | __pyx_k_send_message
+  | __pyx_k_No_new_classes_today_for_course
+  | __pyx_freecount_9scheduler___pyx_scope_struct_1_schedule_batch_update
+  | __pyx_k_get_all_batches_with_schedule
+  | tp_free
+  | PyObject_IsSubclass
+  | PyExc_RuntimeWarning
+  | datastack_top
+  | yieldfrom_am_send
+  | PyErr_Format
+  | in_async_gen
+  | partial_name
+  | kwnames
+  | ma_keys
+  | async_exc
+  | __pyx_k_format
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | __pyx_pw_9scheduler_7start_daily_schedulers
+  | _PyCFunctionFastWithKeywords
+  | PyExc_RuntimeError
+  | co_filename
+  | __Pyx_CyFunction_get_qualname
+  | PyDict_Update
+
+====================================================================================================
+MODULE: modules.retasks
+PATH: modules/retasks.so
+====================================================================================================
+
+  ═══ MODULE-LEVEL VARIABLES ═══
+  IST = <Asia/Kolkata>
+  LOGGER = <Logger>
+  db_instance = <Database>
+
+  ═══ CLASSES ═══
+  [Config class - same as config.py, skipped]
+
+  ═══ FUNCTIONS ═══
+
+  async def collect_data(batch_id, api, token):
+    # varnames: ['batch_id', 'api', 'token', 'all_urls', 'e']
+    # names: []
+
+  async def process_batch_upload(bot, course_id: 'int', all_data: 'list'):
+    # varnames: ['bot', 'course_id', 'all_data', 'data', 'course_name', 'save_dir', 'credit', 'file_credit', 'thumb', 'chat_id', 'p_count', 'v_count', 'i', 'url', 'subjectname', 'topicname', 'check_thread', 'forum_id', 'name', 'video_caption', 'pdf_caption', 'success', 'yt_video_id', 'sent_msg', 'pdf_path', 'cmd', 'copy', 'prog', 'filename', 'e']
+    # names: []
+
+  async def recover_incomplete_batches(bot):
+    # varnames: ['bot', 'incomplete_batches', 'i', 'batch_info', 'all_data', 'pdf_count', 'video_count', 'time']
+    # names: []
+
+  def timezone(zone):
+    """ Return a datetime.tzinfo implementation for the given timezone
+
+    >>> from datetime import datetime, timedelta
+    >>> utc = timezone('UTC')
+    >>> eastern = timezone('US/Eastern')
+    >>> eastern.zone
+    'US/Eastern'
+    >>> timezone(unicode('US/Eastern')) is eastern
+    True
+    >>> utc_dt = datetime(2002, 10, 27, 6, 0, 0, tzinfo=utc)
+    >>> loc_dt = utc_dt.astimezone(eastern)
+    >>> fmt = '%Y-%m-%d %H:%M:%S %Z (%z)'
+    >>> loc_dt.strftime(fmt)
+    '2002-10-27 01:00:00 EST (-0500)'
+   """
+    # varnames: ['zone', 'fp']
+    # names: ['UnknownTimeZoneError', 'upper', 'utc', 'ascii', 'UnicodeEncodeError', '_case_insensitive_zone_lookup', '_unmunge_zone', '_tzinfo_cache', 'all_timezones_set', 'open_resource', 'build_tzinfo', 'close']
+    # constants:
+    #   " Return a datetime.tzinfo implementation for the given timezone\n\n    >>> from datetime import datetime, timedelta\n    >>> utc = timezone('UTC')\n    >>> eastern = timezone('US/Eastern')\n    >>> eastern.zone\n    'US/Eastern'\n    >>> timezone(unicode('US/Eastern')) is eastern\n    True\n    >>> utc_dt = datetime(2002, 10, 27, 6, 0, 0, tzinfo=utc)\n    >>> loc_dt = utc_dt.astimezone(eastern)\n    >>> fmt = '%Y-%m-%d %H:%M:%S %Z (%z)'\n    >>> loc_dt.strftime(fmt)\n    '2002-10-27 01:00:00 EST (-0500)'\n    >>> (loc_dt - timedelta(minutes=10)).strftime(fmt)\n    '2002-10-27 00:50:00 EST (-0500)'\n    >>> eastern.normalize(loc_dt - timedelta(minutes=10)).strftime(fmt)\n    '2002-10-27 01:50:00 EDT (-0400)'\n    >>> (loc_dt + timedelta(minutes=10)).strftime(fmt)\n    '2002-10-27 01:10:00 EST (-0500)'\n\n    Raises UnknownTimeZoneError if passed an unknown zone.\n\n    >>> try:\n    ...     timezone('Asia/Shangri-La')\n    ... except UnknownTimeZoneError:\n    ...     print('Unknown')\n    Unknown\n\n    >>> try:\n    ...     timezone(unicode('\\N{TRADE MARK SIGN}'))\n    ... except UnknownTimeZoneError:\n    ...     print('Unknown')\n    Unknown\n\n    "
+    #   'UTC'
+    # === SOURCE CODE ===
+    # def timezone(zone):
+    #     r''' Return a datetime.tzinfo implementation for the given timezone
+    # 
+    #     >>> from datetime import datetime, timedelta
+    #     >>> utc = timezone('UTC')
+    #     >>> eastern = timezone('US/Eastern')
+    #     >>> eastern.zone
+    #     'US/Eastern'
+    #     >>> timezone(unicode('US/Eastern')) is eastern
+    #     True
+    #     >>> utc_dt = datetime(2002, 10, 27, 6, 0, 0, tzinfo=utc)
+    #     >>> loc_dt = utc_dt.astimezone(eastern)
+    #     >>> fmt = '%Y-%m-%d %H:%M:%S %Z (%z)'
+    #     >>> loc_dt.strftime(fmt)
+    #     '2002-10-27 01:00:00 EST (-0500)'
+    #     >>> (loc_dt - timedelta(minutes=10)).strftime(fmt)
+    #     '2002-10-27 00:50:00 EST (-0500)'
+    #     >>> eastern.normalize(loc_dt - timedelta(minutes=10)).strftime(fmt)
+    #     '2002-10-27 01:50:00 EDT (-0400)'
+    #     >>> (loc_dt + timedelta(minutes=10)).strftime(fmt)
+    #     '2002-10-27 01:10:00 EST (-0500)'
+    # 
+    #     Raises UnknownTimeZoneError if passed an unknown zone.
+    # 
+    #     >>> try:
+    #     ...     timezone('Asia/Shangri-La')
+    #     ... except UnknownTimeZoneError:
+    #     ...     print('Unknown')
+    #     Unknown
+    # 
+    #     >>> try:
+    #     ...     timezone(unicode('\N{TRADE MARK SIGN}'))
+    #     ... except UnknownTimeZoneError:
+    #     ...     print('Unknown')
+    #     Unknown
+    # 
+    #     '''
+    #     if zone is None:
+    #         raise UnknownTimeZoneError(None)
+    # 
+    #     if zone.upper() == 'UTC':
+    #         return utc
+    # 
+    #     try:
+    #         zone = ascii(zone)
+    #     except UnicodeEncodeError:
+    #         # All valid timezones are ASCII
+    #         raise UnknownTimeZoneError(zone)
+    # 
+    #     zone = _case_insensitive_zone_lookup(_unmunge_zone(zone))
+    #     if zone not in _tzinfo_cache:
+    #         if zone in all_timezones_set:  # noqa
+    #             fp = open_resource(zone)
+    #             try:
+    #                 _tzinfo_cache[zone] = build_tzinfo(zone, fp)
+    #             finally:
+    #                 fp.close()
+    #         else:
+    #             raise UnknownTimeZoneError(zone)
+    # 
+    #     return _tzinfo_cache[zone]
+    # 
+
+  ═══ EXTRACTED BINARY STRINGS (filtered) ═══
+  | __gmon_start__
+  | PyExc_TypeError
+  | PyErr_Format
+  | PyUnicode_FromFormat
+  | PyExc_AttributeError
+  | PyExc_ImportError
+  | PyModule_GetName
+  | PyDict_GetItemWithError
+  | PyExc_RuntimeError
+  | PyExc_KeyError
+  | PyExc_SystemError
+  | PyMem_Free
+  | PyExc_RuntimeWarning
+  | PyExc_ValueError
+  | PyDescr_IsData
+  | _PyErr_FormatFromCause
+  | PyArg_ValidateKeywordArguments
+  | PyExc_NameError
+  | PyErr_WarnFormat
+  | PyObject_IsSubclass
+  | PyExc_OverflowError
+  | PyObject_Format
+  | cannot instantiate type, use 'await coroutine' instead
+  | %.200s() keywords must be strings
+  | %s() got multiple values for keyword argument '%U'
+  | cannot reuse already awaited coroutine
+  | __qualname__ must be set to a string object
+  | __name__ must be set to a string object
+  | function's dictionary may not be deleted
+  | NULL result without error in PyObject_Call
+  | coroutine is being awaited already
+  | object %.200s can't be used in 'await' expression
+  | 'async for' received an invalid object from __anext__: %.200s
+  | __await__() returned non-iterator of type '%.200s'
+  | __await__() returned a coroutine
+  | %s() got an unexpected keyword argument '%U'
+  | retasks.recover_incomplete_batches
+  | compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d
+  | base class '%.200s' is not a heap type
+  | coroutine '%.50S' was never awaited
+  | calling %R should have returned an instance of BaseException, not %R
+  | raise: exception class must be a subclass of BaseException
+  | can't send non-None value to a just-started coroutine
+  | qualified name of the coroutine
+  | send(arg) -> send 'arg' into coroutine,
+  | return next iterated value or raise StopIteration.
+  | return next iterated value or raise StopIteration.
+  | send(arg) -> send 'arg' into coroutine,
+  | return next yielded value or raise StopIteration.
+  | return next yielded value or raise StopIteration.
+  | retasks.__pyx_scope_struct__recover_incomplete_batches
+  | cannot import name %S
+  | __file__
+  | recover_incomplete_batches
+  | takes no keyword arguments
+  | keywords must be strings
+  | name '%U' is not defined
+  | cython_runtime
+  | func_name
+  | __name__
+  | __qualname__
+  | name of the coroutine
+  | cr_await
+  | object being awaited, or None
+  | send
+  | Batch Not Found in Database Maybe Deleted: 
+  | Successfully recovered batch 
+  | No incomplete batches found 
+  | recover_incomplete_batches
+  | Last Batch Not Completed : 
+  | get_incomplete_batches
+  | process_batch_upload
+  | incomplete_batches
+  | LAST_BATCH_COMPLETED
+  | delete_batch_status
+  |  incomplete batches
+  | asyncio.coroutines
+  | modules.appxdata
+  | RECOVERING_BATCH
+  | master.database
+  | send_message
+  | collect_data
+  | video_count
+  | course_name
+  | batch_info
+  | pdf_count
+  | get_batch
+  | course_id
+  | timezone
+  | strftime
+  | __qualname__
+  | group_id
+  | datetime
+  | all_data
+  | ADMIN_ID
+  | user_id
+  | asyncio
+  | format
+  | token
+  | __await__
+  | time
+  | send
+  | __name__
+  | PyExc_ModuleNotFoundError
+  | __pyx_k_process_batch_upload
+  | _dictkeysobject
+  | PyExc_KeyError
+  | __pyx_v_pdf_count
+  | __Pyx_RaiseNeedMoreValuesError
+  | __Pyx_CyFunction_Vectorcall_FASTCALL_KEYWORDS_METHOD
+  | tp_as_async
+  | from_name
+  | gi_qualname
+  | __pyx_k_delete_batch_status
+  | __pyx_v_incomplete_batches
+  | __Pyx_UnicodeKeywordsEqual
+  | PyDict_GetItemWithError
+  | __pyx_k_Batch_Not_Found_in_Database_Mayb
+  | __Pyx__ImportDottedModule_Error
+  | invalid_keyword_type
+  | __pyx_CoroutineAwait_methods
+  | modname
+  | PyErr_WarnFormat
+  | __pyx_k_Successfully_recovered_batch
+  | is_async
+  | _PyCoLineInstrumentationData
+  | __Pyx_CoroutineAwait_Send
+  | __pyx_k_time
+  | __Pyx_get_runtime_version
+  | __pyx_pw_7retasks_1recover_incomplete_batches
+  | m_free
+  | __Pyx_Coroutine_get_name
+  | __Pyx_CyFunction_set_qualname
+  | __pyx_k_collect_data
+  | module_name
+  | __pyx_k_send_message
+  | __pyx_freelist_7retasks___pyx_scope_struct__recover_incomplete_batches
+  | tp_free
+  | PyObject_IsSubclass
+  | PyExc_RuntimeWarning
+  | datastack_top
+  | yieldfrom_am_send
+  | PyErr_Format
+  | in_async_gen
+  | partial_name
+  | kwnames
+  | ma_keys
+  | async_exc
+  | __pyx_k_format
+  | __Pyx_CyFunction_get_name_locked
+  | _PyCoMonitoringData
+  | _PyCFunctionFastWithKeywords
+  | PyExc_RuntimeError
+  | co_filename
+  | __Pyx_CyFunction_get_qualname
+  | PyDict_Update
+  | __Pyx_MatchKeywordArg
+  | delete_later
+  | PyModule_GetName
+  | __pyx_v_batch_info
+  | __Pyx_CyFunction_set_name
+  | __Pyx_Coroutine_SendEx
+  | PyUnicode_DATA
+  | _PyErr_FormatFromCause
+  | gi_modulename
+  | __Pyx_RaiseTooManyValuesError
+  | PyDescr_IsData
+  | __Pyx_Coroutine_AmSend
+  | error_traceback
+  | __Pyx_ReturnWithStopIteration
+  | __pyx_k_incomplete_batches
+  | __pyx_k_send
+  | __Pyx_Coroutine_set_name
+  | __Pyx_Coroutine_status_from_result
+  | __pyx_pf_7retasks_recover_incomplete_batches
+  | keys_are_strings
+  | result_udata
+  | __pyx_k_strftime
+  | __pyx_k_get_incomplete_batches
+  | __pyx_k_asyncio_coroutines
+  | method_name
+  | __Pyx_TypeName
+  | __Pyx_CoroutineAwait_Throw
+  | __pyx_L8_resume_from_await
+  | __pyx_k_RECOVERING_BATCH
+  | b_name
+  | _co_freevars
+  | function_name
+  | __pyx_k_ADMIN_ID
+  | __pyx_k_LAST_BATCH_COMPLETED
+  | return_offset
+  | __Pyx__Coroutine_await
+  | _f_frame_data
+  | __pyx_k_timezone
+  | GNU C17 13.3.0 -mtune=generic -march=x86-64 -g -O2 -fno-strict-overflow -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+  | slot_error
+  | error_value
+  | __pyx_k_user_id
+  | kw_name
+  | on_delete

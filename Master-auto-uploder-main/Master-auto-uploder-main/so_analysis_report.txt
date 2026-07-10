@@ -1,0 +1,1157 @@
+COMPLETE .SO MODULE ANALYSIS
+Total modules to analyze: 15
+
+============================================================
+MODULE: master.key
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/master/key.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def appx_page_paid(call_msg, letter, page)
+    # All local vars: call_msg, letter, page, markup, current_page, total_pages, text, e
+    # Line count: ~88
+  async def gen_alpha_paid_kb()
+    # All local vars: keys, keyboard, i, i
+    # Line count: ~38
+  async def gen_apps_paid_kb(letter, page, apps_per_page)
+    # All local vars: letter, page, apps_per_page, app_dict, letter_grouped, app, api, first_letter, start, end, paginated_apps, keys, idx, unique_id, keyboard, nav_buttons, total_pages, i
+    # Line count: ~44
+  async def get_appx_api()
+    # All local vars: 
+    # Line count: ~33
+  async def handle_app_paid(bot, data, call_msg, a)
+    # All local vars: bot, data, call_msg, a, app_id, app_details, app_name, api
+    # Line count: ~72
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+  class Database:
+    def __init__(self, uri, database_name)
+    def get_appx_api(self)
+  class KB:
+    def __init__(self, text, callback_data, url, web_app, login_url, user_id, switch_inline_query, switch_inline_query_current_chat, callback_game, requires_password, copy_text)
+    def bind(self, client)
+    def default(obj)
+    def read(b)
+    def write()
+  class KM:
+    def __init__(self, inline_keyboard)
+    def bind(self, client)
+    def default(obj)
+    def read(o)
+    def write()
+
+  --- STRING CONSTANTS ---
+  DB_NAME = "APPX_API"
+  DB_URL = "mongodb+srv://master:KCzMfCaj7DgGCBPh@cluster0.zihv6vx.mongodb.net/"
+  pass101 = "KCzMfCaj7DgGCBPh"
+  pass2 = "NmC1fGZDNNBEfdh0"
+  pass3 = "NmC1fGdcccsfdh0"
+  pass4 = "NmC1fGdcccsfdh0"
+  pass5 = "NmC1fGdcccsfdh0"
+  pass6 = "NmC1fGdcccsfdh0"
+  pass7 = "NmC1fGdcccsfdh0"
+  pass8 = "NmC1fGdcccsfdh0"
+  us = "master"
+
+  --- OTHER ---
+  [dict] app_identifier_map = {}
+  [import] appx_master
+  [Database] db_instance = <key.Database object at 0x7fafe897a510>
+  [import] motor
+  [import] msg
+
+============================================================
+MODULE: master.buttom
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/master/buttom.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def delete_batch(bot, user_id, course_id)
+    # All local vars: bot, user_id, course_id
+    # Line count: ~79
+  async def get_batch_statistics(bot, user_id, course_id)
+    # All local vars: bot, user_id, course_id, batch, check, group, group_name, stats
+    # Line count: ~53
+  async def manage_batch(bot, m, course_id)
+    # All local vars: bot, m, course_id, x, time
+    # Line count: ~41
+  async def show_all_batches_buttom(user_id)
+    # All local vars: user_id, batches, buttons, batch, batch_name
+    # Line count: ~17
+  async def show_all_batches_buttom_delete(user_id)
+    # All local vars: user_id, batches, buttons, batch, batch_name
+    # Line count: ~5
+  async def show_all_batches_buttom_manage(user_id)
+    # All local vars: user_id, batches, buttons, batch, batch_name
+    # Line count: ~29
+
+  --- CLASSES ---
+  class KB:
+    def __init__(self, text, callback_data, url, web_app, login_url, user_id, switch_inline_query, switch_inline_query_current_chat, callback_game, requires_password, copy_text)
+    def bind(self, client)
+    def default(obj)
+    def read(b)
+    def write()
+  class KM:
+    def __init__(self, inline_keyboard)
+    def bind(self, client)
+    def default(obj)
+    def read(o)
+    def write()
+
+  --- STRING CONSTANTS ---
+  APP = "
+<b>➣━━━━━━━ 🤖 APPS ━━━━━━━➣</b>
+
+<i>I'm your all-in-one solution for extracting and managing course..."
+  BATCH_ALREADY_EXISTS = "❌Batch Already Exists in my Database❌"
+  BATCH_DELETED = "❌Batch Deleted Successfully❌"
+  BATCH_NOT_FOUND = "❌Batch Not Found in my Database❌"
+  BATCH_SELECTION = "<b>Please enter the batch ID number from the list above that you want to set for auto-update ⬆️</b>"
+  BATCH_STATUS = "<b>➣━━━━━━━ 📊 BATCH STATUS ━━━━━━━➣</b>
+
+<b>📚 Batch Information:</b>
+🆔 <b>ID:</b> {}
+📝 <b>Name:</b> ..."
+  BATCH_UPDATED = "✅Batch Updated Successfully✅"
+  COLLECTING_DATA = "<b>➣━━━━━━━ 📊 COLLECTING DATA ━━━━━━━➣</b>
+
+<b>Collecting Data... Please Wait a Few Minutes</b>
+
+<b>..."
+  CONFIRM_CONFIG = "<b>➣━━━━━━━ 📋 CONFIRMATION ━━━━━━━➣</b>
+
+<b>Configuration Summary</b>
+
+🏠 <b>App Name:</b> {}
+🆔 <b>Ba..."
+  CREDIT_OPTIONS = "<b>➣━━━━━━━ 💰 CREDIT ━━━━━━━➣</b>
+
+<b>Enter Credit Name:</b>
+
+1️⃣ Caption only: `Admin`
+2️⃣ Caption ..."
+  DAILY_UPDATE_COMPLETED = "<b>➣━━━━━━━ 📊 DAILY UPDATE COMPLETED ━━━━━━━➣</b>
+
+<b>Daily Update Completed!</b>
+
+<b>📚 Batch Inform..."
+  DISCLAIMER = "
+<b> ======= ⚖️ LEGAL DISCLAIMER =======</b>
+
+<i>Please read this disclaimer carefully before using ..."
+  ERROR_UPLOADING = "╭━━━━━━━━━━━━━━➣
+┣⪼ ⚠️ **Download Failed!**
+┣⪼ 📝 **Name:** <code>{}</code>
+┣⪼ 🔗 **URL:** <code>{}</c..."
+  GENERAL_ERROR = "<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>
+
+<b>Error Occurred</b>
+
+Something went wrong while processing your..."
+  GROUP_ERROR = "<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>
+
+<b>Invalid group ID or insufficient permissions</b>
+
+Please verif..."
+  GROUP_SETUP = "<b>➣━━━━━━━ 👥 GROUP SETUP ━━━━━━━➣</b>
+
+<b>Group Setup Required</b>
+
+Please follow these steps:
+1️⃣ ..."
+  HELP = "<b>➣━━━━━━━ 📚 HELP ━━━━━━━➣</b>
+
+<b>Available Commands</b>
+
+/start - Start the bot
+/help - Show this..."
+  INVALID_TIME_FORMAT = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+⚠️ Invalid time format! Please use 24-hour format (HH:MM)
+Example:..."
+  INVALID_TOKEN = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>Invalid Token</b>
+Please provide a valid authentication token t..."
+  LAST_BATCH_COMPLETED = "<b>➣━━━━━━━ 📊 BATCH COMPLETED ━━━━━━━➣</b>
+
+<b>📚 Batch Information:</b>
+🆔 <b>ID:</b> {}
+📝 <b>Name:</..."
+  LOGIN_ERROR = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>Login Failed!</b>
+<i>Error: {}</i>
+
+<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  LOGIN_OPTIONS = "<b>➣━━━━━━━━ 🔐 LOGIN ━━━━━━━➣</b>
+
+<b>Choose a login method:</b>
+
+1️⃣ ID & Password Format: <code>em..."
+  LOGIN_SUCCESS = "<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>
+
+<b>Login Successful!</b>
+<i>Message: {}</i>
+
+<b>➣━━━━━━━━━━━━━━━..."
+  NO_BATCH_FOUND = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>No Active Batches Found</b>
+
+• Your batches may have expired
+• ..."
+  NO_DATA_ERROR = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>No Data Found</b>
+
+The selected batch appears to be empty.
+Plea..."
+  NO_NEW_CLASSES = "<b>➣━━━━━━━ ❌ NO NEW CLASSES ━━━━━━━➣</b>
+
+<b>No new classes today for course {}</b>
+<b>Go and Enjoy..."
+  OTP_SENT = "<b>➣━━━━━━━ 📱 OTP ━━━━━━━➣</b>
+
+<b>OTP Verification</b>
+An OTP has been sent to your mobile number.
+..."
+  PDF_CAPTION = "╭━━━━━━━━━━━━━━➣
+┣⪼ 📄 <b>PDF Title:</b>
+┃  ╰─⪼ <code>{}.pdf</code>
+┣⪼ 📚 <b>Topic Name:</b>
+┃  ╰─⪼ <b..."
+  PDF_CAPTION_V2 = "<b>[📕]File Title :</b><code>{} .pdf</code>
+<blockquote><b>📌Batch Name : {}
+🔗Topic Name : {}
+⏰Class T..."
+  RECOVERING_BATCH = "<b>➣━━━━━━━ 📊 RECOVERING BATCH ━━━━━━━➣</b>
+⚠️ <b>Last Batch Incomplete</b>
+📚 <b>Course:</b> <code>{..."
+  SCHEDULE_TIME = "<b>➣━━━━━━━ ⏰ SCHEDULE ━━━━━━━➣</b>
+
+Please Set the time in <code>HH:MM</code> format for Daily Upda..."
+  SETUP_CANCELLED = "<b>➣━━━━━━━ ❌ CANCELLED ━━━━━━━➣</b>
+
+<b>Setup Cancelled</b>
+
+Batch update configuration was aborted..."
+  SETUP_SUCCESS = "<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>
+
+<b>Setup Successful!</b>
+Your batch has been configured for auto..."
+  START = "
+<b>➣━━━━━━━ 🤖 WELCOME ━━━━━━━➣</b>
+
+<b>👋 Hey {}, Welcome to Auto Uploader Bot v1.3!</b>
+
+<i>I'm you..."
+  THUMBNAIL_OPTIONS = "<b>➣━━━━━━━ 🖼 THUMBNAIL ━━━━━━━➣</b>
+
+<b>Choose Thumbnail Option:</b>
+
+1️⃣ Send URL (e.g., `https://..."
+  VIDEO_CAPTION = "╭━━━━━━━━━━━━━━➣
+┣⪼ 🎥 <b>Video Title:</b>
+┃  ╰─⪼ <code>{}.mkv</code>
+┣⪼ 📚 <b>Topic Name:</b>
+┃  ╰─⪼ ..."
+  VIDEO_CAPTION_V2 = "<b>[🎥]Video Title :</b><code>{} .mkv</code>
+<blockquote><b>📌Batch Name : {}
+🔗Topic Name : {}
+⏰Class ..."
+  YT_VIDEO_CAPTION = "<blockquote><i>We apologize, We are unable to download YouTube videos for security reasons. However,..."
+
+  --- OTHER ---
+  [import] asyncio
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+
+============================================================
+MODULE: master.helper
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/master/helper.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def convert_timestamp(ts)
+    # All local vars: ts, dt
+    # Line count: ~105
+  async def download_video(url, name, save_dir, credit)
+    # All local vars: url, name, save_dir, credit, video_name, cmd
+    # Line count: ~34
+  async def duration(video)
+    # All local vars: video, proc, output
+    # Line count: ~7
+  async def get_youtube_video_id(url)
+    # All local vars: url, youtube_regex, match, vid_id
+    # Line count: ~25
+  async def sanitize_name(name)
+    # All local vars: name
+    # Line count: ~16
+  async def send_vid(bot, url, caption, filename, name, chat_id, forum_id, thumbs)
+    # All local vars: bot, url, caption, filename, name, chat_id, forum_id, thumbs, thumb, reply, dur, start_time, copy, e, video
+    # Line count: ~79
+  async def temp_File_name(name)
+    # All local vars: name
+    # Line count: ~22
+  async def thumbnail_gen(thumb, filename)
+    # All local vars: thumb, filename, cmd, mark, watermarked_image, e
+    # Line count: ~47
+  async def watermark_image(image_path, watermark)
+    # All local vars: image_path, watermark, img, _, height, font_size, cmd
+    # Line count: ~70
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+  class datetime:
+    def __init__(???)
+    def astimezone(???)
+    def combine(???)
+    def ctime(???)
+    def date(???)
+    def dst(???)
+    def fromisocalendar(???)
+    def fromisoformat(???)
+    def fromordinal(???)
+    def fromtimestamp(???)
+    def isocalendar(???)
+    def isoformat(???)
+    def isoweekday(???)
+    def now(???)
+    def replace(???)
+    def strftime(???)
+    def strptime(???)
+    def time(???)
+    def timestamp(???)
+    def timetuple(???)
+    def timetz(???)
+    def today(???)
+    def toordinal(???)
+    def tzname(???)
+    def utcfromtimestamp(???)
+    def utcnow(???)
+    def utcoffset(???)
+    def utctimetuple(???)
+    def weekday(???)
+
+  --- OTHER ---
+  [import] Image
+  [Logger] LOGGER = <Logger AUTO_UPDATER (INFO)>
+  [timezone] UTC = datetime.timezone.utc
+  [import] asyncio
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+  [import] os
+  [import] re
+  [import] time
+
+============================================================
+MODULE: master.database
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/master/database.so
+============================================================
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+  class Database:
+    def __init__(self, uri, database_name)
+    def add_batch(self, user_id, course_id, api, token, select, time, group_id, length, credit, filename, thumb)
+    def delete_batch(self, user_id, course_id)
+    def delete_batch_status(self, user_id, course_id)
+    def get_all_batches(self, user_id)
+    def get_all_batches_with_schedule(self)
+    def get_batch(self, user_id, course_id)
+    def get_batch_status(self, user_id, course_id)
+    def get_incomplete_batches(self)
+    def get_msg_id(self, url)
+    def get_topic(self, group_id, subjectname)
+    def is_batch_uptodate(self, user_id, course_id)
+    def is_file_uploaded(self, course_id, url)
+    def mark_file_uploaded(self, course_id, url, chat_id)
+    def save_batch_status(self, user_id, course_id, status)
+    def save_msg_id(self, url, msg_id)
+    def save_topic(self, group_id, forum_id, subjectname)
+    def update_batch_schedule(self, user_id, course_id, new_time)
+  class datetime:
+    def __init__(???)
+    def astimezone(???)
+    def combine(???)
+    def ctime(???)
+    def date(???)
+    def dst(???)
+    def fromisocalendar(???)
+    def fromisoformat(???)
+    def fromordinal(???)
+    def fromtimestamp(???)
+    def isocalendar(???)
+    def isoformat(???)
+    def isoweekday(???)
+    def now(???)
+    def replace(???)
+    def strftime(???)
+    def strptime(???)
+    def time(???)
+    def timestamp(???)
+    def timetuple(???)
+    def timetz(???)
+    def today(???)
+    def toordinal(???)
+    def tzname(???)
+    def utcfromtimestamp(???)
+    def utcnow(???)
+    def utcoffset(???)
+    def utctimetuple(???)
+    def weekday(???)
+
+  --- OTHER ---
+  [Asia/Kolkata] IST = <DstTzInfo 'Asia/Kolkata' LMT+5:53:00 STD>
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+  [import] motor
+  [import] pytz
+
+============================================================
+MODULE: master.logdb
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/master/logdb.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def check_and_send_from_db(bot, url, group_id, video_caption, pdf_caption, pdf_counter, video_counter, forum_id)
+    # All local vars: bot, url, group_id, video_caption, pdf_caption, pdf_counter, video_counter, forum_id, file_data, msg_id, msg_data, _, e
+    # Line count: ~7
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+  class FloodWait:
+    def __init__(self, value, rpc_name, is_unknown, is_signed)
+    def add_note(???)
+    def raise_it(rpc_error, rpc_type)
+    def with_traceback(???)
+
+  --- OTHER ---
+  [Logger] LOGGER = <Logger AUTO_UPDATER (INFO)>
+  [import] asyncio
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+
+============================================================
+MODULE: master.server
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/master/server.so
+============================================================
+
+  --- CLASSES ---
+  class HttpxClient:
+    def __init__(self, verify_ssl)
+    def close(self)
+    def get(self, url, params, headers, cookies, retry, attempt)
+    def post(self, url, json, data, params, headers, cookies, files, retry, attempt)
+
+  --- OTHER ---
+  [import] asyncio
+  [import] httpx
+  [HttpxClient] scraper = <server.HttpxClient object at 0x7fafe51aa780>
+
+============================================================
+MODULE: master.utils
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/master/utils.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def check_server()
+    # All local vars: session, response, e
+    # Line count: ~26
+  async def decrypt_link(link)
+    # All local vars: link, key, iv, cipher, decrypted_link, e
+    # Line count: ~7
+  async def send_random_photo()
+    # All local vars: regex_photo, pht, url, response
+    # Line count: ~18
+  async def unpad(padded_data, block_size, style)
+    # All local vars: padded_data, block_size, style, pdata_len, padding_len
+    # Line count: ~69
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+
+  --- OTHER ---
+  [import] AES
+  [Logger] LOGGER = <Logger AUTO_UPDATER (INFO)>
+  [import] aiohttp
+  [import] base64
+  [import] random
+  [HttpxClient] scraper = <server.HttpxClient object at 0x7fafe51aa780>
+
+============================================================
+MODULE: constant.buttom
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/constant/buttom.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def contact()
+    # All local vars: keyboard
+    # Line count: ~24
+  async def help_keyboard()
+    # All local vars: keyboard
+    # Line count: ~17
+  async def home()
+    # All local vars: keyboard
+    # Line count: ~8
+  async def yt_keyboard(watchurl, downloadurl)
+    # All local vars: watchurl, downloadurl, keyboard
+    # Line count: ~4
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+  class KB:
+    def __init__(self, text, callback_data, url, web_app, login_url, user_id, switch_inline_query, switch_inline_query_current_chat, callback_game, requires_password, copy_text)
+    def bind(self, client)
+    def default(obj)
+    def read(b)
+    def write()
+  class KM:
+    def __init__(self, inline_keyboard)
+    def bind(self, client)
+    def default(obj)
+    def read(o)
+    def write()
+
+============================================================
+MODULE: constant.msg
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/constant/msg.so
+============================================================
+
+  --- STRING CONSTANTS ---
+  APP = "
+<b>➣━━━━━━━ 🤖 APPS ━━━━━━━➣</b>
+
+<i>I'm your all-in-one solution for extracting and managing course..."
+  BATCH_ALREADY_EXISTS = "❌Batch Already Exists in my Database❌"
+  BATCH_DELETED = "❌Batch Deleted Successfully❌"
+  BATCH_NOT_FOUND = "❌Batch Not Found in my Database❌"
+  BATCH_SELECTION = "<b>Please enter the batch ID number from the list above that you want to set for auto-update ⬆️</b>"
+  BATCH_STATUS = "<b>➣━━━━━━━ 📊 BATCH STATUS ━━━━━━━➣</b>
+
+<b>📚 Batch Information:</b>
+🆔 <b>ID:</b> {}
+📝 <b>Name:</b> ..."
+  BATCH_UPDATED = "✅Batch Updated Successfully✅"
+  COLLECTING_DATA = "<b>➣━━━━━━━ 📊 COLLECTING DATA ━━━━━━━➣</b>
+
+<b>Collecting Data... Please Wait a Few Minutes</b>
+
+<b>..."
+  CONFIRM_CONFIG = "<b>➣━━━━━━━ 📋 CONFIRMATION ━━━━━━━➣</b>
+
+<b>Configuration Summary</b>
+
+🏠 <b>App Name:</b> {}
+🆔 <b>Ba..."
+  CREDIT_OPTIONS = "<b>➣━━━━━━━ 💰 CREDIT ━━━━━━━➣</b>
+
+<b>Enter Credit Name:</b>
+
+1️⃣ Caption only: `Admin`
+2️⃣ Caption ..."
+  DAILY_UPDATE_COMPLETED = "<b>➣━━━━━━━ 📊 DAILY UPDATE COMPLETED ━━━━━━━➣</b>
+
+<b>Daily Update Completed!</b>
+
+<b>📚 Batch Inform..."
+  DISCLAIMER = "
+<b> ======= ⚖️ LEGAL DISCLAIMER =======</b>
+
+<i>Please read this disclaimer carefully before using ..."
+  ERROR_UPLOADING = "╭━━━━━━━━━━━━━━➣
+┣⪼ ⚠️ **Download Failed!**
+┣⪼ 📝 **Name:** <code>{}</code>
+┣⪼ 🔗 **URL:** <code>{}</c..."
+  GENERAL_ERROR = "<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>
+
+<b>Error Occurred</b>
+
+Something went wrong while processing your..."
+  GROUP_ERROR = "<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>
+
+<b>Invalid group ID or insufficient permissions</b>
+
+Please verif..."
+  GROUP_SETUP = "<b>➣━━━━━━━ 👥 GROUP SETUP ━━━━━━━➣</b>
+
+<b>Group Setup Required</b>
+
+Please follow these steps:
+1️⃣ ..."
+  HELP = "<b>➣━━━━━━━ 📚 HELP ━━━━━━━➣</b>
+
+<b>Available Commands</b>
+
+/start - Start the bot
+/help - Show this..."
+  INVALID_TIME_FORMAT = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+⚠️ Invalid time format! Please use 24-hour format (HH:MM)
+Example:..."
+  INVALID_TOKEN = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>Invalid Token</b>
+Please provide a valid authentication token t..."
+  LAST_BATCH_COMPLETED = "<b>➣━━━━━━━ 📊 BATCH COMPLETED ━━━━━━━➣</b>
+
+<b>📚 Batch Information:</b>
+🆔 <b>ID:</b> {}
+📝 <b>Name:</..."
+  LOGIN_ERROR = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>Login Failed!</b>
+<i>Error: {}</i>
+
+<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  LOGIN_OPTIONS = "<b>➣━━━━━━━━ 🔐 LOGIN ━━━━━━━➣</b>
+
+<b>Choose a login method:</b>
+
+1️⃣ ID & Password Format: <code>em..."
+  LOGIN_SUCCESS = "<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>
+
+<b>Login Successful!</b>
+<i>Message: {}</i>
+
+<b>➣━━━━━━━━━━━━━━━..."
+  NO_BATCH_FOUND = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>No Active Batches Found</b>
+
+• Your batches may have expired
+• ..."
+  NO_DATA_ERROR = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>No Data Found</b>
+
+The selected batch appears to be empty.
+Plea..."
+  NO_NEW_CLASSES = "<b>➣━━━━━━━ ❌ NO NEW CLASSES ━━━━━━━➣</b>
+
+<b>No new classes today for course {}</b>
+<b>Go and Enjoy..."
+  OTP_SENT = "<b>➣━━━━━━━ 📱 OTP ━━━━━━━➣</b>
+
+<b>OTP Verification</b>
+An OTP has been sent to your mobile number.
+..."
+  PDF_CAPTION = "╭━━━━━━━━━━━━━━➣
+┣⪼ 📄 <b>PDF Title:</b>
+┃  ╰─⪼ <code>{}.pdf</code>
+┣⪼ 📚 <b>Topic Name:</b>
+┃  ╰─⪼ <b..."
+  PDF_CAPTION_V2 = "<b>[📕]File Title :</b><code>{} .pdf</code>
+<blockquote><b>📌Batch Name : {}
+🔗Topic Name : {}
+⏰Class T..."
+  RECOVERING_BATCH = "<b>➣━━━━━━━ 📊 RECOVERING BATCH ━━━━━━━➣</b>
+⚠️ <b>Last Batch Incomplete</b>
+📚 <b>Course:</b> <code>{..."
+  SCHEDULE_TIME = "<b>➣━━━━━━━ ⏰ SCHEDULE ━━━━━━━➣</b>
+
+Please Set the time in <code>HH:MM</code> format for Daily Upda..."
+  SETUP_CANCELLED = "<b>➣━━━━━━━ ❌ CANCELLED ━━━━━━━➣</b>
+
+<b>Setup Cancelled</b>
+
+Batch update configuration was aborted..."
+  SETUP_SUCCESS = "<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>
+
+<b>Setup Successful!</b>
+Your batch has been configured for auto..."
+  START = "
+<b>➣━━━━━━━ 🤖 WELCOME ━━━━━━━➣</b>
+
+<b>👋 Hey {}, Welcome to Auto Uploader Bot v1.3!</b>
+
+<i>I'm you..."
+  THUMBNAIL_OPTIONS = "<b>➣━━━━━━━ 🖼 THUMBNAIL ━━━━━━━➣</b>
+
+<b>Choose Thumbnail Option:</b>
+
+1️⃣ Send URL (e.g., `https://..."
+  VIDEO_CAPTION = "╭━━━━━━━━━━━━━━➣
+┣⪼ 🎥 <b>Video Title:</b>
+┃  ╰─⪼ <code>{}.mkv</code>
+┣⪼ 📚 <b>Topic Name:</b>
+┃  ╰─⪼ ..."
+  VIDEO_CAPTION_V2 = "<b>[🎥]Video Title :</b><code>{} .mkv</code>
+<blockquote><b>📌Batch Name : {}
+🔗Topic Name : {}
+⏰Class ..."
+  YT_VIDEO_CAPTION = "<blockquote><i>We apologize, We are unable to download YouTube videos for security reasons. However,..."
+
+============================================================
+MODULE: modules.appx_master
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/modules/appx_master.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def add_batch(bot, m, api, app_name)
+    # All local vars: bot, m, api, app_name, editable, input1, raw_text, log_in, email, password, token, login, phNum, userid, e, res2, bdetail, cc, n, i, sent_messages, message_header, all_batches, chunk, sent_message, editable1, input2, msg, input3, time_input, time, input4, credit_filename, credit, file_credit, input5, thumb, bid, select, group_id, success, chat, group_name, course_id, all_data, pdf_count, video_count
+    # Line count: ~71
+  async def check_server()
+    # All local vars: session, response, e
+    # Line count: ~26
+  async def collect_data(batch_id, api, token)
+    # All local vars: batch_id, api, token, all_urls, e
+    # Line count: ~106
+  async def get_user_id(token)
+    # All local vars: token, decoded
+    # Line count: ~32
+  async def otp_login(phNum, api, editable, bot, m)
+    # All local vars: phNum, api, editable, bot, m, params, r1, input2, otp, r2, login_data, token
+    # Line count: ~48
+  async def password_login(email, password, api)
+    # All local vars: email, password, api, payload, hdr, login, login_data, token
+    # Line count: ~37
+  async def process_batch_upload(bot, course_id, all_data)
+    # All local vars: bot, course_id, all_data, data, course_name, save_dir, credit, file_credit, thumb, chat_id, p_count, v_count, i, url, subjectname, topicname, check_thread, forum_id, name, video_caption, pdf_caption, success, yt_video_id, sent_msg, pdf_path, cmd, copy, prog, filename, e
+    # Line count: ~11
+  async def set_chat(bot, GROUP_ID, editable1)
+    # All local vars: bot, GROUP_ID, editable1, chat, bot_member, e
+    # Line count: ~13
+  async def timezone(zone)
+    # All local vars: zone, fp
+    # Line count: ~143
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+  class HttpxClient:
+    def __init__(self, verify_ssl)
+    def close(self)
+    def get(self, url, params, headers, cookies, retry, attempt)
+    def post(self, url, json, data, params, headers, cookies, files, retry, attempt)
+  class datetime:
+    def __init__(???)
+    def astimezone(???)
+    def combine(???)
+    def ctime(???)
+    def date(???)
+    def dst(???)
+    def fromisocalendar(???)
+    def fromisoformat(???)
+    def fromordinal(???)
+    def fromtimestamp(???)
+    def isocalendar(???)
+    def isoformat(???)
+    def isoweekday(???)
+    def now(???)
+    def replace(???)
+    def strftime(???)
+    def strptime(???)
+    def time(???)
+    def timestamp(???)
+    def timetuple(???)
+    def timetz(???)
+    def today(???)
+    def toordinal(???)
+    def tzname(???)
+    def utcfromtimestamp(???)
+    def utcnow(???)
+    def utcoffset(???)
+    def utctimetuple(???)
+    def weekday(???)
+
+  --- STRING CONSTANTS ---
+  APP = "
+<b>➣━━━━━━━ 🤖 APPS ━━━━━━━➣</b>
+
+<i>I'm your all-in-one solution for extracting and managing course..."
+  BATCH_ALREADY_EXISTS = "❌Batch Already Exists in my Database❌"
+  BATCH_DELETED = "❌Batch Deleted Successfully❌"
+  BATCH_NOT_FOUND = "❌Batch Not Found in my Database❌"
+  BATCH_SELECTION = "<b>Please enter the batch ID number from the list above that you want to set for auto-update ⬆️</b>"
+  BATCH_STATUS = "<b>➣━━━━━━━ 📊 BATCH STATUS ━━━━━━━➣</b>
+
+<b>📚 Batch Information:</b>
+🆔 <b>ID:</b> {}
+📝 <b>Name:</b> ..."
+  BATCH_UPDATED = "✅Batch Updated Successfully✅"
+  COLLECTING_DATA = "<b>➣━━━━━━━ 📊 COLLECTING DATA ━━━━━━━➣</b>
+
+<b>Collecting Data... Please Wait a Few Minutes</b>
+
+<b>..."
+  CONFIRM_CONFIG = "<b>➣━━━━━━━ 📋 CONFIRMATION ━━━━━━━➣</b>
+
+<b>Configuration Summary</b>
+
+🏠 <b>App Name:</b> {}
+🆔 <b>Ba..."
+  CREDIT_OPTIONS = "<b>➣━━━━━━━ 💰 CREDIT ━━━━━━━➣</b>
+
+<b>Enter Credit Name:</b>
+
+1️⃣ Caption only: `Admin`
+2️⃣ Caption ..."
+  DAILY_UPDATE_COMPLETED = "<b>➣━━━━━━━ 📊 DAILY UPDATE COMPLETED ━━━━━━━➣</b>
+
+<b>Daily Update Completed!</b>
+
+<b>📚 Batch Inform..."
+  DISCLAIMER = "
+<b> ======= ⚖️ LEGAL DISCLAIMER =======</b>
+
+<i>Please read this disclaimer carefully before using ..."
+  ERROR_UPLOADING = "╭━━━━━━━━━━━━━━➣
+┣⪼ ⚠️ **Download Failed!**
+┣⪼ 📝 **Name:** <code>{}</code>
+┣⪼ 🔗 **URL:** <code>{}</c..."
+  GENERAL_ERROR = "<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>
+
+<b>Error Occurred</b>
+
+Something went wrong while processing your..."
+  GROUP_ERROR = "<b>➣━━━━━━━ ⚠️ ERROR ━━━━━━━➣</b>
+
+<b>Invalid group ID or insufficient permissions</b>
+
+Please verif..."
+  GROUP_SETUP = "<b>➣━━━━━━━ 👥 GROUP SETUP ━━━━━━━➣</b>
+
+<b>Group Setup Required</b>
+
+Please follow these steps:
+1️⃣ ..."
+  HELP = "<b>➣━━━━━━━ 📚 HELP ━━━━━━━➣</b>
+
+<b>Available Commands</b>
+
+/start - Start the bot
+/help - Show this..."
+  INVALID_TIME_FORMAT = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+⚠️ Invalid time format! Please use 24-hour format (HH:MM)
+Example:..."
+  INVALID_TOKEN = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>Invalid Token</b>
+Please provide a valid authentication token t..."
+  LAST_BATCH_COMPLETED = "<b>➣━━━━━━━ 📊 BATCH COMPLETED ━━━━━━━➣</b>
+
+<b>📚 Batch Information:</b>
+🆔 <b>ID:</b> {}
+📝 <b>Name:</..."
+  LOGIN_ERROR = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>Login Failed!</b>
+<i>Error: {}</i>
+
+<b>➣━━━━━━━━━━━━━━━━━➣</b>"
+  LOGIN_OPTIONS = "<b>➣━━━━━━━━ 🔐 LOGIN ━━━━━━━➣</b>
+
+<b>Choose a login method:</b>
+
+1️⃣ ID & Password Format: <code>em..."
+  LOGIN_SUCCESS = "<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>
+
+<b>Login Successful!</b>
+<i>Message: {}</i>
+
+<b>➣━━━━━━━━━━━━━━━..."
+  NO_BATCH_FOUND = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>No Active Batches Found</b>
+
+• Your batches may have expired
+• ..."
+  NO_DATA_ERROR = "<b>➣━━━━━━━ ❌ ERROR ━━━━━━━➣</b>
+
+<b>No Data Found</b>
+
+The selected batch appears to be empty.
+Plea..."
+  NO_NEW_CLASSES = "<b>➣━━━━━━━ ❌ NO NEW CLASSES ━━━━━━━➣</b>
+
+<b>No new classes today for course {}</b>
+<b>Go and Enjoy..."
+  OTP_SENT = "<b>➣━━━━━━━ 📱 OTP ━━━━━━━➣</b>
+
+<b>OTP Verification</b>
+An OTP has been sent to your mobile number.
+..."
+  PDF_CAPTION = "╭━━━━━━━━━━━━━━➣
+┣⪼ 📄 <b>PDF Title:</b>
+┃  ╰─⪼ <code>{}.pdf</code>
+┣⪼ 📚 <b>Topic Name:</b>
+┃  ╰─⪼ <b..."
+  PDF_CAPTION_V2 = "<b>[📕]File Title :</b><code>{} .pdf</code>
+<blockquote><b>📌Batch Name : {}
+🔗Topic Name : {}
+⏰Class T..."
+  RECOVERING_BATCH = "<b>➣━━━━━━━ 📊 RECOVERING BATCH ━━━━━━━➣</b>
+⚠️ <b>Last Batch Incomplete</b>
+📚 <b>Course:</b> <code>{..."
+  SCHEDULE_TIME = "<b>➣━━━━━━━ ⏰ SCHEDULE ━━━━━━━➣</b>
+
+Please Set the time in <code>HH:MM</code> format for Daily Upda..."
+  SETUP_CANCELLED = "<b>➣━━━━━━━ ❌ CANCELLED ━━━━━━━➣</b>
+
+<b>Setup Cancelled</b>
+
+Batch update configuration was aborted..."
+  SETUP_SUCCESS = "<b>➣━━━━━━━ ✅ SUCCESS ━━━━━━━➣</b>
+
+<b>Setup Successful!</b>
+Your batch has been configured for auto..."
+  START = "
+<b>➣━━━━━━━ 🤖 WELCOME ━━━━━━━➣</b>
+
+<b>👋 Hey {}, Welcome to Auto Uploader Bot v1.3!</b>
+
+<i>I'm you..."
+  THUMBNAIL_OPTIONS = "<b>➣━━━━━━━ 🖼 THUMBNAIL ━━━━━━━➣</b>
+
+<b>Choose Thumbnail Option:</b>
+
+1️⃣ Send URL (e.g., `https://..."
+  VIDEO_CAPTION = "╭━━━━━━━━━━━━━━➣
+┣⪼ 🎥 <b>Video Title:</b>
+┃  ╰─⪼ <code>{}.mkv</code>
+┣⪼ 📚 <b>Topic Name:</b>
+┃  ╰─⪼ ..."
+  VIDEO_CAPTION_V2 = "<b>[🎥]Video Title :</b><code>{} .mkv</code>
+<blockquote><b>📌Batch Name : {}
+🔗Topic Name : {}
+⏰Class ..."
+  YT_VIDEO_CAPTION = "<blockquote><i>We apologize, We are unable to download YouTube videos for security reasons. However,..."
+
+  --- OTHER ---
+  [Asia/Kolkata] IST = <DstTzInfo 'Asia/Kolkata' LMT+5:53:00 STD>
+  [import] asyncio
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+  [dict] headers = {'User-Agent': 'okhttp/4.9.1', 'Accept-Encoding': 'gzip', 'client-service': 'App
+  [import] jwt
+  [import] re
+  [HttpxClient] scraper = <server.HttpxClient object at 0x7fafe52ce0f0>
+
+============================================================
+MODULE: modules.appxdata
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/modules/appxdata.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def check_server()
+    # All local vars: session, response, e
+    # Line count: ~26
+  async def collect_data(batch_id, api, token)
+    # All local vars: batch_id, api, token, all_urls, e
+    # Line count: ~106
+  async def fetch_appx_v1(api, batch_id)
+    # All local vars: api, batch_id, tasks, subject, u, Topic, v, ids_details, i, all_urls, item, sub_item
+    # Line count: ~80
+  async def fetch_appx_v2(api, Batch_id, u, TopicName, SubjectName)
+    # All local vars: api, Batch_id, u, TopicName, SubjectName, all_urls, tasks, res, item, r, url
+    # Line count: ~92
+  async def fetch_details(semaphore, api, i, topicName, subjectName)
+    # All local vars: semaphore, api, i, topicName, subjectName, all_data, pdf_key, link, xx, MTYPE, j, pdf_link, pdf_version
+    # Line count: ~22
+  async def get_video_url(api, i)
+    # All local vars: api, i, querystring, res, enc_link, key, dec_link, keylink, url, e
+    # Line count: ~52
+
+  --- CLASSES ---
+  class HttpxClient:
+    def __init__(self, verify_ssl)
+    def close(self)
+    def get(self, url, params, headers, cookies, retry, attempt)
+    def post(self, url, json, data, params, headers, cookies, files, retry, attempt)
+
+  --- OTHER ---
+  [Logger] LOGGER = <Logger AUTO_UPDATER (INFO)>
+  [import] asyncio
+  [dict] headers = {'User-Agent': 'okhttp/4.9.1', 'Accept-Encoding': 'gzip', 'client-service': 'App
+  [HttpxClient] scraper = <server.HttpxClient object at 0x7fafe4902480>
+  [Semaphore] semaphore = <asyncio.locks.Semaphore object at 0x7fafe4902420 [unlocked, value:36]>
+  [import] utils
+
+============================================================
+MODULE: modules.manager
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/modules/manager.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def create_topic(bot, GROUP_ID, subjectname)
+    # All local vars: bot, GROUP_ID, subjectname, result
+    # Line count: ~6
+  async def set_chat(bot, GROUP_ID, editable1)
+    # All local vars: bot, GROUP_ID, editable1, chat, bot_member, e
+    # Line count: ~13
+
+  --- CLASSES ---
+  class ChatAdminRequired:
+    def __init__(self, value, rpc_name, is_unknown, is_signed)
+    def add_note(???)
+    def raise_it(rpc_error, rpc_type)
+    def with_traceback(???)
+  class ChatWriteForbidden:
+    def __init__(self, value, rpc_name, is_unknown, is_signed)
+    def add_note(???)
+    def raise_it(rpc_error, rpc_type)
+    def with_traceback(???)
+
+  --- OTHER ---
+  [EnumType] ChatType = <enum 'ChatType'>
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+
+============================================================
+MODULE: modules.tasks
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/modules/tasks.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def create_topic(bot, GROUP_ID, subjectname)
+    # All local vars: bot, GROUP_ID, subjectname, result
+    # Line count: ~6
+  async def process_batch_upload(bot, course_id, all_data)
+    # All local vars: bot, course_id, all_data, data, course_name, save_dir, credit, file_credit, thumb, chat_id, p_count, v_count, i, url, subjectname, topicname, check_thread, forum_id, name, video_caption, pdf_caption, success, yt_video_id, sent_msg, pdf_path, cmd, copy, prog, filename, e
+    # Line count: ~11
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+
+  --- OTHER ---
+  [Logger] LOGGER = <Logger AUTO_UPDATER (INFO)>
+  [import] asyncio
+  [import] buttom
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+  [import] helper
+  [import] logdb
+  [import] msg
+  [import] os
+
+============================================================
+MODULE: modules.scheduler
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/modules/scheduler.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def collect_data(batch_id, api, token)
+    # All local vars: batch_id, api, token, all_urls, e
+    # Line count: ~106
+  async def get_next_run_time(time_str)
+    # All local vars: time_str, now, hour, minute, next_run
+    # Line count: ~12
+  async def process_batch_upload(bot, course_id, all_data)
+    # All local vars: bot, course_id, all_data, data, course_name, save_dir, credit, file_credit, thumb, chat_id, p_count, v_count, i, url, subjectname, topicname, check_thread, forum_id, name, video_caption, pdf_caption, success, yt_video_id, sent_msg, pdf_path, cmd, copy, prog, filename, e
+    # Line count: ~11
+  async def schedule_batch_update(bot, course_id, api_url, time_str, token, length, course_name, group_id, price)
+    # All local vars: bot, course_id, api_url, time_str, token, length, course_name, group_id, price, next_run, now, sleep_seconds, all_data, pdf_count, video_count, time
+    # Line count: ~20
+  async def start_daily_schedulers(bot)
+    # All local vars: bot, batches, i
+    # Line count: ~45
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+  class datetime:
+    def __init__(???)
+    def astimezone(???)
+    def combine(???)
+    def ctime(???)
+    def date(???)
+    def dst(???)
+    def fromisocalendar(???)
+    def fromisoformat(???)
+    def fromordinal(???)
+    def fromtimestamp(???)
+    def isocalendar(???)
+    def isoformat(???)
+    def isoweekday(???)
+    def now(???)
+    def replace(???)
+    def strftime(???)
+    def strptime(???)
+    def time(???)
+    def timestamp(???)
+    def timetuple(???)
+    def timetz(???)
+    def today(???)
+    def toordinal(???)
+    def tzname(???)
+    def utcfromtimestamp(???)
+    def utcnow(???)
+    def utcoffset(???)
+    def utctimetuple(???)
+    def weekday(???)
+  class timedelta:
+    def __init__(???)
+    def total_seconds(???)
+
+  --- OTHER ---
+  [Asia/Kolkata] IST = <DstTzInfo 'Asia/Kolkata' LMT+5:53:00 STD>
+  [Logger] LOGGER = <Logger AUTO_UPDATER (INFO)>
+  [import] asyncio
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+  [import] msg
+  [import] pytz
+
+============================================================
+MODULE: modules.retasks
+File: /mnt/c/Users/natra/Desktop/online courses/Autoappx-main/modules/retasks.so
+============================================================
+
+  --- FUNCTIONS ---
+  async def collect_data(batch_id, api, token)
+    # All local vars: batch_id, api, token, all_urls, e
+    # Line count: ~106
+  async def process_batch_upload(bot, course_id, all_data)
+    # All local vars: bot, course_id, all_data, data, course_name, save_dir, credit, file_credit, thumb, chat_id, p_count, v_count, i, url, subjectname, topicname, check_thread, forum_id, name, video_caption, pdf_caption, success, yt_video_id, sent_msg, pdf_path, cmd, copy, prog, filename, e
+    # Line count: ~11
+  async def recover_incomplete_batches(bot)
+    # All local vars: bot, incomplete_batches, i, batch_info, all_data, pdf_count, video_count, time
+    # Line count: ~12
+  async def timezone(zone)
+    # All local vars: zone, fp
+    # Line count: ~143
+
+  --- CLASSES ---
+  class Config:
+    def __init__(???)
+  class datetime:
+    def __init__(???)
+    def astimezone(???)
+    def combine(???)
+    def ctime(???)
+    def date(???)
+    def dst(???)
+    def fromisocalendar(???)
+    def fromisoformat(???)
+    def fromordinal(???)
+    def fromtimestamp(???)
+    def isocalendar(???)
+    def isoformat(???)
+    def isoweekday(???)
+    def now(???)
+    def replace(???)
+    def strftime(???)
+    def strptime(???)
+    def time(???)
+    def timestamp(???)
+    def timetuple(???)
+    def timetz(???)
+    def today(???)
+    def toordinal(???)
+    def tzname(???)
+    def utcfromtimestamp(???)
+    def utcnow(???)
+    def utcoffset(???)
+    def utctimetuple(???)
+    def weekday(???)
+
+  --- OTHER ---
+  [Asia/Kolkata] IST = <DstTzInfo 'Asia/Kolkata' LMT+5:53:00 STD>
+  [Logger] LOGGER = <Logger AUTO_UPDATER (INFO)>
+  [import] asyncio
+  [Database] db_instance = <database.Database object at 0x7fafe4a03d10>
+  [import] msg

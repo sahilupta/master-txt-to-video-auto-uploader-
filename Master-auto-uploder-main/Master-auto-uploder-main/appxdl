@@ -1,0 +1,91 @@
+#!/bin/bash
+# appxdl - wrapper script to download and process video content
+# Replaces the original appxdl binary from masterapi.tech (domain expired)
+# Uses yt-dlp, ffmpeg, and aria2c for downloading
+
+URL=""
+OUTPUT=""
+
+# Parse arguments
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -u)
+            URL="$2"
+            shift 2
+            ;;
+        -o)
+            OUTPUT="$2"
+            shift 2
+            ;;
+        *)
+            # If no flag, treat as URL
+            if [ -z "$URL" ]; then
+                URL="$1"
+            fi
+            shift
+            ;;
+    esac
+done
+
+if [ -z "$URL" ]; then
+    echo "Usage: appxdl -u <url> [-o <output>]"
+    exit 1
+fi
+
+# Generate output filename if not provided
+if [ -z "$OUTPUT" ]; then
+    OUTPUT="downloaded_$(date +%s).mp4"
+fi
+
+echo "Downloading: $URL"
+echo "Output: $OUTPUT"
+
+# Try different download methods based on URL type
+if echo "$URL" | grep -qi "\.m3u8"; then
+    # HLS stream - use ffmpeg
+    echo "Detected m3u8 stream, using ffmpeg..."
+    ffmpeg -y -i "$URL" -c copy -bsf:a aac_adtstoasc "$OUTPUT" 2>/dev/null
+    if [ $? -eq 0 ]; then
+        echo "Download completed: $OUTPUT"
+        exit 0
+    fi
+    # Fallback to yt-dlp
+    echo "ffmpeg failed, trying yt-dlp..."
+    yt-dlp --no-check-certificate -o "$OUTPUT" "$URL" 2>/dev/null
+    exit $?
+
+elif echo "$URL" | grep -qi "\.mpd"; then
+    # DASH stream - use yt-dlp
+    echo "Detected MPD stream, using yt-dlp..."
+    yt-dlp --no-check-certificate --allow-unplayable-formats -o "$OUTPUT" "$URL" 2>/dev/null
+    exit $?
+
+elif echo "$URL" | grep -qi "\.mp4\|\.mkv\|\.webm"; then
+    # Direct video file - use aria2c for speed, fallback to wget
+    echo "Direct video download..."
+    aria2c -x 16 -j 32 -o "$OUTPUT" "$URL" 2>/dev/null
+    if [ $? -ne 0 ]; then
+        wget -O "$OUTPUT" "$URL" 2>/dev/null
+    fi
+    exit $?
+
+else
+    # Generic URL - try yt-dlp first, then ffmpeg, then wget
+    echo "Trying yt-dlp..."
+    yt-dlp --no-check-certificate -R 25 --fragment-retries 25 \
+        --external-downloader aria2c \
+        --downloader-args "aria2c: -x 16 -j 32" \
+        -o "$OUTPUT" "$URL" 2>/dev/null
+    
+    if [ $? -ne 0 ]; then
+        echo "yt-dlp failed, trying ffmpeg..."
+        ffmpeg -y -i "$URL" -c copy "$OUTPUT" 2>/dev/null
+        
+        if [ $? -ne 0 ]; then
+            echo "ffmpeg failed, trying direct download..."
+            aria2c -x 16 -j 32 -o "$OUTPUT" "$URL" 2>/dev/null || \
+            wget -O "$OUTPUT" "$URL" 2>/dev/null
+        fi
+    fi
+    exit $?
+fi

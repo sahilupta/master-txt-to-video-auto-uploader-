@@ -1,0 +1,16 @@
+pyrogram
+tgcrypto
+aiohttp
+requests
+pytz
+python-dotenv
+Flask>=3.0.0
+gunicorn==20.1.0
+motor
+pymongo
+PyJWT
+httpx
+pycryptodome
+cloudscraper
+beautifulsoup4
+pyromod

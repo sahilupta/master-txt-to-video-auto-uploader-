@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: txt bot
+    plan: free
+    env: docker
+    dockerfilePath: Dockerfile
+    repo: https://github.com/yassuhacks750/Autoappx
+    branch: main
+    autoDeploy: false
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: OWNER
+        sync: false
+      - key: CREDIT
+        sync: false
+      #- key: WEBHOOK
+        #sync: false
+      - key: PORT
+        value: 5000  # Default port value, update if needed
